@@ -17,4 +17,7 @@
 	</head>
 
     <body>
-        Hello from Header
+ 
+				<?php 
+				// Display Linkedin svg icon
+				echo svg_icon('mail__icon', 'mail') ?>

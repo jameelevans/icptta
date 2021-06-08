@@ -5,47 +5,105 @@
 *
 */
 
-// Font variables
-$font-primary: sans-serif;
+// * --------| Font variables |-------- *
+$font-primary: futura-pt, sans-serif;
+$font-secondary: adobe-caslon-pro, serif;
+$font-h1: 3rem;
+$font-h2: 2.4rem;
+$font-body: 1.2rem;
+$font-icon-title: 0.8rem;
+$font-icon-body: 0.8rem;
 
-// Font mixins
+// * --------| Font mixins |-------- *
 @mixin font-primary {
-    font-family: $font-primary;
-	font-display: swap;
+  font-family: $font-primary;
+  font-display: swap;
 }
 
 @mixin font-primary-i {
-    font-family: $font-primary;
-    font-display: swap;
-    font-style: italic;
+  font-family: $font-primary;
+  font-display: swap;
+  font-style: italic;
+}
+
+@mixin font-secondary {
+  font-family: $font-secondary;
+  font-display: swap;
+}
+
+@mixin font-secondary-i {
+  font-family: $font-secondary;
+  font-display: swap;
+  font-style: italic;
 }
 
 // Primary font regular
 @font-face {
-	@include font-primary;
-	src: url('assets/fonts/xxx.ttf') format('ttf');
-	font-weight: 300;
-
+  @include font-primary;
+  src: url('assets/fonts/FuturaPTBook.otf') format('otf');
+  font-weight: 300;
 }
 
 // Primary font italic
 @font-face {
-	@include font-primary-i;
-	src: url('assets/fonts/xxx.ttf') format('ttf');
-	font-weight: 300;
+  @include font-primary-i;
+  src: url('assets/fonts/FuturaPTBookOblique.otf') format('otf');
+  font-weight: 300;
 }
 
+// Primary font light regular
+@font-face {
+  @include font-primary;
+  src: url('assets/fonts/FuturaPTLight.otf') format('otf');
+  font-weight: 100;
+}
 
+// Primary font light italic
+@font-face {
+  @include font-primary-i;
+  src: url('assets/fonts/FuturaPTLightOblique.otf') format('otf');
+  font-weight: 100;
+}
+
+// Secondary font regular
+@font-face {
+  @include font-secondary;
+  src: url('assets/fonts/ACaslonPro-Regular.otf') format('otf');
+  font-weight: 300;
+}
+
+// Secondary font italic
+@font-face {
+  @include font-secondary-i;
+  src: url('assets/fonts/ACaslonPro-Italic.otf') format('otf');
+  font-weight: 300;
+}
 
 html {
-	// ! Makes 1 rem = 10px ( Simplifies dealing with rem to px calcs )
-	font-size: 62.5%; // 10px / 16px = 65.5% 
+  // ! Makes 1 rem = 10px ( Simplifies dealing with rem to px calcs )
+  font-size: 62.5%; // 10px / 16px = 65.5%
 }
 
-body {
-	font-family: $font-primary;
+h1 {
+  font-family: $font-primary;
+  font-size: $font-h1;
+  font-weight: 100;
 }
 
+h2 {
+  font-family: $font-secondary;
+  font-size: $font-h2;
+}
 
+.body {
+  font-size: $font-body;
+}
 
+.icon-title {
+  font-family: $font-secondary;
+  font-size: $font-icon-title;
+}
 
+.icon-body {
+  font-size: $font-icon-body;
+}

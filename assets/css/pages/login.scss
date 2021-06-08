@@ -1,0 +1,145 @@
+.login {
+  background: var(--gradient-primary);
+  position: relative;
+
+  #login {
+    font-size: $font-body;
+    width: 32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & h1 a {
+    color: var(--color-white);
+    background-image: url('assets/img/icp-tta-login-logo.png');
+    background-size: 300px;
+    height: 150px;
+    width: auto;
+    padding-bottom: 20px;
+    margin: 0 auto 30%;
+  }
+
+  & form {
+    border: 2.5px solid var(--color-white);
+    background-color: transparent;
+    padding: 15px 24px 34px;
+
+    & label {
+      color: var(--color-white);
+
+      font-weight: 100;
+      margin-top: 5.5rem;
+    }
+
+    & input[type='checkbox'] {
+      border-radius: 0;
+
+      &:checked:before {
+        color: var(--color-white);
+        margin: -0.2rem 0 0 -0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+
+      &:focus {
+        border-color: var(--color-lightblue-secondary);
+      }
+    }
+
+    & input[type='checkbox'],
+    & input[type='radio'] {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    & input[type='color'],
+    & input[type='date'],
+    & input[type='datetime-local'],
+    & input[type='datetime'],
+    & input[type='email'],
+    & input[type='month'],
+    & input[type='number'],
+    & input[type='password'],
+    & input[type='search'],
+    & input[type='tel'],
+    & input[type='text'],
+    & input[type='time'],
+    & input[type='url'],
+    & input[type='week'],
+    select,
+    textarea {
+      border-radius: 0;
+      color: var(--color-charcoal);
+
+      &:focus {
+        border-color: var(--color-lightblue-secondary);
+        box-shadow: 0 0 0 1px var(--color-lightblue-secondary);
+      }
+    }
+
+    & .dashicons-visibility,
+    & .dashicons-hidden {
+      color: var(--color-blue-primary);
+    }
+
+    & .submit {
+      display: block;
+    }
+
+    & .button-primary {
+      width: 125px;
+      background: var(--gradient-secondary);
+      font-size: $font-body;
+      color: var(--color-white);
+      cursor: pointer;
+      height: 35px;
+      text-align: center;
+      border: none;
+      background-size: 450% 150%;
+      border-radius: 2px;
+      transition: all 0.4s ease-in-out;
+      margin: 5rem 0 3rem;
+      text-shadow: none;
+      box-shadow: none;
+
+      &:hover {
+        background: var(--gradient-secondary);
+        background-position: 50% 0;
+        transition: all 0.4s ease-in-out;
+      }
+
+      &:active,
+      &:focus {
+        background: var(--gradient-secondary);
+        outline: none;
+        background-position: 100% 0;
+        transition: all 0.4s ease-in-out;
+        box-shadow: none;
+      }
+    }
+
+    & .forgetmenot label {
+      color: var(--color-white);
+    }
+  }
+
+  & #backtoblog a,
+  & #nav a {
+    color: var(--color-white);
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+
+  & .privacy-policy-page-link a {
+    color: var(--color-white);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+}

@@ -3,10 +3,63 @@
 * * All variables for project can be found in this file
 *
 */
-
 // * --------| Color variables |-------- *
-$color-primary: red;
-$color-primary-dark: black;
+:root {
+  --color-blue-primary: #0071bc;
+  --color-red-primary: #9e005d;
 
+  --color-lightblue-secondary: #009de2;
+  --color-lightblue-secondary-a: 0, 157, 226;
+  --color-darkblue-secondary: #3b4393;
+  --color-darkblue-secondary-a: 59, 67, 147;
+  --color-purple-secondary: #6e257e;
+  --color-purple-secondary-a: #6e257e;
+  --color-lightpurple-secondary: #b43c8a;
+  --color-lightpurple-secondary-a: 181, 60, 138;
 
+  --color-white: #ffffff;
+  --color-grey: #b2b2b2;
+  --color-grey-light: #f1f1f1;
+  --color-charcoal: #403d39;
+  --color-charcoal-a: 64, 61, 57;
+  --color-black: #1a1a1a;
+  --color-black-a: 26, 26, 26;
 
+  --color-twitter-blue: #00aced;
+  --color-facebook-blue: #3b5998;
+  --color-linkedin-blue: #0082ca;
+
+  --gradient-primary: linear-gradient(
+    45deg,
+    var(--color-red-primary),
+    var(--color-blue-primary)
+  );
+
+  --gradient-secondary: linear-gradient(
+    45deg,
+    var(--color-blue-primary),
+    var(--color-red-primary)
+  );
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-large-light: 0 1rem 3rem rgba(26, 26, 26, 0.1);
+}
+
+.mail__icon {
+  fill: var(--color-charcoal);
+  height: 2rem;
+  width: 2rem;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-plus {
+  width: 0.7857142857142857em;
+}

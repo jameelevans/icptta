@@ -1,9 +1,9 @@
 /*
-Theme Name: Starter Wordpress Theme
+Theme Name: ICP TTA
 Author: Jameel Evans
 Description: This theme was designed and coded by Jameel Evans.
 Version: 1.0
-Text Domain: jameelevans.com
+Text Domain: icptta.com
  */
 /**
 --------------------------------------------------------------
@@ -23,12 +23,13 @@ Text Domain: jameelevans.com
 *   Utilities --> All utility helper classes
 *
 * * | Components |
-*
+*   Buttons
 *
 * * | Layout |
 *
 *
 * * | Pages |
+*   Login
 
 
 --------------------------------------------------------------*/
@@ -37,6 +38,59 @@ Text Domain: jameelevans.com
 * * All variables for project can be found in this file
 *
 */
+:root {
+  --color-blue-primary: #0071bc;
+  --color-red-primary: #9e005d;
+  --color-lightblue-secondary: #009de2;
+  --color-lightblue-secondary-a: 0, 157, 226;
+  --color-darkblue-secondary: #3b4393;
+  --color-darkblue-secondary-a: 59, 67, 147;
+  --color-purple-secondary: #6e257e;
+  --color-purple-secondary-a: #6e257e;
+  --color-lightpurple-secondary: #b43c8a;
+  --color-lightpurple-secondary-a: 181, 60, 138;
+  --color-white: #ffffff;
+  --color-grey: #b2b2b2;
+  --color-grey-light: #f1f1f1;
+  --color-charcoal: #403d39;
+  --color-charcoal-a: 64, 61, 57;
+  --color-black: #1a1a1a;
+  --color-black-a: 26, 26, 26;
+  --color-twitter-blue: #00aced;
+  --color-facebook-blue: #3b5998;
+  --color-linkedin-blue: #0082ca;
+  --gradient-primary: linear-gradient(
+    45deg,
+    var(--color-red-primary),
+    var(--color-blue-primary)
+  );
+  --gradient-secondary: linear-gradient(
+    45deg,
+    var(--color-blue-primary),
+    var(--color-red-primary)
+  );
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-large-light: 0 1rem 3rem rgba(26, 26, 26, 0.1);
+}
+
+.mail__icon {
+  fill: var(--color-charcoal);
+  height: 2rem;
+  width: 2rem;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+.icon-plus {
+  width: 0.7857142857142857em;
+}
+
 /**
 *
 * * All mixins for project can be found in this file (Except for typography mixins)
@@ -66,17 +120,47 @@ Text Domain: jameelevans.com
 *
 */
 @font-face {
-  font-family: sans-serif;
+  font-family: futura-pt, sans-serif;
   font-display: swap;
-  src: url("assets/fonts/xxx.ttf") format("ttf");
+  src: url("assets/fonts/FuturaPTBook.otf") format("otf");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: sans-serif;
+  font-family: futura-pt, sans-serif;
   font-display: swap;
   font-style: italic;
-  src: url("assets/fonts/xxx.ttf") format("ttf");
+  src: url("assets/fonts/FuturaPTBookOblique.otf") format("otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: futura-pt, sans-serif;
+  font-display: swap;
+  src: url("assets/fonts/FuturaPTLight.otf") format("otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: futura-pt, sans-serif;
+  font-display: swap;
+  font-style: italic;
+  src: url("assets/fonts/FuturaPTLightOblique.otf") format("otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: adobe-caslon-pro, serif;
+  font-display: swap;
+  src: url("assets/fonts/ACaslonPro-Regular.otf") format("otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: adobe-caslon-pro, serif;
+  font-display: swap;
+  font-style: italic;
+  src: url("assets/fonts/ACaslonPro-Italic.otf") format("otf");
   font-weight: 300;
 }
 
@@ -84,8 +168,28 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: sans-serif;
+h1 {
+  font-family: futura-pt, sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: adobe-caslon-pro, serif;
+  font-size: 2.4rem;
+}
+
+.body {
+  font-size: 1.2rem;
+}
+
+.icon-title {
+  font-family: adobe-caslon-pro, serif;
+  font-size: 0.8rem;
+}
+
+.icon-body {
+  font-size: 0.8rem;
 }
 
 *,
@@ -102,11 +206,6 @@ html {
           box-sizing: border-box;
 }
 
-body {
-  background-color: orangered;
-  color: white;
-}
-
 .mb-sm {
   margin-bottom: 2rem;
 }
@@ -121,4 +220,208 @@ body {
 
 .mb-hg {
   margin-bottom: 8rem;
+}
+
+.btn {
+  width: 125px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 35px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-position: 50% 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+  background-position: 100% 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn_blue {
+  background-image: var(--gradient-primary);
+}
+
+.btn_red {
+  background-image: var(--gradient-secondary);
+}
+
+.login {
+  background: var(--gradient-primary);
+  position: relative;
+}
+
+.login #login {
+  font-size: 1.2rem;
+  width: 32rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.login h1 a {
+  color: var(--color-white);
+  background-image: url("assets/img/icp-tta-login-logo.png");
+  background-size: 300px;
+  height: 150px;
+  width: auto;
+  padding-bottom: 20px;
+  margin: 0 auto 30%;
+}
+
+.login form {
+  border: 2.5px solid var(--color-white);
+  background-color: transparent;
+  padding: 15px 24px 34px;
+}
+
+.login form label {
+  color: var(--color-white);
+  font-weight: 100;
+  margin-top: 5.5rem;
+}
+
+.login form input[type='checkbox'] {
+  border-radius: 0;
+}
+
+.login form input[type='checkbox']:checked:before {
+  color: var(--color-white);
+  margin: -0.2rem 0 0 -0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.login form input[type='checkbox']:focus {
+  border-color: var(--color-lightblue-secondary);
+}
+
+.login form input[type='checkbox'],
+.login form input[type='radio'] {
+  height: 2rem;
+  width: 2rem;
+}
+
+.login form input[type='color'],
+.login form input[type='date'],
+.login form input[type='datetime-local'],
+.login form input[type='datetime'],
+.login form input[type='email'],
+.login form input[type='month'],
+.login form input[type='number'],
+.login form input[type='password'],
+.login form input[type='search'],
+.login form input[type='tel'],
+.login form input[type='text'],
+.login form input[type='time'],
+.login form input[type='url'],
+.login form input[type='week'],
+.login form select,
+.login form textarea {
+  border-radius: 0;
+  color: var(--color-charcoal);
+}
+
+.login form input[type='color']:focus,
+.login form input[type='date']:focus,
+.login form input[type='datetime-local']:focus,
+.login form input[type='datetime']:focus,
+.login form input[type='email']:focus,
+.login form input[type='month']:focus,
+.login form input[type='number']:focus,
+.login form input[type='password']:focus,
+.login form input[type='search']:focus,
+.login form input[type='tel']:focus,
+.login form input[type='text']:focus,
+.login form input[type='time']:focus,
+.login form input[type='url']:focus,
+.login form input[type='week']:focus,
+.login form select:focus,
+.login form textarea:focus {
+  border-color: var(--color-lightblue-secondary);
+  -webkit-box-shadow: 0 0 0 1px var(--color-lightblue-secondary);
+          box-shadow: 0 0 0 1px var(--color-lightblue-secondary);
+}
+
+.login form .dashicons-visibility,
+.login form .dashicons-hidden {
+  color: var(--color-blue-primary);
+}
+
+.login form .submit {
+  display: block;
+}
+
+.login form .button-primary {
+  width: 125px;
+  background: var(--gradient-secondary);
+  font-size: 1.2rem;
+  color: var(--color-white);
+  cursor: pointer;
+  height: 35px;
+  text-align: center;
+  border: none;
+  background-size: 450% 150%;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 5rem 0 3rem;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login form .button-primary:hover {
+  background: var(--gradient-secondary);
+  background-position: 50% 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.login form .button-primary:active, .login form .button-primary:focus {
+  background: var(--gradient-secondary);
+  outline: none;
+  background-position: 100% 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login form .forgetmenot label {
+  color: var(--color-white);
+}
+
+.login #backtoblog a,
+.login #nav a {
+  color: var(--color-white);
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover {
+  color: var(--color-white);
+}
+
+.login .privacy-policy-page-link a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.login .privacy-policy-page-link a:hover {
+  color: var(--color-white);
 }

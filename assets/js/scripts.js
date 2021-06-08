@@ -5,4 +5,4 @@ import $ from 'jquery';
 import Alert from './modules/Alert'; // From sample alert js file 
 
 // Instantiate a new object using our modules/classes
-var alert = new Alert(); // From sample alert js file 
+//var alert = new Alert(); // From sample alert js file 

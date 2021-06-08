@@ -1,12 +1,12 @@
 /*
-Theme Name: Starter Wordpress Theme
+Theme Name: ICP TTA
 Author: Jameel Evans
 Description: This theme was designed and coded by Jameel Evans.
 Version: 1.0
-Text Domain: jameelevans.com
+Text Domain: icptta.com
  */
 
- /**
+/**
 --------------------------------------------------------------
 *! TABLE OF CONTENTS:
 --------------------------------------------------------------
@@ -24,12 +24,13 @@ Text Domain: jameelevans.com
 *   Utilities --> All utility helper classes
 *
 * * | Components |
-*
+*   Buttons
 *
 * * | Layout |
 *
 *
 * * | Pages |
+*   Login
 
 
 --------------------------------------------------------------*/
@@ -37,36 +38,34 @@ Text Domain: jameelevans.com
 //* --------| Abstracts |--------*//
 
 // * Variables
-@import "abstracts/variables";
+@import 'abstracts/variables';
 
- //  * Mixins
-@import "abstracts/mixins";
+//  * Mixins
+@import 'abstracts/mixins';
 
-  //  * Functions
- // @import "abstracts/functions";
-
+//  * Functions
+// @import "abstracts/functions";
 
 //*-------| Base |--------*//
 
- //  * Typography
-@import "base/typography";
+//  * Typography
+@import 'base/typography';
 
- //  * Global
- @import "base/base";
+//  * Global
+@import 'base/base';
 
 //  * Animations
 // @import "base/animations";
 
 //  * Utilities
-@import "base/utilities";
-
+@import 'base/utilities';
 
 //*--------| Components |--------*//
-
-
+//  * Buttons
+@import 'components/buttons';
 
 //*--------| Layouts |--------*//
 
-
-
 //*--------| Pages |--------*//
+//  * Login
+@import 'pages/login';

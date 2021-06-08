@@ -1,11 +1,11 @@
 {
-  "name": "your-wp-project",
+  "name": "icp-tta",
   "description": "A WPGulp based project",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jameelevans/wp-sass-starter.git"
+    "url": "git+https://github.com/jameelevans/icptta.git"
   },
   "license": "ISC",
   "devDependencies": {

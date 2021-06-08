@@ -1,0 +1,33 @@
+.btn {
+  width: 125px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 35px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background-position: 50% 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &_blue {
+    background-image: var(--gradient-primary);
+  }
+
+  &_red {
+    background-image: var(--gradient-secondary);
+  }
+}

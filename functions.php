@@ -16,6 +16,15 @@
   // Asynchronously load scripts
   add_filter( 'clean_url', 'async_scripts', 11, 1 ); 
 
+  //Action to make css styles available to login screen
+add_action('login_enqueue_scripts', 'icptta_login_css');
+
+//Filter to change login logo link to home page
+add_filter('login_headerurl', 'icptta_url');
+
+//Filter to replace WP logo with site title name on login screen
+add_filter('login_headertitle', 'icptta_login_title');
+
 
 
 
@@ -36,3 +45,30 @@
   else
     return str_replace( '#asyncload', '', $url )."' async='async";
   }
+
+  //Makes login logo link to home page
+function icptta_url() {
+  return esc_url(site_url('/'));
+}
+
+//Make css styles available to login screen
+function icptta_login_css() {
+  wp_enqueue_style('icptta_main_styles', get_stylesheet_uri());
+  }
+
+//Replace WP logo with site title name on login screen
+function icptta_login_title() {
+  return get_bloginfo('name');
+}
+
+
+  //*  Display inline svg icon from sprite sheet with custom class
+function svg_icon($class, $icon) { ?>
+  <svg class="<?php echo $class ?>">
+    <use
+      xlink:href="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/sprite.svg' ); ?>#icon-<?php echo $icon ?>">
+    </use>
+  </svg>
+  <?php } 
+  
+  // .Display inline svg icon from sprite sheet with custom class
