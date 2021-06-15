@@ -1,0 +1,56 @@
+.nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+
+  &__link {
+    &:link,
+    &:visited,
+    &:active {
+      color: var(--color-charcoal);
+      font-size: 1.6rem;
+      font-weight: 300;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      position: relative;
+    }
+
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: var(--color-blue-primary);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+
+    &:hover {
+      color: var(--color-blue-primary);
+    }
+
+    & .is-current-link {
+      color: var(--color-blue-primary);
+    }
+  }
+
+  &__item &__link {
+    text-decoration: none;
+  }
+
+  &__item:last-of-type {
+    margin-right: 2.5rem;
+  }
+
+  &___cta {
+  }
+}

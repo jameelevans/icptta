@@ -27,10 +27,13 @@ Text Domain: icptta.com
 *   Buttons
 *
 * * | Layout |
-*
+*   Header
+*   Navigation
+*   Slick slider
 *
 * * | Pages |
 *   Login
+*   Front page
 
 
 --------------------------------------------------------------*/
@@ -65,7 +68,18 @@ Text Domain: icptta.com
 @import 'components/buttons';
 
 //*--------| Layouts |--------*//
+//  * Header
+@import 'layout/header';
+
+//  * Navigation
+@import 'layout/navigation';
+
+//  * Slick slider
+@import 'layout/slider';
 
 //*--------| Pages |--------*//
 //  * Login
 @import 'pages/login';
+
+//  * Front page
+@import 'pages/front-page';

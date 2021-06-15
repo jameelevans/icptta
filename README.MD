@@ -15,4 +15,4 @@ This is a custom WordPress theme for ICP TTA built with Gulp, Webpack and Sass.
 
 ### Built For
 
-- **ICP TTA** - _Development_ - [ICP TTA](https://icptta.com/)
+- **ICP TTA** - [ICP TTA](https://icptta.com/)

@@ -1,0 +1,178 @@
+.front-page {
+  .header {
+    width: 100vw;
+
+    &__top {
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      padding: 1rem;
+      width: 100vw;
+      color: var(--color-white);
+      background-image: var(--gradient-primary);
+      font-weight: 100;
+
+      &-details {
+        text-align: right;
+        margin-right: 5vw;
+
+        .phone__icon {
+          fill: var(--color-white);
+          margin: 0 0.5rem;
+          height: 1.2rem;
+          width: 1.2rem;
+        }
+      }
+    }
+
+    &__menu {
+      width: 100vw;
+      padding: 1.2rem 5vw;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__heading {
+    }
+
+    &__h1 {
+    }
+
+    &__logo {
+      width: 15rem;
+    }
+
+    &__title {
+      position: absolute;
+      text-indent: -9999px;
+    }
+
+    &__main {
+      width: 100vw;
+      background-image: var(--gradient-primary);
+      position: relative;
+
+      .slider {
+        &__slide {
+          width: 100%;
+          height: 25vw;
+        }
+
+        &__text {
+          color: var(--color-white);
+          float: left;
+          width: 50%;
+          display: grid;
+          grid-template-rows: auto;
+          margin: 5vw 0 0 5vw;
+        }
+
+        &__heading {
+          font-family: $font-primary;
+          font-size: $font-h1;
+          font-weight: 100;
+          margin-bottom: 10px;
+        }
+
+        &__subheading {
+          font-family: $font-primary-bold;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 4.5vw;
+          line-height: 1;
+          margin: -1.5rem 0 2rem;
+        }
+
+        &__links:last-of-type {
+          margin-left: 2rem;
+        }
+
+        &__image {
+          & img {
+            max-width: 40%;
+            height: auto;
+          }
+        }
+      }
+
+      & .share {
+        display: grid;
+        grid-template-columns: min-content;
+        grid-template-rows: repeat(4, min-content);
+        grid-row-gap: 1.5rem;
+        position: absolute;
+        right: 2.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+
+        &__text {
+          position: absolute;
+          pointer-events: none;
+          user-select: none;
+          font-family: $font-primary;
+          font-weight: 300;
+          font-size: $font-icon-title;
+          left: -7rem;
+          padding: 2px;
+          opacity: 0;
+          writing-mode: vertical-lr;
+          text-orientation: upright;
+          border: 1px solid var(--color-white);
+          color: var(--color-white);
+          top: 50%;
+          transform: translateY(-50%);
+          transition: left 0.4s ease-in-out, opacity 0.3s ease-in-out;
+
+          @include respond(small) {
+            display: none;
+          }
+        }
+
+        &:hover .share__text {
+          left: -3.3rem;
+          opacity: 0.85;
+        }
+
+        &__link {
+          display: grid;
+          place-content: center;
+
+          @include respond(med-small) {
+            border: 1px solid var(--color-white);
+            border-radius: 50%;
+            padding: 5px;
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+
+        &__icon {
+          height: 2rem;
+          width: 2rem;
+          fill: var(--color-white);
+          transition: transform 0.5s cubic-bezier(0, 1.87, 0.83, 0.67);
+
+          @include respond(med-small) {
+            height: 2rem;
+            width: 2rem;
+          }
+
+          &:hover {
+            transform: scale(1.5);
+
+            @include respond(med-small) {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.general {
+}

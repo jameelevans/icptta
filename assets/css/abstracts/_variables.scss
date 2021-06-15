@@ -18,11 +18,13 @@
   --color-lightpurple-secondary-a: 181, 60, 138;
 
   --color-white: #ffffff;
+  --color-white-a: 255, 255, 255;
+
   --color-grey: #b2b2b2;
-  --color-grey-light: #f1f1f1;
+  --color-grey-light: #edf1f5;
   --color-charcoal: #403d39;
   --color-charcoal-a: 64, 61, 57;
-  --color-black: #1a1a1a;
+  --color-black: #403d39;
   --color-black-a: 26, 26, 26;
 
   --color-twitter-blue: #00aced;
@@ -46,20 +48,37 @@
   --shadow-large-light: 0 1rem 3rem rgba(26, 26, 26, 0.1);
 }
 
-.mail__icon {
-  fill: var(--color-charcoal);
-  height: 2rem;
-  width: 2rem;
+// * --------| Slider variables |-------- *
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+$slick-font-path: './assets/fonts/' !default;
+$slick-font-family: 'slick' !default;
+$slick-loader-path: './' !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: '\2190' !default;
+$slick-next-character: '\2192' !default;
+$slick-dot-character: '\2022' !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+  @if function-exists(image-url) {
+    @return image-url($url);
+  } @else {
+    @return url($slick-loader-path + $url);
+  }
 }
 
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-  font-size: 32px;
-  color: red;
-}
-========================================== */
-
-.icon-plus {
-  width: 0.7857142857142857em;
+@function slick-font-url($url) {
+  @if function-exists(font-url) {
+    @return font-url($url);
+  } @else {
+    @return url($slick-font-path + $url);
+  }
 }

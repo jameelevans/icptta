@@ -7,76 +7,26 @@
 
 // * --------| Font variables |-------- *
 $font-primary: futura-pt, sans-serif;
+$font-primary-bold: futura-pt-bold, sans-serif;
 $font-secondary: adobe-caslon-pro, serif;
-$font-h1: 3rem;
+$font-h1: 4rem;
 $font-h2: 2.4rem;
 $font-body: 1.2rem;
 $font-icon-title: 0.8rem;
 $font-icon-body: 0.8rem;
 
-// * --------| Font mixins |-------- *
-@mixin font-primary {
-  font-family: $font-primary;
-  font-display: swap;
-}
-
-@mixin font-primary-i {
-  font-family: $font-primary;
-  font-display: swap;
-  font-style: italic;
-}
-
-@mixin font-secondary {
-  font-family: $font-secondary;
-  font-display: swap;
-}
-
-@mixin font-secondary-i {
-  font-family: $font-secondary;
-  font-display: swap;
-  font-style: italic;
-}
-
-// Primary font regular
-@font-face {
-  @include font-primary;
-  src: url('assets/fonts/FuturaPTBook.otf') format('otf');
-  font-weight: 300;
-}
-
-// Primary font italic
-@font-face {
-  @include font-primary-i;
-  src: url('assets/fonts/FuturaPTBookOblique.otf') format('otf');
-  font-weight: 300;
-}
-
-// Primary font light regular
-@font-face {
-  @include font-primary;
-  src: url('assets/fonts/FuturaPTLight.otf') format('otf');
-  font-weight: 100;
-}
-
-// Primary font light italic
-@font-face {
-  @include font-primary-i;
-  src: url('assets/fonts/FuturaPTLightOblique.otf') format('otf');
-  font-weight: 100;
-}
-
-// Secondary font regular
-@font-face {
-  @include font-secondary;
-  src: url('assets/fonts/ACaslonPro-Regular.otf') format('otf');
-  font-weight: 300;
-}
-
-// Secondary font italic
-@font-face {
-  @include font-secondary-i;
-  src: url('assets/fonts/ACaslonPro-Italic.otf') format('otf');
-  font-weight: 300;
+// Slider fonts
+@if $slick-font-family == 'slick' {
+  @font-face {
+    font-family: 'slick';
+    src: slick-font-url('slick.eot');
+    src: slick-font-url('slick.eot?#iefix') format('embedded-opentype'),
+      slick-font-url('slick.woff') format('woff'),
+      slick-font-url('slick.ttf') format('truetype'),
+      slick-font-url('slick.svg#slick') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 html {
@@ -90,14 +40,39 @@ h1 {
   font-weight: 100;
 }
 
-h2 {
+.h2__header {
   font-family: $font-secondary;
-  font-size: $font-h2;
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+
+  &--grey {
+    color: var(--color-charcoal);
+  }
+
+  &--white {
+    color: var(--color-white);
+  }
+}
+
+.p__subheader {
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: $font-primary;
 }
 
 .body {
   font-size: $font-body;
 }
+
+// Icons
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
 
 .icon-title {
   font-family: $font-secondary;
@@ -107,3 +82,83 @@ h2 {
 .icon-body {
   font-size: $font-icon-body;
 }
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/*
+Futura PT Heavy
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Futura PT Heavy Oblique
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Futura PT Light Oblique
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 300;
+
+font-style: italic;
+
+
+Futura PT Book
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Futura PT Book Oblique
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Futura PT Light
+
+font-family: futura-pt, sans-serif;
+
+font-weight: 300;
+
+font-style: normal;
+
+
+Futura PT Bold
+
+font-family: futura-pt-bold, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Futura PT Bold Oblique
+
+font-family: futura-pt-bold, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+*/

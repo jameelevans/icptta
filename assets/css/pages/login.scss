@@ -14,10 +14,10 @@
   & h1 a {
     color: var(--color-white);
     background-image: url('assets/img/icp-tta-login-logo.png');
-    background-size: 300px;
-    height: 150px;
+    background-size: 30rem;
+    height: 15rem;
     width: auto;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     margin: 0 auto 30%;
   }
 
@@ -28,7 +28,6 @@
 
     & label {
       color: var(--color-white);
-
       font-weight: 100;
       margin-top: 5.5rem;
     }
