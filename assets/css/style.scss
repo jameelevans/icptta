@@ -30,6 +30,7 @@ Text Domain: icptta.com
 *   Header
 *   Navigation
 *   Slick slider
+*   Footer
 *
 * * | Pages |
 *   Login
@@ -58,7 +59,7 @@ Text Domain: icptta.com
 @import 'base/base';
 
 //  * Animations
-// @import "base/animations";
+@import 'base/animations';
 
 //  * Utilities
 @import 'base/utilities';
@@ -76,6 +77,9 @@ Text Domain: icptta.com
 
 //  * Slick slider
 @import 'layout/slider';
+
+//  * Footer
+@import 'layout/footer';
 
 //*--------| Pages |--------*//
 //  * Login

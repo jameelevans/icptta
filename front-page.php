@@ -9,7 +9,7 @@ get_header();
 
 ?>
 	<main>
-        <section class="about">
+        <section class="about animate__animated animate__fadeInUp">
 					<div class="about__logo">
 					<?php
 										$custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -40,7 +40,7 @@ euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
 
 					<div class="partners__wrapper">
 						<figure class="partners__logo">
-							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="" draggable="false">
+							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="">
 							<figcaption class="partners__name">Lorem ipsum dolor</figcaption>
 						</figure>
 						<figure class="partners__logo">

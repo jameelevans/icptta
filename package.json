@@ -40,5 +40,8 @@
     "gulpscripts": "gulp scripts",
     "images": "gulp images",
     "clearCache": "gulp clearCache"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }

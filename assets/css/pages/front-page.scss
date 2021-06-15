@@ -68,6 +68,14 @@
 
   &__logo {
     width: 15rem;
+    position: relative;
+    text-align: center;
+
+    &:hover .partners__name {
+      bottom: -3rem;
+      opacity: 1;
+    }
+
     & img {
       width: 100%;
       border-radius: 50%;
@@ -76,14 +84,22 @@
 
   &__name {
     font-family: $font-primary;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 100;
-    margin-top: 1.8rem;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.5s ease;
+    opacity: 0;
   }
 }
 
 .testimonials {
-  background-image: var(--gradient-primary);
+  background: var(--gradient-primary);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
   width: 100%;
   padding: 15rem 0 25rem;
 
@@ -140,7 +156,7 @@
 }
 
 .resources {
-  padding: 0 25vw;
+  padding: 0 25vw 10rem;
 
   &__header {
     width: 100%;
@@ -161,7 +177,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 25rem);
-    grid-column-gap: 10rem;
+    grid-column-gap: 6rem;
     text-align: center;
     justify-content: center;
     margin-top: 10rem;
@@ -170,14 +186,27 @@
       color: var(--color-charcoal);
       text-decoration: none;
       font-family: $font-primary;
-
       font-style: normal;
+      padding: 5rem 2rem;
+      border-radius: 0.5rem;
+      background-color: transparent;
+      transition: background-color 0.5s ease;
+
+      &:hover .resource__icon {
+        transform: scale(1.4);
+      }
+
+      &:hover {
+        background-color: var(--color-grey-light);
+      }
 
       &__icon {
-        width: 8rem;
-        height: 8rem;
+        width: 3rem;
+        height: 3rem;
         fill: var(--color-charcoal);
         margin-bottom: 2rem;
+        transform-origin: 50% 50%;
+        transition: all 0.5s;
       }
 
       &__best-practice-title {
@@ -187,7 +216,7 @@
       }
 
       &__resource-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 200;
       }
     }
