@@ -25,6 +25,7 @@ Text Domain: icptta.com
 *
 * * | Components |
 *   Buttons
+*   Resources
 *
 * * | Layout |
 *   Header
@@ -34,7 +35,9 @@ Text Domain: icptta.com
 *
 * * | Pages |
 *   Login
+*   General
 *   Front page
+*   About Us page
 
 
 --------------------------------------------------------------*/
@@ -68,6 +71,9 @@ Text Domain: icptta.com
 //  * Buttons
 @import 'components/buttons';
 
+//  * Resources
+@import 'components/resources';
+
 //*--------| Layouts |--------*//
 //  * Header
 @import 'layout/header';
@@ -85,5 +91,11 @@ Text Domain: icptta.com
 //  * Login
 @import 'pages/login';
 
+//  * General pages
+@import 'pages/general';
+
 //  * Front page
 @import 'pages/front-page';
+
+//  * About Us page
+@import 'pages/about-us';

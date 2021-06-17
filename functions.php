@@ -11,6 +11,8 @@
  * *    6. Activates the ability to add custom logo in customizer
  * *    7. Display inline svg icon from sprite sheet with custom class 
  * *    8. Get and display Featured Posts
+ * *    9. Get and display header slider
+ * *    10. Get and display general header content
  *      
  */
 
@@ -143,3 +145,56 @@ function custom_post_types() {
       wp_reset_postdata();
       endif;                  
   }
+
+//* 9. Get and display header slider
+function slider() { ?>
+  <section>
+    <h3 id="slider-heading" class="sr-only">Recent news</h3>
+    <div class="slider" aria-labelledby="slider-heading">
+        <?php
+        $slider = new WP_Query(array(
+          'posts_per_page' => -1,
+          'post_type' => 'slide'
+        ));
+        while ($slider -> have_posts()) {
+          $slider -> the_post(); ?>
+          <article class="slider__slide">
+            <div class="slider__text">
+              <h4 class="slider__heading"><?php echo get_the_title(); ?></h4>
+              <p class="slider__subheading"><?php the_field('sub_heading'); ?></p>
+              <div class="slider__buttons">
+                <a href="<?php the_field('link_learn'); ?>" class="slider__links btn btn--white-outline">Learn More</a>
+                <a href="" class="slider__links btn btn--blue">CONTACT US</a>
+              </div>
+            </div>
+            <div class="slider__image">
+              <?php // Class=wp-post-image
+              echo get_the_post_thumbnail(); ?>
+            </div>
+          </article>
+      <?php }
+      wp_reset_postdata();
+      ?>
+    </div>
+  </section>
+<?php } 
+// .Get and display header slider
+
+//* 10. Get and display general header content
+function general() { ?>
+  <div class="header__general">
+    <h1 class="header__heading">
+      <?php
+          if (is_home()) {
+          echo single_post_title();
+          }
+          else if (is_404()) {
+          echo '404 Error';
+          } else {
+          echo the_title();
+          }
+        ?>
+    </h1>
+  </div>
+  <?php } 
+  // .Get and display general header content

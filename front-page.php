@@ -2,14 +2,14 @@
 /**
  * * The template for displaying the front page
  *
- * @package your-wp-project
+ * @package icptta
  */
 
 get_header();
 
 ?>
 	<main>
-        <section class="about animate__animated animate__fadeInUp">
+        <section class="about fade-in-up">
 					<div class="about__logo">
 					<?php
 										$custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -24,7 +24,7 @@ get_header();
 					</div>
 					<div class="about__mission">
 						<h3 class="about__mission-header">Mission Statement</h3>
-						<p class="about__mission-p">Lorem ipsum dolor sit amet, consectet adipiscing
+						<p class="about__mission-p p__lead">Lorem ipsum dolor sit amet, consectet adipiscing
 						elit, sed diam nonummy nibh euismod tincidunt ut
 						laoreet dolore magna aliquam erat volutpat. Ut
 						wisi enim ad minim veniam, quis nostrud exerci</p>
@@ -34,26 +34,25 @@ get_header();
 				<section class="partners">
 					<div class="partners__headline">
 						<h2 class="h2__header h2__header--grey">Our Partners</h2>
-						<p class="p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+						<p class="p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
 					</div>
 
 					<div class="partners__wrapper">
 						<figure class="partners__logo">
 							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="">
-							<figcaption class="partners__name">Lorem ipsum dolor</figcaption>
+							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
 						</figure>
 						<figure class="partners__logo">
 							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="" draggable="false">
-							<figcaption class="partners__name">Lorem ipsum dolor</figcaption>
+							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
 						</figure>
 						<figure class="partners__logo">
 							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="" draggable="false">
-							<figcaption class="partners__name">Lorem ipsum dolor</figcaption>
+							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
 						</figure>
 						<figure class="partners__logo">
 							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt=""draggable="false">
-							<figcaption class="partners__name">Lorem ipsum dolor</figcaption>
+							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
 						</figure>
 					</div>
 

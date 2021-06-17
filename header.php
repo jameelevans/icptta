@@ -12,6 +12,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<?php if(is_front_page()) {echo '<meta name="google-site-verification" content="" />';}?>
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<?php wp_head(); ?>
 	</head>
@@ -60,32 +61,9 @@
 				</div><!-- .Navigation menu wrapper -->
 
 				<div class="header__main">
-						<div class="slider">
-								<?php
-								$slider = new WP_Query(array(
-									'posts_per_page' => -1,
-									'post_type' => 'slide'
-								));
-								while ($slider -> have_posts()) {
-									$slider -> the_post(); ?>
-									<div class="slider__slide">
-										<div class="slider__text">
-											<h2 class="slider__heading"><?php echo get_the_title(); ?></h2>
-											<p class="slider__subheading"><?php the_field('sub_heading'); ?></p>
-											<div class="slider__buttons">
-												<a href="<?php the_field('link_learn'); ?>" class="slider__links btn btn--white-outline">Learn More</a>
-												<a href="" class="slider__links btn btn--blue">CONTACT US</a>
-											</div>
-										</div>
-										<div class="slider__image">
-											<?php // Class=wp-post-image
-											echo get_the_post_thumbnail(); ?>
-										</div>
-									</div>
-							<?php }
-							wp_reset_postdata();
-							?>
-					</div>
+					<?php if (is_front_page()) { echo slider();} else {echo general();} ?>
+					
+						
 					
 					<div class="share">
 						<p class="share__text">SHARE</p>

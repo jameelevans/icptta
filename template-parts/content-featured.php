@@ -6,6 +6,6 @@
           echo esc_html( $categories[0]->name );
     ?>
   </h4>
-  <p class="resource__resource-title"><?php echo the_title(); ?></p>
+  <p class="resource__resource-title p__body"><?php echo the_title(); ?></p>
 </a>
 

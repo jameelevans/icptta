@@ -1,10 +1,53 @@
+.wp-block-button__link {
+  &,
+  &:link,
+  &:visited {
+    color: var(--color-white);
+    background-image: var(--gradient-secondary);
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    font-weight: 100;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  &:hover {
+    background-position: 50% 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(var(--color-black-a), 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(var(--color-black-a), 0.2);
+  }
+}
+
 .btn {
   &,
   &:link,
   &:visited {
     width: max-content;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 100;
     font-family: $font-primary;
     color: var(--color-white);
