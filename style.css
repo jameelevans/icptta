@@ -25,7 +25,6 @@ Text Domain: icptta.com
 *
 * * | Components |
 *   Buttons
-*   Resources
 *
 * * | Layout |
 *   Header
@@ -35,9 +34,7 @@ Text Domain: icptta.com
 *
 * * | Pages |
 *   Login
-*   General
 *   Front page
-*   About Us page
 
 
 --------------------------------------------------------------*/
@@ -1376,20 +1373,6 @@ html {
 
 .login .privacy-policy-page-link a:hover {
   color: var(--color-white);
-}
-
-.general--content {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-}
-
-.general--narrow {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 8rem 2rem;
-  position: relative;
 }
 
 .about {
