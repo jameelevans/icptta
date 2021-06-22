@@ -1,4 +1,4 @@
-<a class="resource" href="">
+<a class="resource" href="<?php the_permalink();?>" alt="">
   <?php // Display Link svg icon
   echo svg_icon('resource__icon', 'link') ?>
   <h4 class="resource__best-practice-title">

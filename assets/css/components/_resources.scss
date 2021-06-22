@@ -1,0 +1,34 @@
+.resources {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin: 0 0 5rem 0;
+
+  &__resource {
+    height: auto;
+    padding: 3rem 3rem 4rem 3rem;
+    position: relative;
+    background-color: var(--color-grey-light);
+    border-width: 5px 0 5px 5px;
+    border-style: solid;
+    border-image: linear-gradient(
+        to bottom,
+        var(--color-blue-primary),
+        var(--color-red-primary)
+      )
+      1 100%;
+  }
+
+  &__heading {
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: var(--color-charcoal);
+    text-transform: uppercase;
+  }
+
+  &__excerpt {
+    margin: 2rem 0 3rem 0;
+  }
+}

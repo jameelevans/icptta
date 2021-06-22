@@ -103,6 +103,10 @@ h1 {
   font-weight: 200;
 }
 
+strong {
+  font-family: $font-primary-bold !important;
+}
+
 // Icons
 /* ==========================================
 Single-colored icons can be modified like so:

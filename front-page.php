@@ -31,33 +31,7 @@ get_header();
 						<a href="#" class="btn btn--blue">LEARN MORE</a>
 					</div>
 				</section>
-				<section class="partners">
-					<div class="partners__headline">
-						<h2 class="h2__header h2__header--grey">Our Partners</h2>
-						<p class="p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
-					</div>
-
-					<div class="partners__wrapper">
-						<figure class="partners__logo">
-							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="">
-							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
-						</figure>
-						<figure class="partners__logo">
-							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="" draggable="false">
-							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
-						</figure>
-						<figure class="partners__logo">
-							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt="" draggable="false">
-							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
-						</figure>
-						<figure class="partners__logo">
-							<img src="<?php echo esc_url(get_theme_file_uri('assets/img/logo-placeholder.jpg')); ?>" alt=""draggable="false">
-							<figcaption class="partners__name p__body">Lorem ipsum dolor</figcaption>
-						</figure>
-					</div>
-
-
-				</section>
+				<?php echo partners('p-lg');?>
 				<section class="testimonials">
 					<h2 class="h2__header h2__header--white">What Others Are Saying</h2>
 					<figure class="testimonial">
@@ -82,13 +56,13 @@ get_header();
 							?>
 					</figure>
 				</section>
-				<section class="resources">
-					<div class="resources__header">
-						<h2 class="resources__heading h2__header h2__header--grey">Resources</h2>
-						<p class="resources__subheading p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
-						<a class="resources__cta btn btn btn--blue">LEARN MORE</a>
+				<section class="home-resources general--narrow">
+					<div class="home-resources__header">
+						<h2 class="home-resources__heading h2__header h2__header--grey">Resources</h2>
+						<p class="home-resources__subheading p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+						<a class="home-resources__cta btn btn btn--blue">LEARN MORE</a>
 					</div>
-					<div class="resources__wrapper">
+					<div class="home-resources__wrapper">
 					<?php
 						// Show featured posts
 						echo featured_posts();

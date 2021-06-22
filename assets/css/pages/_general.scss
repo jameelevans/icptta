@@ -1,9 +1,52 @@
 .general {
+  position: relative;
+  font-family: $font-primary;
+
+  & .training__date {
+    width: 15rem;
+    position: absolute;
+    top: -18rem;
+    left: 10%;
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    font-family: $font-primary;
+    padding: 1.5rem;
+    line-height: 1;
+    text-align: center;
+  }
+  & .training__month {
+    display: block;
+    font-size: 5rem;
+  }
+  & .training__day {
+    display: block;
+    font-size: 5.8rem;
+  }
+
+  & .training__year {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
   &--content {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
+  }
+
+  &--single {
+    max-width: 1300px;
+    background-color: var(--color-grey-light);
+    margin: 10rem auto;
+    padding: 5rem;
+    position: relative;
+
+    p {
+      font-weight: 100;
+      font-size: 2rem;
+    }
   }
 
   &--narrow {

@@ -49,12 +49,12 @@
 
 						<!-- Navigation menu and CTA -->
 						<ul class="nav">
-							<li class="nav__item"><a class="nav__link" href="">Home</a></li>
-							<li class="nav__item"><a class="nav__link" href="">About Us</a></li>
-							<li class="nav__item"><a class="nav__link" href="">Resources</a></li>
-							<li class="nav__item"><a class="nav__link" href="">Trainings</a></li>
-							<li class="nav__item"><a class="nav__link" href="">Consultants</a></li>
-							<li class="nav__item"><a class="nav__link" href="">Contact Us</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_page('/')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/')); ?>">Home</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_page('about-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/about-us')); ?>">About Us</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_page('resources')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/resources')); ?>">Resources</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_page('trainings')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/trainings')); ?>">Trainings</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_page('consultants')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/consultants')); ?>">Consultants</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/contact-us')); ?>">Contact Us</a></li>
 							<a class="nav__cta btn btn--blue" href="">Sign Up Now</a>
 						</ul><!-- .Navigation menu and CTA -->
 					</nav><!-- .Navigation content -->

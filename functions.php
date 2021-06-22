@@ -75,10 +75,10 @@ add_filter('login_headertitle', 'icptta_login_title');
       'header-text' => array( 'ICP TTA', 'Assiting Victims of Mass Violence and Domestice Terrorism' ),
   );
   add_theme_support( 'custom-logo', $defaults );
-  add_theme_support( 'post-thumbnails' ); // .Enable support for Post Thumbnails on posts and pages
 }
   add_action( 'after_setup_theme', 'icptta_custom_logo_setup' );
   // .Activates the ability to add custom logo in customizer
+
 
 
  
@@ -111,6 +111,7 @@ function custom_post_types() {
     ),
     'menu_icon' => 'dashicons-images-alt2'
   ));
+
   // Testimonials post type
   register_post_type('testimonials', array(
     'supports' => array('title','testimonials', 'thumbnail'),
@@ -123,6 +124,57 @@ function custom_post_types() {
       'singular_name' => 'Testimonial'
     ),
     'menu_icon' => 'dashicons-format-quote'
+  ));
+
+  // Training Post Type
+  register_post_type('training', array(
+
+    'map_meta_cap' => true,
+    'supports' => array('title', 'editor', 'excerpt','thumbnail'),
+    'rewrite' => array('slug' => 'past-trainings'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Trainings',
+      'add_new_item' => 'Add New Training',
+      'edit_item' => 'Edit Training',
+      'all_items' => 'All Trainings',
+      'singular_name' => 'Training'
+    ),
+    'menu_icon' => 'dashicons-calendar'
+  ));
+
+  // Consultant Post Type
+register_post_type('consultants', array(
+  'show_in_rest' => true,
+  'supports' => array('title', 'editor', 'thumbnail'),
+  'rewrite' => array('slug' => 'consultant'),
+  'taxonomies'  => array( 'category' ),
+  'public' => true,
+  'labels' => array(
+    'name' => 'Consultants',
+    'add_new_item' => 'Add New Consultant',
+    'edit_item' => 'Edit Consultant',
+    'all_items' => 'All Consultants',
+    'singular_name' => 'Consultant'
+  ),
+  'menu_icon' => 'dashicons-admin-users'
+));
+
+  // Parners Post Type
+  register_post_type('partners', array(
+    'show_in_rest' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'rewrite' => array('slug' => 'partner'),
+    'public' => true,
+    'labels' => array(
+      'name' => 'Partners',
+      'add_new_item' => 'Add New Partner',
+      'edit_item' => 'Edit Partner',
+      'all_items' => 'All Partners',
+      'singular_name' => 'Partner'
+    ),
+    'menu_icon' => 'dashicons-groups'
   ));
 
 }
@@ -190,7 +242,10 @@ function general() { ?>
           }
           else if (is_404()) {
           echo '404 Error';
-          } else {
+          }
+          else if (is_archive('training')) {
+            echo 'All Previous Trainings';
+            } else {
           echo the_title();
           }
         ?>
@@ -198,3 +253,54 @@ function general() { ?>
   </div>
   <?php } 
   // .Get and display general header content
+
+  //* ## Partners section
+  function partners($class) { ?>
+    <section class="partners <?php echo $class ?>">
+      <div class="partners__headline partners--narrow">
+        <h2 class="h2__header h2__header--grey">Our Partners</h2>
+        <p class="p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+      </div>
+
+      <div class="partners__wrapper partners__slider partners--narrow">
+        <?php
+            $partners = new WP_Query(array(
+              'posts_per_page' => -1,
+              'post_type' => 'partners',
+              'orderby' => 'rand'
+            ));
+
+            while($partners->have_posts()) {
+              $partners->the_post();?>
+              <a class="partners__link" href="<?php the_permalink();?>">
+                <figure class="partners__logo">
+                  <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>">
+                  <figcaption class="partners__name p__body"><?php the_title(); ?></figcaption>
+                </figure>
+              </a>
+              
+            <?php }
+          ?>
+      </div>
+    </section>
+    <?php } 
+
+  //* Adjust post queries
+  function icptta_adjust_queries($query) {
+    if (!is_admin() AND is_post_type_archive('training') AND $query->is_main_query()) {
+      $query->set('posts_per_page', 1);
+    }
+  
+  }
+  add_action('pre_get_posts', 'icptta_adjust_queries');
+
+
+function icptta_features() {
+  add_theme_support('title-tag');
+  add_theme_support('post-thumbnails');
+  add_image_size('consultantLandscape', 400, 260, true);
+  add_image_size('consultantPortrait', 480, 650, true);
+}
+add_action('after_setup_theme', 'icptta_features');
+
+

@@ -1,0 +1,19 @@
+.partner {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 5rem;
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__content {
+    background-color: var(--color-grey-light);
+    padding: 5rem;
+
+    p {
+      font-weight: 100;
+      font-size: 2rem;
+    }
+  }
+}

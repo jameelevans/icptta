@@ -25,6 +25,7 @@ Text Domain: icptta.com
 *
 * * | Components |
 *   Buttons
+*   Resources
 *
 * * | Layout |
 *   Header
@@ -34,7 +35,12 @@ Text Domain: icptta.com
 *
 * * | Pages |
 *   Login
+*   General
 *   Front page
+*   About Us page
+*   Trainings page
+*   Consultants page
+*   Partner page
 
 
 --------------------------------------------------------------*/
@@ -187,6 +193,10 @@ h1 {
   font-family: futura-pt, sans-serif;
   font-size: 1.8rem;
   font-weight: 200;
+}
+
+strong {
+  font-family: futura-pt-bold, sans-serif !important;
 }
 
 /* ==========================================
@@ -389,6 +399,10 @@ html {
   margin-bottom: 8rem;
 }
 
+.p-lg {
+  margin: 20rem 0;
+}
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -562,6 +576,38 @@ html {
           transform: translateY(-0.1rem);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(var(--color-black-a), 0.2);
           box-shadow: 0 0.5rem 1rem rgba(var(--color-black-a), 0.2);
+}
+
+.resources {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin: 0 0 5rem 0;
+}
+
+.resources__resource {
+  height: auto;
+  padding: 3rem 3rem 4rem 3rem;
+  position: relative;
+  background-color: var(--color-grey-light);
+  border-width: 5px 0 5px 5px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to bottom, var(--color-blue-primary), var(--color-red-primary)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-blue-primary)), to(var(--color-red-primary))) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-blue-primary), var(--color-red-primary)) 1 100%;
+}
+
+.resources__heading {
+  font-family: adobe-caslon-pro, serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: var(--color-charcoal);
+  text-transform: uppercase;
+}
+
+.resources__excerpt {
+  margin: 2rem 0 3rem 0;
 }
 
 .header {
@@ -1074,17 +1120,13 @@ html {
   background-color: var(--color-grey-light);
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 5vw;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8rem 10vw;
-}
-
-.footer__top .help {
-  width: 50rem;
+  padding: 8rem 15vw;
 }
 
 .footer__top .help__header {
@@ -1101,7 +1143,6 @@ html {
 .footer__top .contact {
   background-color: var(--color-red-primary);
   padding: 4rem;
-  width: 30rem;
   outline: var(--color-white) solid 3px;
   border-radius: 2px;
   color: var(--color-white);
@@ -1375,6 +1416,67 @@ html {
   color: var(--color-white);
 }
 
+.general {
+  position: relative;
+  font-family: futura-pt, sans-serif;
+}
+
+.general .training__date {
+  width: 15rem;
+  position: absolute;
+  top: -18rem;
+  left: 10%;
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  font-family: futura-pt, sans-serif;
+  padding: 1.5rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.general .training__month {
+  display: block;
+  font-size: 5rem;
+}
+
+.general .training__day {
+  display: block;
+  font-size: 5.8rem;
+}
+
+.general .training__year {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.general--content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.general--single {
+  max-width: 1300px;
+  background-color: var(--color-grey-light);
+  margin: 10rem auto;
+  padding: 5rem;
+  position: relative;
+}
+
+.general--single p {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.general--narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
 .about {
   width: 100%;
   margin: 10rem 0;
@@ -1423,8 +1525,10 @@ html {
   width: 60rem;
 }
 
-.partners {
-  margin: 10rem 0;
+.partners--narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .partners__headline {
@@ -1434,35 +1538,56 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 0 25vw;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .partners__wrapper {
-  display: grid;
-  grid-template-columns: 15rem 15rem 15rem 15rem;
-  grid-column-gap: 8rem;
-  text-align: center;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 8rem;
+  overflow-x: hidden;
+}
+
+.partners__wrapper .slick-list {
+  overflow: visible;
+}
+
+.partners__link {
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 .partners__logo {
-  width: 15rem;
+  width: 25rem;
   position: relative;
   text-align: center;
+  min-height: 100px;
+  display: block;
 }
 
 .partners__logo:hover .partners__name {
-  bottom: -3rem;
+  bottom: -4.5rem;
   opacity: 1;
 }
 
 .partners__logo img {
-  width: 100%;
-  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .partners__name {
@@ -1471,7 +1596,7 @@ html {
   left: 0;
   bottom: -1rem;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   opacity: 0;
@@ -1538,13 +1663,9 @@ html {
   margin-top: 1rem;
 }
 
-.resources {
-  padding: 0 25vw 10rem;
-}
-
-.resources__header {
+.home-resources__header {
   width: 100%;
-  margin-top: -9.5rem;
+  margin-top: -17rem;
   background-color: var(--color-grey-light);
   text-align: center;
   padding: 5rem 8rem;
@@ -1552,22 +1673,19 @@ html {
           box-shadow: 0px 0px 3rem rgba(var(--color-black-a), 0.2);
 }
 
-.resources__subheading {
+.home-resources__subheading {
   margin-bottom: 4.5rem;
 }
 
-.resources__wrapper {
+.home-resources__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 25rem);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 6rem;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 10rem;
 }
 
-.resources__wrapper .resource {
+.home-resources__wrapper .resource {
   color: var(--color-charcoal);
   text-decoration: none;
   font-family: futura-pt, sans-serif;
@@ -1579,16 +1697,16 @@ html {
   transition: background-color 0.5s ease;
 }
 
-.resources__wrapper .resource:hover .resource__icon {
+.home-resources__wrapper .resource:hover .resource__icon {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.resources__wrapper .resource:hover {
+.home-resources__wrapper .resource:hover {
   background-color: var(--color-grey-light);
 }
 
-.resources__wrapper .resource__icon {
+.home-resources__wrapper .resource__icon {
   width: 3rem;
   height: 3rem;
   fill: var(--color-charcoal);
@@ -1599,8 +1717,298 @@ html {
   transition: all 0.5s;
 }
 
-.resources__wrapper .resource__best-practice-title {
+.home-resources__wrapper .resource__best-practice-title {
   font-size: 2.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+
+.trainings__no-show, .trainings__link {
+  font-family: futura-pt, sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.trainings__no-show a, .trainings__link a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-blue-primary);
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.trainings__no-show a:hover, .trainings__link a:hover {
+  color: var(--color-black);
+}
+
+.trainings__featured {
+  width: 100%;
+  margin: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  grid-column-gap: 5rem;
+}
+
+.trainings__featured .trainings__img {
+  width: 35rem;
+  height: 35rem;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.trainings__featured .trainings__date {
+  height: 35%;
+  width: 35%;
+  background-color: rgba(var(--color-charcoal-a), 0.95);
+  color: var(--color-white);
+  font-family: futura-pt, sans-serif;
+  padding: 5%;
+  line-height: 1;
+  text-align: center;
+}
+
+.trainings__featured .trainings__month {
+  display: block;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.trainings__featured .trainings__day {
+  display: block;
+  font-size: 4.8rem;
+}
+
+.trainings__featured .trainings__heading {
+  margin-bottom: 2rem;
+}
+
+.trainings__featured .trainings__description {
+  font-family: futura-pt, sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.trainings__normal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem auto;
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+.trainings__normal .trainings__card {
+  display: block;
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.trainings__normal .trainings__heading {
+  font-family: futura-pt, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.trainings__normal .trainings__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 62%;
+}
+
+.trainings__normal .trainings__date {
+  height: 8rem;
+  width: 8rem;
+  background-color: rgba(var(--color-charcoal-a), 0.95);
+  color: var(--color-white);
+  font-family: futura-pt, sans-serif;
+  padding: 5%;
+  line-height: 1;
+  text-align: center;
+}
+
+.trainings__normal .trainings__month {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.trainings__normal .trainings__day {
+  display: block;
+  font-size: 2.8rem;
+}
+
+.trainings__normal .trainings__details {
+  position: absolute;
+  width: 100%;
+  min-height: 11.5rem;
+  bottom: 0;
+  background-color: var(--color-grey-light);
+  padding: 3rem;
+  text-align: left;
+  color: var(--color-black);
+}
+
+.trainings__normal .trainings__description {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 2.5rem;
+}
+
+.consultants__normal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.consultants__article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2.5rem;
+}
+
+.consultants__img {
+  width: 100%;
+}
+
+.consultants__heading {
+  font-family: futura-pt, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.consultants__heading a {
+  text-decoration: none;
+  color: var(--color-charcoal);
+  position: relative;
+}
+
+.consultants__heading a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.consultants__heading a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.consultants__heading a:hover {
+  color: var(--color-blue-primary);
+}
+
+.consultants__icon {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.consultants__description {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+
+.consultants__communities {
+  border-bottom: 1px solid var(--color-black);
+  padding-bottom: 2px;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.consultants__category {
+  font-size: 1.3rem;
+  font-weight: 100;
+  list-style: none;
+}
+
+.consultants__category a {
+  color: var(--color-charcoal);
+  text-decoration: none;
+  position: relative;
+}
+
+.consultants__category a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.consultants__category a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.consultants__category a:hover {
+  color: var(--color-blue-primary);
+}
+
+.consultant {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 5rem;
+}
+
+.consultant__headshot {
+  width: 100%;
+}
+
+.consultant__content {
+  background-color: var(--color-grey-light);
+  padding: 5rem;
+}
+
+.consultant__content p,
+.consultant__content ul,
+.consultant__content a {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.partner {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 5rem;
+}
+
+.partner__logo {
+  width: 100%;
+}
+
+.partner__content {
+  background-color: var(--color-grey-light);
+  padding: 5rem;
+}
+
+.partner__content p {
+  font-weight: 100;
+  font-size: 2rem;
 }

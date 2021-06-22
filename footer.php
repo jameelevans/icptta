@@ -6,6 +6,7 @@
  */
 
 ?>
+    
     <!--Footer-->
     <footer class="footer">
         <div class="footer__top">

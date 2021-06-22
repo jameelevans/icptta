@@ -6,14 +6,13 @@
     background-color: var(--color-grey-light);
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 5vw;
     justify-items: center;
     align-items: center;
-    padding: 8rem 10vw;
+    padding: 8rem 15vw;
 
     & .help {
-      width: 50rem;
       &__header {
         margin-bottom: 2.5rem;
       }
@@ -29,7 +28,7 @@
     & .contact {
       background-color: var(--color-red-primary);
       padding: 4rem;
-      width: 30rem;
+
       outline: var(--color-white) solid 3px;
       border-radius: 2px;
       color: var(--color-white);

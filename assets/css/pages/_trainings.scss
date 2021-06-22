@@ -1,0 +1,142 @@
+.trainings {
+  &__section {
+  }
+
+  &__no-show,
+  &__link {
+    font-family: $font-primary;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    & a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--color-blue-primary);
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &__featured {
+    width: 100%;
+    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 5rem;
+
+    & .trainings__img {
+      width: 35rem;
+      height: 35rem;
+      background-repeat: none;
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .trainings__date {
+      height: 35%;
+      width: 35%;
+      background-color: rgba(var(--color-charcoal-a), 0.95);
+      color: var(--color-white);
+      font-family: $font-primary;
+      padding: 5%;
+      line-height: 1;
+      text-align: center;
+    }
+    & .trainings__month {
+      display: block;
+      font-size: 4rem;
+      font-weight: 100;
+    }
+    & .trainings__day {
+      display: block;
+      font-size: 4.8rem;
+    }
+
+    & .trainings__content {
+    }
+
+    & .trainings__heading {
+      margin-bottom: 2rem;
+    }
+
+    & .trainings__description {
+      font-family: $font-primary;
+      font-weight: 100;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  &__normal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem auto;
+    grid-gap: 2rem;
+    width: 100%;
+
+    & .trainings__card {
+      display: block;
+      height: 40rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    & .trainings__heading {
+      font-family: $font-primary;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--color-charcoal);
+      margin-bottom: 1.5rem;
+    }
+
+    & .trainings__img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 62%;
+    }
+
+    & .trainings__date {
+      height: 8rem;
+      width: 8rem;
+      background-color: rgba(var(--color-charcoal-a), 0.95);
+      color: var(--color-white);
+      font-family: $font-primary;
+      padding: 5%;
+      line-height: 1;
+      text-align: center;
+    }
+    & .trainings__month {
+      display: block;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+    & .trainings__day {
+      display: block;
+      font-size: 2.8rem;
+    }
+
+    .trainings__details {
+      position: absolute;
+      width: 100%;
+      min-height: 11.5rem;
+      bottom: 0;
+      background-color: var(--color-grey-light);
+      padding: 3rem;
+      text-align: left;
+      color: var(--color-black);
+    }
+
+    .trainings__description {
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-bottom: 2.5rem;
+    }
+  }
+}

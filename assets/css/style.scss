@@ -38,6 +38,9 @@ Text Domain: icptta.com
 *   General
 *   Front page
 *   About Us page
+*   Trainings page
+*   Consultants page
+*   Partner page
 
 
 --------------------------------------------------------------*/
@@ -99,3 +102,12 @@ Text Domain: icptta.com
 
 //  * About Us page
 @import 'pages/about-us';
+
+//  * Trainings page
+@import 'pages/trainings';
+
+//  * Consultants page
+@import 'pages/consultants';
+
+//  * Partner page
+@import 'pages/partner';
