@@ -41,6 +41,8 @@ Text Domain: icptta.com
 *   Trainings page
 *   Consultants page
 *   Partner page
+*   Contact Us
+*   404 page
 
 
 --------------------------------------------------------------*/
@@ -111,3 +113,9 @@ Text Domain: icptta.com
 
 //  * Partner page
 @import 'pages/partner';
+
+//  * Contact-us page
+@import 'pages/contact-us';
+
+//  * 404 page
+@import 'pages/404';

@@ -14,7 +14,7 @@ get_header();
                       $trainingDate = new DateTime(get_field('training_date'));
                       echo $trainingDate->format('M')?></span>
       <span class="training__day"><strong><?php echo $trainingDate->format('d') ?></strong></span>
-      <span class="training__year"><strong><?php echo $trainingDate->format('Y') ?></strong></span>
+      <span class="training__year"><?php echo $trainingDate->format('Y') ?></span>
     </div>
     <section class="general--single">
       <?php the_content(); ?>

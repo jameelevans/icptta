@@ -10,9 +10,12 @@
  * *    5. Add theme title to login screen
  * *    6. Activates the ability to add custom logo in customizer
  * *    7. Display inline svg icon from sprite sheet with custom class 
- * *    8. Get and display Featured Posts
- * *    9. Get and display header slider
- * *    10. Get and display general header content
+ * *    8. Enable custom post types
+ * *    9. Get and display Featured Posts
+ * *    10. Get and display header slider
+ * *    11. Get and display general header content
+ * *    12. Theme custom image sizes
+ * *    13. Exclude node_modules from exporting
  *      
  */
 
@@ -80,10 +83,6 @@ add_filter('login_headertitle', 'icptta_login_title');
   // .Activates the ability to add custom logo in customizer
 
 
-
- 
-
-
   //* 7.  Display inline svg icon from sprite sheet with custom class
 function svg_icon($class, $icon) { ?>
   <svg class="<?php echo $class ?>">
@@ -126,23 +125,22 @@ function custom_post_types() {
     'menu_icon' => 'dashicons-format-quote'
   ));
 
-  // Training Post Type
-  register_post_type('training', array(
+ // Training Post Type
+ register_post_type('trainings', array(
 
-    'map_meta_cap' => true,
-    'supports' => array('title', 'editor', 'excerpt','thumbnail'),
-    'rewrite' => array('slug' => 'past-trainings'),
-    'has_archive' => true,
-    'public' => true,
-    'labels' => array(
-      'name' => 'Trainings',
-      'add_new_item' => 'Add New Training',
-      'edit_item' => 'Edit Training',
-      'all_items' => 'All Trainings',
-      'singular_name' => 'Training'
-    ),
-    'menu_icon' => 'dashicons-calendar'
-  ));
+  'map_meta_cap' => true,
+  'supports' => array('title', 'editor', 'excerpt','thumbnail'),
+  'rewrite' => array('slug' => 'training'),
+  'has_archive' => true,
+  'public' => true,
+  'labels' => array(
+    'name' => 'Trainings',
+    'add_new_item' => 'Add New Training',
+    'edit_item' => 'Edit Trainings',
+    'all_items' => 'All Trainings'
+  ),
+  'menu_icon' => 'dashicons-calendar'
+));
 
   // Consultant Post Type
 register_post_type('consultants', array(
@@ -177,17 +175,29 @@ register_post_type('consultants', array(
     'menu_icon' => 'dashicons-groups'
   ));
 
+   // FAQs Post Type
+   register_post_type('faqs', array(
+    'supports' => array('title', 'editor'),
+    'public' => true,
+    'labels' => array(
+      'name' => 'FAQs',
+      'add_new_item' => 'Add New FAQ',
+      'edit_item' => 'Edit FAQ',
+      'all_items' => 'All FAQs',
+      'singular_name' => 'FAQ'
+    ),
+    'menu_icon' => 'dashicons-format-chat'
+  ));
+
 }
  
   add_action('init', 'custom_post_types');
-  // .Enable custom post types
+  // . 8 Enable custom post types
 
-  // 8. Get and display Featured Posts
-
+  //* 9. Get and display Featured Posts
   function featured_posts(){
   
     // Show first three featured resources
-    
     $featured = new WP_Query('showposts=3&orderby=rand&tag_name=featured');
       if( $featured->have_posts() ):
         while( $featured->have_posts() ):
@@ -196,9 +206,9 @@ register_post_type('consultants', array(
         endwhile;
       wp_reset_postdata();
       endif;                  
-  }
+  } // 9. Get and display Featured Posts
 
-//* 9. Get and display header slider
+//* 10. Get and display header slider
 function slider() { ?>
   <section>
     <h3 id="slider-heading" class="sr-only">Recent news</h3>
@@ -216,7 +226,7 @@ function slider() { ?>
               <p class="slider__subheading"><?php the_field('sub_heading'); ?></p>
               <div class="slider__buttons">
                 <a href="<?php the_field('link_learn'); ?>" class="slider__links btn btn--white-outline">Learn More</a>
-                <a href="" class="slider__links btn btn--blue">CONTACT US</a>
+                <a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="slider__links btn btn--blue">CONTACT US</a>
               </div>
             </div>
             <div class="slider__image">
@@ -230,9 +240,9 @@ function slider() { ?>
     </div>
   </section>
 <?php } 
-// .Get and display header slider
+// .10 Get and display header slider
 
-//* 10. Get and display general header content
+//* 11. Get and display general header content
 function general() { ?>
   <div class="header__general">
     <h1 class="header__heading">
@@ -252,9 +262,9 @@ function general() { ?>
     </h1>
   </div>
   <?php } 
-  // .Get and display general header content
+  // .11 Get and display general header content
 
-  //* ## Partners section
+  //* 12 Get and display Partners section
   function partners($class) { ?>
     <section class="partners <?php echo $class ?>">
       <div class="partners__headline partners--narrow">
@@ -283,24 +293,27 @@ function general() { ?>
           ?>
       </div>
     </section>
-    <?php } 
-
-  //* Adjust post queries
-  function icptta_adjust_queries($query) {
-    if (!is_admin() AND is_post_type_archive('training') AND $query->is_main_query()) {
-      $query->set('posts_per_page', 1);
-    }
-  
-  }
-  add_action('pre_get_posts', 'icptta_adjust_queries');
+    <?php } //. 12 Get and display Partners section
 
 
+//* 12 Theme custom image sizes
 function icptta_features() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_image_size('consultantLandscape', 400, 260, true);
   add_image_size('consultantPortrait', 480, 650, true);
+  add_image_size('training', 870, 870, true);
 }
 add_action('after_setup_theme', 'icptta_features');
+//. 12 Theme custom image sizes
+
+//* 13 Exclude node_modules from exporting
+add_filter('ai1wm_exclude_content_from_export', 'ignoreCertainFiles');
+
+function ignoreCertainFiles ($exclude_filters){
+  $exclude_filters[] = 'themes/ICP TTA/node_modules';
+  return $exclude_filters;
+}
+//. 13 Exclude node_modules from exporting
 
 

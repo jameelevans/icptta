@@ -1,17 +1,32 @@
 .about {
   width: 100%;
-  margin: 10rem 0;
+  margin-top: 10rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: minmax(50rem, 60rem) minmax(min-content, 60rem);
   grid-column-gap: 8rem;
   padding: 6rem 8rem;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  line-height: 1;
+
+  @include respond(large) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 4rem;
+    grid-template-columns: minmax(min-content, 80rem);
+    justify-content: center;
+    grid-column-gap: 0;
+    padding: 5rem 3rem;
+    margin: 5rem 0;
+    text-align: center;
+  }
 
   &__logo {
-    width: 50rem;
+    width: 100%;
     position: relative;
+
+    @include respond(large) {
+      width: 80%;
+    }
   }
 
   &__icon {
@@ -20,6 +35,7 @@
 
   &__tagline {
     position: absolute;
+    text-indent: -9999px;
     font-family: $font-secondary;
     font-size: 2rem;
     top: 13rem;
@@ -40,7 +56,6 @@
   }
 
   &__mission-p {
-    width: 60rem;
   }
 }
 
@@ -49,6 +64,10 @@
     max-width: 960px;
     margin: 0 auto;
     position: relative;
+
+    @include respond(medium) {
+      padding: 0 2rem;
+    }
   }
   &__headline {
     display: grid;
@@ -129,6 +148,10 @@
     padding: 2.5rem 2rem;
     position: relative;
 
+    @include respond(large) {
+      margin: 0 2rem;
+    }
+
     &::before {
       content: '\201C';
       position: absolute;
@@ -159,12 +182,20 @@
     & blockquote {
       font-style: italic;
       font-size: 1.5rem;
+
+      @include respond(large) {
+        font-size: 2.5rem;
+      }
     }
 
     & footer {
       font-style: normal;
       font-size: 1.2rem;
       margin-top: 1rem;
+
+      @include respond(large) {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -192,6 +223,14 @@
     grid-column-gap: 6rem;
     text-align: center;
     margin-top: 10rem;
+
+    @include respond(medium) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-row-gap: 3rem;
+      grid-template-columns: minmax(min-content, 45rem);
+      grid-column-gap: 0;
+      justify-content: center;
+    }
 
     .resource {
       color: var(--color-charcoal);

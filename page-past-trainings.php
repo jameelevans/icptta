@@ -11,9 +11,7 @@ get_header();
 	<main class="general trainings">
 
 
-        <section class="general--narrow trainings__section">
-  
-  
+  <section class="general--narrow trainings__section">
           <div class="trainings__normal">
           <?php
             $today = date('Ymd');
@@ -26,17 +24,16 @@ get_header();
               'meta_query' => array(
                 array(
                   'key' => 'training_date',
-                  'compare' => '>=',
+                  'compare' => '<',
                   'value' => $today,
                   'type' => 'numeric'
                 )
               )
               ));
 
-              if($trainings->have_posts()) {
-                while($trainings->have_posts()) {
-                  $trainings->the_post();?>
-                    <article class="trainings__card">
+              while($trainings->have_posts()) {
+                $trainings->the_post();?>
+                  <article class="trainings__card">
                       <div class="trainings__date">
                           <span class="trainings__month"><?php
                         $trainingDate = new DateTime(get_field('training_date'));
@@ -62,16 +59,11 @@ get_header();
                         <a href="<?php the_permalink();?>" class="btn btn--blue">Learn More</a>
                       </div>
                     </article>
-                <?php }
-                 } else { ?>
-                  <p class="trainings__no-show">There no trainings to show yet</p>
-               <?php }
+              <?php }
             ?>
           </div>
-        
-
+                  
         </section>
-
         
 	</main>
 <?php get_footer(); ?>

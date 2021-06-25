@@ -9,12 +9,13 @@
     
     <!--Footer-->
     <footer class="footer">
-        <div class="footer__top">
+        <?php if(!is_page('contact-us')){?>
+            <div class="footer__top">
             <div class="help">
                 <h4 class="help__header h2__header h2__header--grey">Looking For Help?</h4>
                 <p class="help__details">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 sed diam nonummy nibh euismod tincidunt ut</p>
-                <a href="" class="help__link btn btn--blue">CONTACT US</a>
+                <a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="help__link btn btn--blue">CONTACT US</a>
             </div>
 
             <div class="contact">
@@ -27,9 +28,11 @@ sed diam nonummy nibh euismod tincidunt ut</p>
                 <p><a href="" class="contact__link"><?php echo svg_icon('contact__icon', 'phone') ?>&nbsp; &nbsp;123-123-1234</a></p>
             </div>
         </div>
+            
+           <?php } ?>
         <div class="footer__main">
             <div class="footer__logo">
-                <img class="footer__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-login-logo.png')); ?>" alt="">
+                <img class="footer__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-login-logo.png')); ?>" alt="ICP TTA logo">
             </div>
             <div class="footer__content">
                 <p class="footer__disclaimer">Funds made available under 2020-V7-GX-K001, awarded by the
@@ -41,18 +44,17 @@ sed diam nonummy nibh euismod tincidunt ut</p>
             </div>
             <div class="footer__sitemap">
                 <ul class="footer__list">
-                    <li class="footer__item"><a class="footer__link" href="">Home</a></li>
-                    <li class="footer__item"><a class="footer__link" href="">About us</a></li>
-                    <li class="footer__item"><a class="footer__link" href="">Topics</a></li>
-                    <li class="footer__item"><a class="footer__link" href="">Resources</a></li>
-                    <li class="footer__item"><a class="footer__link" href="">Trainings</a></li>
-                    <li class="footer__item"><a class="footer__link" href="">Consultants</a></li>
-                    <li class="footer__item"><a class="footer__link" href="">Contact Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/')); ?>">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/about-us')); ?>">About us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/resources')); ?>">Resources</a></li>
+                    <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/trainings')); ?>">Trainings</a></li>
+                    <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/consultants')); ?>">Consultants</a></li>
+                    <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/contact-us')); ?>">Contact Us</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__bottom">
-            <p class="footer__copyright">Company Name | 2021</p>
+            <p class="footer__copyright">&copy; 2021 | <? echo get_bloginfo( 'name' ); ?></p>
         </div>
     </footer>
 

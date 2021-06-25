@@ -25,7 +25,7 @@
 
   & .training__year {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 100;
   }
 
@@ -42,6 +42,24 @@
     margin: 10rem auto;
     padding: 5rem;
     position: relative;
+
+    p {
+      font-weight: 100;
+      font-size: 2rem;
+    }
+  }
+
+  &--single-narrow {
+    max-width: 96rem;
+    background-color: var(--color-grey-light);
+    margin: 10rem auto;
+    padding: 5rem;
+    position: relative;
+
+    @include respond(medium) {
+      padding: 3rem;
+      margin: 5rem auto;
+    }
 
     p {
       font-weight: 100;

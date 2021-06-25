@@ -13,7 +13,18 @@ class Slider {
       autoplay: true,
       arrows: false,
       dots: true,
-      infinite: true
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            dots: false,
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   }
 }

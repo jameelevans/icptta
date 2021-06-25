@@ -55,7 +55,7 @@ get_header();
                                   //get the name of the category
                                   $cat_id = get_cat_ID( $cat->name );
                                   //make a list item containing a link to the category
-                                  echo '<li class="consultants__category"><a href="'.get_category_link($cat_id).'">'.$cat->name.'</a></li>';
+                                  echo '<li class="consultants__category">'.$cat->name.'</li>';
                                 }
                               ?>
                           </ul>

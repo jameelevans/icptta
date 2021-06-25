@@ -29,7 +29,10 @@
 
 				<!-- Navigation menu wrapper -->
 				<div class="header__menu">
-					<!-- Header menu icon - Uncomment later <div class="header__icon"></div>-->
+					<!-- Header menu icon-->
+					<div class="header__icon">
+						<div class="header__icon--middle"></div>
+					</div>
 
 					<!-- Navigation content -->
 					<nav class="header__content">
@@ -49,13 +52,13 @@
 
 						<!-- Navigation menu and CTA -->
 						<ul class="nav">
-							<li class="nav__item"><a class="nav__link<?php if(is_page('/')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/')); ?>">Home</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_front_page()){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/')); ?>">Home</a></li>
 							<li class="nav__item"><a class="nav__link<?php if(is_page('about-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/about-us')); ?>">About Us</a></li>
-							<li class="nav__item"><a class="nav__link<?php if(is_page('resources')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/resources')); ?>">Resources</a></li>
-							<li class="nav__item"><a class="nav__link<?php if(is_page('trainings')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/trainings')); ?>">Trainings</a></li>
-							<li class="nav__item"><a class="nav__link<?php if(is_page('consultants')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/consultants')); ?>">Consultants</a></li>
+							<li class="nav__item"><a class="nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/resources')); ?>">Resources</a></li>
+							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>">Trainings</a></li>
+							<li class="nav__item"><a class="nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/consultants')); ?>">Consultants</a></li>
 							<li class="nav__item"><a class="nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/contact-us')); ?>">Contact Us</a></li>
-							<a class="nav__cta btn btn--blue" href="">Sign Up Now</a>
+							<a class="nav__cta btn btn--blue" href="<?php echo esc_url( home_url('/contact-us')); ?>">Sign Up Now</a>
 						</ul><!-- .Navigation menu and CTA -->
 					</nav><!-- .Navigation content -->
 				</div><!-- .Navigation menu wrapper -->

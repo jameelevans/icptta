@@ -4,6 +4,12 @@
   grid-gap: 3rem;
   margin: 0 0 5rem 0;
 
+  @include respond(medium) {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    grid-gap: 3rem;
+  }
+
   &__resource {
     height: auto;
     padding: 3rem 3rem 4rem 3rem;

@@ -60,6 +60,11 @@
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+
+    @include respond(medium) {
+      padding: 1.5rem 3.5rem;
+      font-size: 2rem;
+    }
   }
 
   &--blue {

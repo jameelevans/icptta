@@ -32,6 +32,10 @@ $font-icon-body: 0.8rem;
 html {
   // ! Makes 1 rem = 10px ( Simplifies dealing with rem to px calcs )
   font-size: 62.5%; // 10px / 16px = 65.5%
+
+  @include respond(large) {
+    font-size: 50%;
+  }
 }
 
 h1 {
@@ -48,6 +52,10 @@ h1 {
 
   &--grey {
     color: var(--color-charcoal);
+
+    @include respond(medium) {
+      text-align: center;
+    }
   }
 
   &--white {
@@ -60,6 +68,10 @@ h1 {
   font-size: 4.8rem;
   font-weight: 100;
   color: var(--color-blue-primary);
+
+  @include respond(medium) {
+    font-size: 6rem;
+  }
 }
 
 .h3__header {
@@ -76,6 +88,10 @@ h1 {
   font-size: 2.8rem;
   font-weight: 100;
   color: var(--color-charcoal);
+
+  @include respond(large) {
+    font-size: 3.2rem;
+  }
 }
 
 .p__lead {
@@ -84,6 +100,10 @@ h1 {
   color: var(--color-charcoal);
   font-size: 3rem;
   margin-bottom: 5rem;
+
+  @include respond(large) {
+    font-size: 3.5rem !important;
+  }
 
   &--centered {
     text-align: center;
@@ -95,12 +115,20 @@ h1 {
   font-weight: 100;
   color: var(--color-charcoal);
   font-size: 2rem;
+
+  @include respond(medium) {
+    font-size: 2.5rem;
+  }
 }
 
 .p__body {
   font-family: $font-primary;
   font-size: 1.8rem;
   font-weight: 200;
+
+  @include respond(medium) {
+    font-size: 2.3rem;
+  }
 }
 
 strong {

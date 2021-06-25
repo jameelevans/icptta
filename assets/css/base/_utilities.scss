@@ -13,7 +13,11 @@
 }
 
 .p-lg {
-  margin: 20rem 0;
+  margin: 10rem 0;
+
+  @include respond(medium) {
+    margin: 5rem 3rem;
+  }
 }
 
 .sr-only:not(:focus):not(:active) {

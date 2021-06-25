@@ -6,16 +6,28 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
+
+    @include respond(medium) {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: auto;
+    }
   }
 
   &__article {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 2.5rem;
+    justify-content: center;
+
+    @include respond(small) {
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: minmax(min-content, 45rem);
+    }
   }
 
   &__img {
     width: 100%;
+    border-radius: 3px;
   }
 
   &__details {
@@ -26,6 +38,10 @@
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
+
+    @include respond(medium) {
+      font-size: 3rem;
+    }
 
     a {
       text-decoration: none;
@@ -58,12 +74,21 @@
   &__icon {
     height: 1.3rem;
     width: 1.3rem;
+
+    @include respond(medium) {
+      height: 1.8rem;
+      width: 1.8rem;
+    }
   }
 
   &__description {
     font-size: 1.5rem;
     font-weight: 100;
     margin-bottom: 1.5rem;
+
+    @include respond(medium) {
+      font-size: 2rem;
+    }
   }
 
   &__communities {
@@ -74,12 +99,20 @@
     width: auto;
     font-size: 1.5rem;
     font-weight: 300;
+
+    @include respond(medium) {
+      font-size: 2rem;
+    }
   }
 
   &__category {
     font-size: 1.3rem;
     font-weight: 100;
     list-style: none;
+
+    @include respond(medium) {
+      font-size: 1.6rem;
+    }
 
     a {
       color: var(--color-charcoal);

@@ -11,16 +11,9 @@ get_header();
 	<main>
         <section class="about fade-in-up">
 					<div class="about__logo">
-					<?php
-										$custom_logo_id = get_theme_mod( 'custom_logo' );
-										$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-										if ( has_custom_logo() ) {
-														echo '<img class="about__icon" src="' . esc_url( $logo[0] ) . '"' . 'alt="' . get_bloginfo( 'name' ) . '" draggable="false">';
-														echo '<h1 class="about__tagline">' . get_bloginfo( 'description' ) . '</h1>';
-										} else {
-														echo '';
-										}
-									?>
+					
+									<img class="about__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-logo-tag.png')); ?>" alt="ICP TTA logo">
+									<h1 class="about__tagline"><?php get_bloginfo( 'description' ) ?></h1>
 					</div>
 					<div class="about__mission">
 						<h3 class="about__mission-header">Mission Statement</h3>
@@ -28,7 +21,7 @@ get_header();
 						elit, sed diam nonummy nibh euismod tincidunt ut
 						laoreet dolore magna aliquam erat volutpat. Ut
 						wisi enim ad minim veniam, quis nostrud exerci</p>
-						<a href="#" class="btn btn--blue">LEARN MORE</a>
+						<a href="<?php echo esc_url( home_url('/about-us')); ?>" class="btn btn--blue">LEARN MORE</a>
 					</div>
 				</section>
 				<?php echo partners('p-lg');?>
@@ -60,7 +53,7 @@ get_header();
 					<div class="home-resources__header">
 						<h2 class="home-resources__heading h2__header h2__header--grey">Resources</h2>
 						<p class="home-resources__subheading p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
-						<a class="home-resources__cta btn btn btn--blue">LEARN MORE</a>
+						<a class="home-resources__cta btn btn btn--blue" href="<?php echo esc_url( home_url('/resources')); ?>">LEARN MORE</a>
 					</div>
 					<div class="home-resources__wrapper">
 					<?php
