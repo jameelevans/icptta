@@ -12,7 +12,12 @@ get_header();
     <section class="general--single-narrow">
       <div class="contact-us">
         <div class="contact-us__content">
-          <?php the_content(); ?>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing
+        elit, sed diam nonummy nibh euismod tincidunt ut
+        laoreet dolore magna aliquam erat volutpat. Ut wisi
+        enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea
+        commodo consequat.
         </div>
         
         <div class="contact">
@@ -58,7 +63,7 @@ get_header();
     
     </section>
 
-    <section class="form general--narrow">
+    <section class="form">
       <?php the_content();?>
     </section>
     
