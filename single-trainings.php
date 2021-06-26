@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main class="general">
+	<main class="training general">
     <div class="training__date">
       <span class="training__month"><?php
                       $trainingDate = new DateTime(get_field('training_date'));
@@ -16,7 +16,7 @@ get_header();
       <span class="training__day"><strong><?php echo $trainingDate->format('d') ?></strong></span>
       <span class="training__year"><?php echo $trainingDate->format('Y') ?></span>
     </div>
-    <section class="general--single">
+    <section class="training__content general--single">
       <?php the_content(); ?>
     </section>
     

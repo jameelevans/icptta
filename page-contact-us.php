@@ -57,6 +57,10 @@ get_header();
       </div>   
     
     </section>
+
+    <section class="form general--narrow">
+      <?php the_content();?>
+    </section>
     
 
 	</main>

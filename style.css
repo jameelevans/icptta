@@ -675,6 +675,14 @@ html {
   margin: 2rem 0 3rem 0;
 }
 
+.resource-page__content p,
+.resource-page__content ul,
+.resource-page__content ol,
+.resource-page__content a {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
 .header {
   width: 100vw;
 }
@@ -2344,6 +2352,14 @@ html {
   }
 }
 
+.training__content p,
+.training__content ul,
+.training__content ol,
+.training__content a {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
 .consultants__normal {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2699,6 +2715,13 @@ html {
 
 .faqs input[type='checkbox'] {
   display: none;
+}
+
+.form {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
 }
 
 .error {
