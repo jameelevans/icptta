@@ -1418,7 +1418,7 @@ html {
   background-color: var(--color-grey-light);
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(45rem, 60rem) minmax(30rem, 35rem);
+  grid-template-columns: minmax(45rem, 60rem) minmax(30rem, 50rem);
   gap: 5vw;
   justify-items: center;
   -webkit-box-align: center;
