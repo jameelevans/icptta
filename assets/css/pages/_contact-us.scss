@@ -145,4 +145,12 @@
   margin: 0 auto;
   padding: 2rem;
   position: relative;
+
+  & p,
+  & ul,
+  & ol,
+  & a {
+    font-weight: 100;
+    font-size: 2rem;
+  }
 }

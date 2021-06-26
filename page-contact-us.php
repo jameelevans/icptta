@@ -12,12 +12,12 @@ get_header();
     <section class="general--single-narrow">
       <div class="contact-us">
         <div class="contact-us__content">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing
+          <p class="p__lead">Lorem ipsum dolor sit amet, consectetuer adipiscing
         elit, sed diam nonummy nibh euismod tincidunt ut
         laoreet dolore magna aliquam erat volutpat. Ut wisi
         enim ad minim veniam, quis nostrud exerci tation
         ullamcorper suscipit lobortis nisl ut aliquip ex ea
-        commodo consequat.
+        commodo consequat.</p>
         </div>
         
         <div class="contact">
@@ -58,6 +58,7 @@ get_header();
             </div>
 
           <?php }
+          wp_reset_postdata();
         ?>
       </div>   
     
