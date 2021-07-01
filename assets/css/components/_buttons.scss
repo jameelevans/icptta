@@ -1,3 +1,4 @@
+//* Guetenburg buttons
 .wp-block-button__link {
   &,
   &:link,
@@ -41,6 +42,7 @@
   }
 }
 
+//* Overall button styles
 .btn {
   &,
   &:link,
@@ -67,6 +69,7 @@
     }
   }
 
+  //* Blue button
   &--blue {
     background-image: var(--gradient-secondary);
     border: none;
@@ -93,6 +96,7 @@
     }
   }
 
+  //* Red button
   &--red {
     background-image: var(--gradient-primary);
     border: none;
@@ -119,6 +123,7 @@
     }
   }
 
+  //* White outline button
   &--white-outline {
     background-color: rgba(var(--color-white-a), 0);
     border: 2px solid var(--color-white);

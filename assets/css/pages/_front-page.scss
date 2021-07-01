@@ -1,3 +1,4 @@
+//* About section
 .about {
   width: 100%;
   margin-top: 10rem;
@@ -57,8 +58,9 @@
 
   &__mission-p {
   }
-}
+} //. About section
 
+//* Partners section
 .partners {
   &--narrow {
     max-width: 960px;
@@ -127,8 +129,9 @@
     transition: all 0.5s ease;
     opacity: 0;
   }
-}
+} //. Partners section
 
+//* Testimonials section
 .testimonials {
   background: var(--gradient-primary);
   background-size: 200% 200%;
@@ -198,8 +201,9 @@
       }
     }
   }
-}
+} //. Testimonials section
 
+//* Home Resources section
 .home-resources {
   &__header {
     width: 100%;
@@ -269,4 +273,4 @@
       }
     }
   }
-}
+} //. Home Resources section

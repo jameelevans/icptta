@@ -1,7 +1,9 @@
+//* Footer overall styles
 .footer {
   display: grid;
   grid-template-rows: auto;
 
+  //* Top footer section
   &__top {
     background-color: var(--color-grey-light);
     width: 100%;
@@ -78,8 +80,9 @@
         }
       }
     }
-  }
+  } //. Top footer section
 
+  //* Main footer section
   &__main {
     background: var(--gradient-primary);
     color: var(--color-white);
@@ -100,14 +103,16 @@
       text-align: center;
     }
   }
-
+  //* Footer logo - no styles needed
   &__logo {
-  }
+  } //. Footer logo - no styles needed
 
+  //* Footer icon
   &__icon {
     width: 100%;
-  }
+  } //. Footer icon
 
+  //* Footer disclaimer
   &__disclaimer {
     font-family: $font-primary;
     font-size: 1.8rem;
@@ -116,19 +121,20 @@
     @include respond(medium) {
       font-size: 2.3rem;
     }
-  }
+  } //. Footer disclaimer
 
+  //* Footer list - no styles needed
   &__list {
-  }
+  } //* Footer list - no styles needed
 
   &__item {
     list-style-type: none;
 
     &:not(:last-of-type) {
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.8rem; //Remove bottom margin of all items except the last
     }
   }
-
+  //* Footer links
   &__link {
     &:link,
     &:visited,
@@ -145,6 +151,7 @@
       }
     }
 
+    // Underline hover
     &:after {
       background: none repeat scroll 0 0 transparent;
       bottom: 0;
@@ -160,9 +167,10 @@
     &:hover:after {
       width: 100%;
       left: 0;
-    }
-  }
+    } //* Main footer section
+  } //. Footer links
 
+  //* Bottom Footer Section
   &__bottom {
     background-color: var(--color-charcoal);
     color: var(--color-white);
@@ -172,5 +180,5 @@
 
   &__copyright {
     font-size: 1.3rem;
-  }
-}
+  } //. Bottom Footer Section
+} //. Footer overall styles

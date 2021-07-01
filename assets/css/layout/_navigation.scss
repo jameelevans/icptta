@@ -1,3 +1,4 @@
+//* Navigation overall styles
 .nav {
   display: grid;
   grid-template-columns: repeat(7, max-content);
@@ -5,6 +6,7 @@
   align-items: center;
   gap: 2rem;
 
+  //* is current link style
   .is-current-link {
     color: var(--color-blue-primary) !important;
 
@@ -20,8 +22,9 @@
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 100%;
     }
-  }
+  } //. is current link style
 
+  //* Link styles
   &__link {
     &:link,
     &:visited,
@@ -38,7 +41,7 @@
         font-size: 2.5rem;
       }
     }
-
+    // Underline hover from middle
     &:after {
       background: none repeat scroll 0 0 transparent;
       bottom: 0;
@@ -54,19 +57,19 @@
     &:hover:after {
       width: 100%;
       left: 0;
-    }
+    } //. Underline hover from middle
 
     &:hover {
       color: var(--color-blue-primary);
     }
-  }
+  } //. Link styles
 
   &__item &__link {
     text-decoration: none;
   }
 
   &__item:last-of-type {
-    margin-right: 2.5rem;
+    margin-right: 2.5rem; // Remove right margin on all list items except last
 
     @include respond(large) {
       margin-right: 0;
@@ -75,11 +78,11 @@
 
   &___cta {
   }
-
+  //* If menu item is clicked these styles are added
   &--is-visible {
     max-height: 50rem !important;
     margin-bottom: 5rem;
-  }
+  } //. If menu item is clicked these styles are added
 
   @include respond(medium) {
     grid-template-rows: repeat(7, max-content);
@@ -90,4 +93,4 @@
     overflow: hidden;
     transition: max-height 0.3s ease-in;
   }
-}
+} //* Navigation overall styles

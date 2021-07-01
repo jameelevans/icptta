@@ -1,6 +1,8 @@
+//* Header Home page overall styles
 .header {
   width: 100vw;
 
+  //* Header top section
   &__top {
     font-family: $font-primary;
     font-size: 1.5rem;
@@ -26,8 +28,9 @@
         width: 1.2rem;
       }
     }
-  }
+  } //. Header top section
 
+  //* Header Menu section
   &__menu {
     width: 100vw;
     padding: 1.2rem 5vw;
@@ -37,7 +40,7 @@
     @include respond(large) {
       padding: 1.2rem;
     }
-  }
+  } //. Header Menu section
 
   //* Header toggle icon
   &__icon {
@@ -108,6 +111,7 @@
     }
   } // .Header toggle icon
 
+  //* Header main content section
   &__content {
     display: flex;
     justify-content: space-between;
@@ -120,14 +124,13 @@
       justify-content: center;
       justify-items: center;
     }
-  }
+  } //. Header main content section
 
+  //* Header heading section
   &__heading {
-  }
+  } //* Header heading section
 
-  &__h1 {
-  }
-
+  //* Header logo
   &__logo {
     width: 15rem;
 
@@ -135,13 +138,15 @@
       width: 20rem;
       margin-top: 5rem;
     }
-  }
+  } //. Header logo
 
+  //* Hidden header title
   &__title {
     position: absolute;
     text-indent: -9999px;
-  }
+  } //.Hidden header title
 
+  //* Header main section
   &__main {
     width: 100vw;
     background-image: var(--gradient-primary);
@@ -151,6 +156,7 @@
       padding: 2rem 1rem;
     }
 
+    //* Header share module
     & .share {
       display: grid;
       grid-template-columns: min-content;
@@ -232,10 +238,11 @@
           }
         }
       }
-    }
-  }
-}
+    } //. Header share module
+  } //. Header main section
+} //. Header Home page overall styles
 
+//* Header general pages overall styles
 .general {
   .header {
     &__general {
@@ -252,4 +259,4 @@
       font-size: 7rem;
     }
   }
-}
+} //* Header general pages overall styles

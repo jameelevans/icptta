@@ -1,6 +1,5 @@
 
-
-
+//* Click mobile menu icon to add a class and expand the menu
 class MobileMenu {
   constructor() {
 

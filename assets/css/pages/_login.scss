@@ -1,7 +1,9 @@
+//* Overall Login page
 .login {
   background: var(--gradient-primary);
   position: relative;
 
+  //* Login box
   #login {
     font-size: $font-body;
     width: 32rem;
@@ -11,6 +13,7 @@
     transform: translate(-50%, -50%);
   }
 
+  //* Login logo and header
   & h1 a {
     color: var(--color-white);
     background-image: url('assets/img/icp-tta-login-logo.png');
@@ -21,11 +24,13 @@
     margin: 0 auto 30%;
   }
 
+  //* Login form
   & form {
     border: 2.5px solid var(--color-white);
     background-color: transparent;
     padding: 15px 24px 34px;
 
+    //* Login labels
     & label {
       color: var(--color-white);
       font-weight: 100;
@@ -141,4 +146,4 @@
       color: var(--color-white);
     }
   }
-}
+} //. Overall Login page

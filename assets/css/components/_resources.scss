@@ -1,3 +1,4 @@
+//* Resources list | index page
 .resources {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -37,9 +38,9 @@
   &__excerpt {
     margin: 2rem 0 3rem 0;
   }
-}
+} //. Resources list | index page
 
-//Resource single page styles
+//* Resource single page styles
 .resource-page {
   &__content {
     font-size: 2rem;
@@ -53,4 +54,4 @@
       font-size: 2rem;
     }
   }
-}
+} //. Resource single page styles

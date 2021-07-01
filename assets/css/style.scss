@@ -1,7 +1,7 @@
 /*
 Theme Name: ICP TTA
 Author: Jameel Evans
-Description: This theme was designed and coded by Jameel Evans.
+Description: Custom Wordpress theme was co-designed by ICF Creative Services and Jameel Evans and developed by Jameel Evans.
 Version: 1.0
 Text Domain: icptta.com
  */
@@ -37,7 +37,6 @@ Text Domain: icptta.com
 *   Login
 *   General
 *   Front page
-*   About Us page
 *   Trainings page
 *   Consultants page
 *   Partner page
@@ -101,9 +100,6 @@ Text Domain: icptta.com
 
 //  * Front page
 @import 'pages/front-page';
-
-//  * About Us page
-@import 'pages/about-us';
 
 //  * Trainings page
 @import 'pages/trainings';

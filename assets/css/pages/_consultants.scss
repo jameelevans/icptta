@@ -1,3 +1,4 @@
+//* Consultants list page overall styles
 .consultants {
   &__section {
   }
@@ -141,8 +142,9 @@
       }
     }
   }
-}
+} //. Consultants list page overall styles
 
+//* Consultant single page overall styles
 .consultant {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -163,4 +165,4 @@
       font-size: 2rem;
     }
   }
-}
+} //. Consultant single page overall styles

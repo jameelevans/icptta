@@ -1,4 +1,4 @@
-/* Slider */
+/* Overall slick slider styles */
 .slick-list {
   .slick-loading & {
     background: #fff slick-image-url('./assets/img/ajax-loader.gif') center
@@ -6,7 +6,7 @@
   }
 }
 
-/* Arrows */
+//* Arrows
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -70,10 +70,9 @@
       content: $slick-prev-character;
     }
   }
-}
+} //. Arrows
 
-/* Dots */
-
+//* Dots
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
@@ -152,10 +151,9 @@
   .slick-active button {
     background-color: #fff;
   }
-}
+} //. Dots
 
 /* Slider */
-
 .slick-slider {
   position: relative;
   display: block;
@@ -242,7 +240,7 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
-
+//* Front page slider styles
 .front-page {
   .slider {
     &__slide {
@@ -308,4 +306,4 @@
       }
     }
   }
-}
+} //. Front page slider styles

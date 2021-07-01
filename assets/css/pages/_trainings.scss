@@ -1,3 +1,4 @@
+//* Trainings list
 .trainings {
   &__section {
     max-width: 960px;
@@ -172,8 +173,9 @@
       }
     }
   }
-}
+} //. Trainings list
 
+//* Training post
 .training {
   &__content {
     & p,
@@ -184,4 +186,4 @@
       font-size: 2rem;
     }
   }
-}
+} //. Training post
