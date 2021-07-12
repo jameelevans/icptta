@@ -16,10 +16,7 @@ get_header();
 			</div>
 			<div class="about__mission">
 				<h3 class="about__mission-header">Mission Statement</h3>
-				<p class="about__mission-p p__lead">Lorem ipsum dolor sit amet, consectet adipiscing
-				elit, sed diam nonummy nibh euismod tincidunt ut
-				laoreet dolore magna aliquam erat volutpat. Ut
-				wisi enim ad minim veniam, quis nostrud exerci</p>
+				<p class="about__mission-p p__lead">To deliver individualized training and technical assistance (TTA) to local, state, regional, and tribal jurisdictions across the country, including Washington, D.C., and U.S. territories, to augment existing emergency response plans to ensure that they include effective protocols and strategies to address the immediate and long-term needs of victims, families, and first responders after incidents of criminal mass violence (CMV) and domestic terrorism (DT).</p>
 				<a href="<?php echo esc_url( home_url('/about-us')); ?>" class="btn btn--blue">LEARN MORE</a>
 			</div>
 		</section>
@@ -48,7 +45,7 @@ get_header();
 		<section class="home-resources general--narrow">
 			<div class="home-resources__header">
 				<h2 class="home-resources__heading h2__header h2__header--grey">Resources</h2>
-				<p class="home-resources__subheading p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+				<p class="home-resources__subheading p__subheader">ICP TTA staff has assembled a comprehensive list of internal and external resources to assist emergency management personnel, victim service professionals and key community stakeholders integrate victim services into their emergency operations plans.</p>
 				<a class="home-resources__cta btn btn btn--blue" href="<?php echo esc_url( home_url('/resources')); ?>">VIEW ALL</a>
 			</div>
 			<div class="home-resources__wrapper">

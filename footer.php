@@ -13,19 +13,15 @@
             <div class="footer__top">
             <div class="help">
                 <h4 class="help__header h2__header h2__header--grey">Looking For Help?</h4>
-                <p class="help__details">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh euismod tincidunt ut</p>
+                <p class="help__details">ICP TTA staff are available to answer any questions you might have about our program, to help you apply for no-cost assistance, or to find the resources you need to use for planning.</p>
                 <a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="help__link btn btn--blue">CONTACT US</a>
             </div>
 
             <div class="contact">
                 <h4 class="contact__header">Contact</h4>
-                <p class="contact__details">Lorem ipsum dolor sit amet,
-                    consectetuer adipiscing elit,
-                    sed diam nonummy nibh
-                    euismod tincidunt ut laoreet</p>
-                <p><a href="" class="contact__link"><?php echo svg_icon('contact__icon', 'mail') ?>&nbsp;&nbsp;&nbsp; your@email.com</a></p>
-                <p><a href="" class="contact__link"><?php echo svg_icon('contact__icon', 'phone') ?>&nbsp; &nbsp;123-123-1234</a></p>
+                <p class="contact__details">To reach ICP TTA staff please email or call Tara Hughes at:</p>
+                <p><a href="mailto:tara.hughes@icf.com" class="contact__link"><?php echo svg_icon('contact__icon', 'mail') ?>&nbsp;&nbsp;&nbsp; tara.hughes@icf.com</a></p>
+                <p><a href="tel:16172183584" class="contact__link"><?php echo svg_icon('contact__icon', 'phone') ?>&nbsp; &nbsp; +1-617-218-3584</a></p>
             </div>
         </div>
             
