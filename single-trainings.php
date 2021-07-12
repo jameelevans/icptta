@@ -8,16 +8,20 @@
 get_header();
 
 ?>
-	<main class="training general">
+	<main class="main training general">
     <div class="training__date">
-      <span class="training__month"><?php
-                      $trainingDate = new DateTime(get_field('training_date'));
-                      echo $trainingDate->format('M')?></span>
-      <span class="training__day"><strong><?php echo $trainingDate->format('d') ?></strong></span>
-      <span class="training__year"><?php echo $trainingDate->format('Y') ?></span>
-    </div>
+        <?php if( get_field('training_date') ){
+          $trainingDate = new DateTime(get_field('training_date'));
+          echo '<time>' . $trainingDate->format('M d') .'<sup>'. $trainingDate->format('S') .'</sup>, ' . $trainingDate->format('Y'). '</time>';
+        } else {
+          echo '<p>Coming Soon</p>';
+        }?>
+          
+        
+        </div>
     <section class="training__content general--single">
       <?php the_content(); ?>
+      <a href="mailto:terry.boes@icf.com?subject=Customized subject goes here" class="training__cta btn btn--blue">Request Access</a>
     </section>
     
 

@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main class="general consultants">
+	<main class="main general consultants">
 
 
         <section class="general--narrow consultants__section">
@@ -31,7 +31,7 @@ get_header();
                     <article class="consultants__article">
                       
                       <?php if ( has_post_thumbnail() ) { ?>
-                        <img class="consultants__img" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title_attribute(); ?>"/>
+                        <img class="consultants__img" src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title_attribute(); ?>"/>
                        <?php } else { ?>
                         <img class="consultants__img" src="<?php bloginfo('template_directory'); ?>/assets/img/headshot-fallback.jpg" alt="<?php the_title(); ?>" />
                         <?php } ?>
@@ -44,21 +44,7 @@ get_header();
                           } else {
                           echo wp_trim_words(get_the_content(), 30);
                           }?></p>
-                          <h5 class="consultants__communities">Selected Communities</h5>
-                          <ul>
-                            <?php
-                                //get all the categories the post belongs to
-                                $categories = wp_get_post_categories( get_the_ID() );
-                                //loop through them
-                                foreach($categories as $c){
-                                  $cat = get_category( $c );
-                                  //get the name of the category
-                                  $cat_id = get_cat_ID( $cat->name );
-                                  //make a list item containing a link to the category
-                                  echo '<li class="consultants__category">'.$cat->name.'</li>';
-                                }
-                              ?>
-                          </ul>
+
                       </div>
                     </article>
                 <?php }

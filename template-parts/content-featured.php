@@ -1,6 +1,10 @@
-<a class="resource" href="<?php the_permalink();?>" alt="">
-  <?php // Display Link svg icon
-  echo svg_icon('resource__icon', 'link') ?>
+<a class="resource" href="<?php the_field('resource_link');?>" alt="">
+  <?php if ( has_post_thumbnail() ) { ?>
+    <img class="resource__icon" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title_attribute(); ?>"/>
+    <?php } else { 
+    // Display Link svg icon
+      echo svg_icon('resource__icon', 'link');
+  } ?> 
   <h4 class="resource__best-practice-title">
     <?php $categories = get_the_category();
           echo esc_html( $categories[0]->name );
@@ -8,4 +12,3 @@
   </h4>
   <p class="resource__resource-title p__body"><?php echo the_title(); ?></p>
 </a>
-

@@ -32,7 +32,7 @@ sed diam nonummy nibh euismod tincidunt ut</p>
            <?php } ?>
         <div class="footer__main">
             <div class="footer__logo">
-                <img class="footer__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-login-logo.png')); ?>" alt="ICP TTA logo">
+                <img class="footer__icon lazyload" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-login-logo.png')); ?>" alt="ICP TTA logo">
             </div>
             <div class="footer__content">
                 <p class="footer__disclaimer">Funds made available under 2020-V7-GX-K001, awarded by the
@@ -56,6 +56,9 @@ sed diam nonummy nibh euismod tincidunt ut</p>
         <div class="footer__bottom">
             <p class="footer__copyright">&copy; 2021 | <? echo get_bloginfo( 'name' ); ?></p>
         </div>
+        <a href="#top" class="back-top__button">
+            <?php echo svg_icon('back-top__button-icon', 'up') ?>
+        </a>
     </footer>
 
     <?php wp_footer(); ?>

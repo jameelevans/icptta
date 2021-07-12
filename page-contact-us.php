@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main class="general">
+	<main class="main general">
     <section class="general--single-narrow">
       <div class="contact-us">
         <div class="contact-us__content">

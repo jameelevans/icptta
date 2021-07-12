@@ -6,9 +6,9 @@ import slick from 'slick-carousel';
 // Our modules/ classes
 import Slider from './modules/Slider'; 
 import Testimonial from './modules/Testimonial'; 
-import Partners from './modules/Partners'; 
+//import Partners from './modules/Partners'; Uncomment if slider is needed in future
 //import RevealOnScroll from './modules/RevealOnScroll';
-import MobileMenu from './modules/MobileMenu';
+import BackTop from './modules/BackTop';
 
 
 
@@ -21,6 +21,6 @@ import MobileMenu from './modules/MobileMenu';
 // Instantiate a new object using our modules/classes
 let slider = new Slider();
 let testimonial = new Testimonial();
-let partner = new Partners();
-let mobileMenu = new MobileMenu();
+//let partner = new Partners(); Uncomment if slider is needed in future
+let backTop = new BackTop();
 

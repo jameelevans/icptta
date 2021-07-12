@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main class="general trainings">
+	<main class="main general trainings">
 
 
   <section class="general--narrow trainings__section">
@@ -34,12 +34,7 @@ get_header();
               while($trainings->have_posts()) {
                 $trainings->the_post();?>
                   <article class="trainings__card">
-                      <div class="trainings__date">
-                          <span class="trainings__month"><?php
-                        $trainingDate = new DateTime(get_field('training_date'));
-                        echo $trainingDate->format('M')?></span>
-                          <span class="trainings__day"><strong><?php echo $trainingDate->format('d') ?></strong></span>
-                        </div>
+                    
 
                       <?php if ( has_post_thumbnail() ) { ?>
                         <img class="trainings__img" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title_attribute(); ?>"/>

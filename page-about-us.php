@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main class="general">
+	<main class="main general">
     <section class="general--narrow">
       <?php the_content(); ?>
     </section>

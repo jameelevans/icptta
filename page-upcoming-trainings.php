@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main class="general trainings">
+	<main class="main general trainings">
 
 
         <section class="general--narrow trainings__section">

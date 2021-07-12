@@ -29,15 +29,36 @@
 
 				<!-- Navigation menu wrapper -->
 				<div class="header__menu">
-					<!-- Header menu icon-->
-					<div class="header__icon">
-						<div class="header__icon--middle"></div>
+
+					<div class="mobile-nav">
+						<input id="navi-toggle" type="checkbox" class="mobile-nav__checkbox">
+
+						<label for="navi-toggle" class="mobile-nav__button">
+							<span class="mobile-nav__icon">&nbsp;</span>
+						</label>
+						<div class="mobile-nav__background">&nbsp;</div>
+						<nav class="mobile-nav__nav">
+							<ul class="mobile-nav__list">
+								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/')); ?>" class="mobile-nav__link<?php if(is_front_page()){echo ' is-current-link';} ?>">Home</a></li>
+								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/about-us')); ?>" class="mobile-nav__link<?php if(is_page('about-us')){echo ' is-current-link';} ?>">About Us</a></li>
+								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/resources')); ?>" class="mobile-nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>">Resources</a></li>
+								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/trainings')); ?>" class="mobile-nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>">Trainings</a></li>
+								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/consultants')); ?>" class="mobile-nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>">Consultants</a></li>
+								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="mobile-nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>">Contact Us</a></li>
+								<a class="nav__cta btn btn--white-outline" href="<?php echo esc_url( home_url('/contact-us')); ?>">Sign Up Now</a>
+							</ul>
+						</nav>
 					</div>
+
+				
+						
+					
+				
 
 					<!-- Navigation content -->
 					<nav class="header__content">
 						<!-- Logo and off screen title -->
-						<a class="header__heading" href="<?php echo site_url(); ?>">
+						<a class="header__logo-wrapper" href="<?php echo site_url(); ?>">
 									<?php
 										$custom_logo_id = get_theme_mod( 'custom_logo' );
 										$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );

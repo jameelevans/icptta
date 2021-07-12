@@ -5,9 +5,15 @@
   grid-gap: 3rem;
   margin: 0 0 5rem 0;
 
+  @include respond(large) {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+
   @include respond(medium) {
     grid-template-rows: auto;
-    grid-template-columns: none;
+    grid-template-columns: auto;
     grid-gap: 3rem;
   }
 
@@ -33,6 +39,38 @@
     margin-bottom: 1.5rem;
     color: var(--color-charcoal);
     text-transform: uppercase;
+  }
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: var(--color-charcoal);
+    transform: translateY(15%);
+  }
+
+  &__source {
+    color: var(--color-darkblue-secondary);
+    font-size: 1.8rem;
+    text-decoration: none;
+    position: relative;
+
+    // Underline hover from middle
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 1px;
+      left: 50%;
+      position: absolute;
+      background: var(--color-darkblue-secondary);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    } //. Underline hover from middle
   }
 
   &__excerpt {

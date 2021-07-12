@@ -13,7 +13,8 @@ class Testimonial {
       autoplay: true,
       arrows: false,
       dots: false,
-      infinite: true
+      infinite: true,
+      adaptiveHeight: true
     });
   }
 }

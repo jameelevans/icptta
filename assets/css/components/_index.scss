@@ -1,0 +1,73 @@
+.index {
+  padding: 3rem 3rem 4rem 3rem;
+  background-color: var(--color-grey-light);
+  border-width: 5px 0 5px 5px;
+  margin-bottom: 5rem;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      var(--color-blue-primary),
+      var(--color-red-primary)
+    )
+    1 100%;
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 2rem;
+    list-style: none;
+
+    @include respond(medium) {
+      column-count: 1;
+      column-gap: none;
+    }
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 0.8rem;
+
+      @include respond(medium) {
+        margin-bottom: 1.8rem;
+      }
+    }
+  }
+
+  &__link {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-decoration: none;
+    position: relative;
+    color: var(--color-charcoal);
+
+    &:hover {
+      color: var(--color-blue-primary);
+    }
+
+    @include respond(medium) {
+      font-size: 2.3rem;
+    }
+
+    // Underline hover from middle
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 1px;
+      left: 50%;
+      position: absolute;
+      background: var(--color-blue-primary);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    } //. Underline hover from middle
+  }
+}

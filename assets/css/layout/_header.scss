@@ -35,6 +35,7 @@
     width: 100vw;
     padding: 1.2rem 5vw;
     display: grid;
+    position: relative;
     grid-template-rows: repeat(2, auto);
 
     @include respond(large) {
@@ -42,92 +43,23 @@
     }
   } //. Header Menu section
 
-  //* Header toggle icon
-  &__icon {
-    width: 30px;
-    height: 29px;
-    transform: scale(1.2);
-    z-index: 10;
-    place-self: center;
-    display: none;
-    cursor: pointer;
-
-    @include respond(medium) {
-      display: block;
-      margin-top: 2rem;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 30px;
-      height: 3px;
-      border-radius: 3px;
-      background-color: var(--color-blue-primary);
-      transform-origin: 0 0;
-      transition: transform 0.3s ease-out;
-    }
-
-    &--middle {
-      position: absolute;
-      border-radius: 3px;
-      top: 13px;
-      left: 0;
-      width: 30px;
-      height: 3px;
-      background-color: var(--color-blue-primary);
-      transition: all 0.3s ease-out;
-      transform-origin: 0 50%;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      border-radius: 3px;
-      bottom: 0;
-      left: 0;
-      width: 30px;
-      height: 3px;
-      background-color: var(--color-blue-primary);
-      transform-origin: 0 100%;
-      transition: transform 0.3s ease-out;
-    }
-
-    &--close-x {
-      &::before {
-        transform: rotate(45deg) scaleX(1.3);
-      }
-
-      .header__icon--middle {
-        opacity: 0;
-        transform: scaleX(0);
-      }
-
-      &::after {
-        transform: rotate(-45deg) scaleX(1.3) translateY(1px);
-      }
-    }
-  } // .Header toggle icon
-
   //* Header main content section
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @include respond(medium) {
+    /*@include respond(medium) {
       display: grid;
       grid-row-gap: 4rem;
       grid-template-rows: auto auto;
       justify-content: center;
       justify-items: center;
-    }
+    }*/
   } //. Header main content section
 
   //* Header heading section
-  &__heading {
+  &__logo-wrapper {
   } //* Header heading section
 
   //* Header logo
@@ -136,7 +68,11 @@
 
     @include respond(medium) {
       width: 20rem;
-      margin-top: 5rem;
+      margin-left: 4vw;
+    }
+
+    @include respond(small) {
+      //margin-left: 3rem;
     }
   } //. Header logo
 

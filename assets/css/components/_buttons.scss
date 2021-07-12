@@ -62,6 +62,7 @@
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+    display: inline-block;
 
     @include respond(medium) {
       padding: 1.5rem 3.5rem;
@@ -129,11 +130,11 @@
     border: 2px solid var(--color-white);
 
     &:hover {
-      background-color: rgba(var(--color-white-a), 0.7);
+      background-color: rgba(var(--color-white-a), 0.9);
       transition: all 0.4s ease-in-out;
       transform: translateY(-0.3rem);
       box-shadow: 0 1rem 2rem rgba(var(--color-black-a), 0.2);
-      color: var(--color-black);
+      color: var(--color-blue-primary);
 
       &::after {
         transform: scaleX(1.4) scaleY(1.6);
@@ -148,6 +149,7 @@
       transition: all 0.4s ease-in-out;
       transform: translateY(-0.1rem);
       box-shadow: 0 0.5rem 1rem rgba(var(--color-black-a), 0.2);
+      color: var(--color-blue-primary);
     }
 
     :hover {

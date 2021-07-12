@@ -159,7 +159,7 @@ register_post_type('consultants', array(
   'menu_icon' => 'dashicons-admin-users'
 ));
 
-  // Parners Post Type
+  // Partners Post Type
   register_post_type('partners', array(
     'show_in_rest' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
@@ -198,7 +198,14 @@ register_post_type('consultants', array(
   function featured_posts(){
   
     // Show first three featured resources
-    $featured = new WP_Query('showposts=3&orderby=rand&tag_name=featured');
+    $featured = new WP_Query( 
+      array( 
+        'post_type' => 'post', 
+        'posts_per_page' => 3,
+        'meta_key' => 'featured_on_home',
+        'orderby' => 'rand',
+        'meta_value' => '1' ) 
+      );
       if( $featured->have_posts() ):
         while( $featured->have_posts() ):
           $featured->the_post();
@@ -275,7 +282,7 @@ function general() { ?>
       <div class="partners__wrapper partners__slider partners--narrow">
         <?php
             $partners = new WP_Query(array(
-              'posts_per_page' => -1,
+              'posts_per_page' => 4,
               'post_type' => 'partners',
               'orderby' => 'rand'
             ));

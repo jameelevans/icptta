@@ -8,11 +8,11 @@
 get_header();
 
 ?>
-	<main class="general trainings">
+	<main class="main general trainings">
 
 
         <section class="trainings__section">
-          <h2 class="h2__header h2__header--grey">Upcoming Trainings</h2>
+          <h2 class="h2__header h2__header--grey">Available Trainings</h2>
 
           <?php
               $today = date('Ymd');
@@ -122,12 +122,12 @@ get_header();
                <?php }
             ?>
           </div>
-          <p class="trainings__link">View all upcoming trainings <a href="<?php echo esc_url( home_url('/upcoming-trainings')); ?>">here</a></p>
+          <p class="trainings__link">View all available trainings <a href="<?php echo esc_url( home_url('/upcoming-trainings')); ?>">here</a></p>
 
         </section>
 
         <section class="trainings__section">
-          <h2 class="h2__header h2__header--grey">Previous Trainings</h2>
+          <h2 class="h2__header h2__header--grey">Coming Soon</h2>
 
           <div class="trainings__normal">
           <?php
@@ -135,29 +135,17 @@ get_header();
             $previousTrainings = new WP_Query(array(
               'posts_per_page' => 3,
               'post_type' => 'trainings',
-              'orderby' => 'meta_value_num',
               'meta_key' => 'training_date',
-              'order' => 'ASC',
-              'meta_query' => array(
-                array(
-                  'key' => 'training_date',
-                  'compare' => '<',
-                  'value' => $today,
-                  'type' => 'numeric'
-                )
-              )
+              'meta_value' => '',
+              'meta_compare' => '=',
+              'order' => 'DESC'
               ));
 
               if($previousTrainings->have_posts()) {
                 while($previousTrainings->have_posts()) {
                   $previousTrainings->the_post();?>
                     <article class="trainings__card">
-                      <div class="trainings__date">
-                          <span class="trainings__month"><?php
-                        $trainingDate = new DateTime(get_field('training_date'));
-                        echo $trainingDate->format('M')?></span>
-                          <span class="trainings__day"><strong><?php echo $trainingDate->format('d') ?></strong></span>
-                        </div>
+                   
 
                       <?php if ( has_post_thumbnail() ) { ?>
                         <img class="trainings__img" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title_attribute(); ?>"/>
@@ -184,7 +172,7 @@ get_header();
             ?>
           </div>
 
-          <p class="trainings__link">View all previous trainings <a href="<?php echo esc_url( home_url('/past-trainings')); ?>">here</a></p>
+          <p class="trainings__link">View all trainings coming soon <a href="<?php echo esc_url( home_url('/trainings-coming-soon')); ?>">here</a></p>
 
 
         </section>

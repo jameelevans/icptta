@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main class="general resource-page">
+	<main class="main general resource-page">
     <section class="general--single resource-page__content">
       <?php the_content(); ?>
     </section>

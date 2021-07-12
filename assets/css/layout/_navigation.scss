@@ -1,3 +1,190 @@
+.mobile-nav {
+  display: none;
+  font-family: $font-primary;
+
+  @include respond(medium) {
+    display: block;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: var(--color-white);
+    height: 7rem;
+    width: 7rem;
+    top: 2rem;
+    position: absolute;
+    right: 4vw;
+    border-radius: 3px;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+
+    &--is-scrolled {
+      box-shadow: var(--shadow-large-light);
+      position: fixed !important;
+      top: 3rem !important;
+    }
+  }
+
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5rem;
+    right: 4.5vw;
+    background-image: var(--gradient-primary);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    &--is-scrolled {
+      box-shadow: var(--shadow-large-light);
+      position: fixed !important;
+      top: 3.5rem !important;
+    }
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    //Hide navigation
+    opacity: 0;
+    width: 0;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    margin: 1rem;
+
+    &:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 4rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: var(--color-white);
+      text-decoration: none;
+      text-transform: uppercase;
+      //Slanted solid gradient
+      background-image: linear-gradient(
+        120deg,
+        transparent,
+        transparent 50%,
+        var(--color-white) 50%
+      );
+      //Gradient hidden off element
+      background-size: 230%;
+      transition: all 0.4s;
+
+      span {
+        margin-right: 1.5rem;
+        display: inline-block;
+      }
+    }
+
+    &:hover,
+    &:active {
+      //Gradient slides in on hover
+      background-position: 100%;
+      color: var(--color-blue-primary);
+      transform: translateX(1rem);
+    }
+  }
+
+  //FUNCTIONALITY
+  &__checkbox:checked ~ &__background {
+    transform: scale(60);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+  //ICON
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    //Base styles for all three icon lines
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 3px;
+      border-radius: 1px;
+      background-color: var(--color-blue-primary);
+      display: inline-block;
+    }
+
+    //Content must be set empty for sudo elements
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    //Individual positioining for 1st and 3rd icon lines
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  //When checkbox is selected --> slecte its sibling, then select the buttons child (icon) then remove middle icon line
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  //Rotate top icon line on menu click
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  //Rotate bottom icon line on menu click
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
 //* Navigation overall styles
 .nav {
   display: grid;
@@ -78,19 +265,20 @@
 
   &___cta {
   }
-  //* If menu item is clicked these styles are added
+  /* If menu item is clicked these styles are added
   &--is-visible {
     max-height: 50rem !important;
     margin-bottom: 5rem;
-  } //. If menu item is clicked these styles are added
+  } */ //. If menu item is clicked these styles are added
 
   @include respond(medium) {
-    grid-template-rows: repeat(7, max-content);
-    grid-row-gap: 4rem;
-    grid-template-columns: max-content;
-    text-align: center;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in;
+    //grid-template-rows: repeat(7, max-content);
+    //grid-row-gap: 4rem;
+    //grid-template-columns: max-content;
+    //text-align: center;
+    //max-height: 0;
+    //overflow: hidden;
+    //transition: max-height 0.3s ease-in;
+    display: none;
   }
 } //* Navigation overall styles

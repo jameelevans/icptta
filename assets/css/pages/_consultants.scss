@@ -23,12 +23,17 @@
     @include respond(small) {
       grid-template-rows: repeat(2, auto);
       grid-template-columns: minmax(min-content, 45rem);
+      justify-items: center;
     }
   }
 
   &__img {
     width: 100%;
     border-radius: 3px;
+
+    @include respond(small) {
+      width: 70%;
+    }
   }
 
   &__details {

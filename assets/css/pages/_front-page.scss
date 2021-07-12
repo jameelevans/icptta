@@ -11,9 +11,9 @@
   line-height: 1;
 
   @include respond(large) {
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     grid-row-gap: 4rem;
-    grid-template-columns: minmax(min-content, 80rem);
+    grid-template-columns: minmax(min-content, 70rem);
     justify-content: center;
     grid-column-gap: 0;
     padding: 5rem 3rem;
@@ -24,14 +24,18 @@
   &__logo {
     width: 100%;
     position: relative;
-
-    @include respond(large) {
-      width: 80%;
-    }
   }
 
   &__icon {
     width: 100%;
+
+    @include respond(large) {
+      width: 70%;
+    }
+
+    @include respond(small) {
+      width: 100%;
+    }
   }
 
   &__tagline {
@@ -80,10 +84,23 @@
   }
   &__wrapper {
     min-height: 200px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    overflow-x: hidden;
+    justify-items: center;
+
+    @include respond(medium) {
+      grid-template-columns: repeat(2, minmax(5rem, max-content));
+      grid-template-rows: auto;
+      padding: 0 2rem;
+      grid-gap: 5rem;
+    }
+
+    @include respond(small) {
+      grid-template-columns: minmax(5rem, max-content);
+      grid-template-rows: auto;
+      grid-gap: 5rem;
+    }
 
     .slick-list {
       overflow: visible;
@@ -105,6 +122,10 @@
     &:hover .partners__name {
       bottom: -4.5rem;
       opacity: 1;
+
+      @include respond(small) {
+        bottom: -11.5rem;
+      }
     }
 
     & img {
@@ -128,6 +149,12 @@
     z-index: 99;
     transition: all 0.5s ease;
     opacity: 0;
+
+    @include respond(small) {
+      position: relative;
+      opacity: 1;
+      bottom: -11.5rem;
+    }
   }
 } //. Partners section
 
@@ -148,7 +175,7 @@
     border: 2px solid var(--color-white);
     color: var(--color-white);
     margin: 0 30vw;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 3.5rem;
     position: relative;
 
     @include respond(large) {
@@ -219,6 +246,7 @@
   }
 
   &__cta {
+    margin: 0 auto;
   }
 
   &__wrapper {

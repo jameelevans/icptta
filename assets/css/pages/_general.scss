@@ -3,9 +3,8 @@
   font-family: $font-primary;
 
   & .training__date {
-    width: 15rem;
     position: absolute;
-    top: -18rem;
+    top: -13rem;
     left: 10%;
     background-color: var(--color-charcoal);
     color: var(--color-white);
@@ -13,6 +12,7 @@
     padding: 1.5rem;
     line-height: 1;
     text-align: center;
+    font-size: 3rem;
   }
   & .training__month {
     display: block;

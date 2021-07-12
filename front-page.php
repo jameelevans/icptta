@@ -8,7 +8,7 @@
 get_header();
 
 ?>
-	<main>
+	<main class="main">
 		<section class="about fade-in-up">
 			<div class="about__logo">
 				<img class="about__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-logo-tag.png')); ?>" alt="ICP TTA logo">
@@ -49,7 +49,7 @@ get_header();
 			<div class="home-resources__header">
 				<h2 class="home-resources__heading h2__header h2__header--grey">Resources</h2>
 				<p class="home-resources__subheading p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
-				<a class="home-resources__cta btn btn btn--blue" href="<?php echo esc_url( home_url('/resources')); ?>">LEARN MORE</a>
+				<a class="home-resources__cta btn btn btn--blue" href="<?php echo esc_url( home_url('/resources')); ?>">VIEW ALL</a>
 			</div>
 			<div class="home-resources__wrapper">
 			<?php
