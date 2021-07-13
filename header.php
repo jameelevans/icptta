@@ -23,7 +23,7 @@
 				<!-- Top header contact strip -->
 				<div class="header__top">
 					<div class="header__top-details">
-						<p>Need help? <?php echo svg_icon('phone__icon', 'phone') ?> Call Tara (xxx) xxx-xxxx</p>
+						<p>Need help? <?php echo svg_icon('phone__icon', 'phone') ?> Call Tara (617)-218-3584</p>
 					</div>
 				</div><!-- .Top header contact strip -->
 

@@ -23,18 +23,31 @@
 
 // * --------| Breakpoint Mixin |-------- *
 // TODO: Add breakpoint argument choices below from smallest to largest
-// ! Mobile first uses min-width and works in reverse 
+// ! Mobile first uses min-width and works in reverse
 @mixin respond($breakpoint) {
-    @if $breakpoint == small {
-        @media only screen and (max-width: 37.5em) { @content };  // 600px
-    }
-    @if $breakpoint == medium {
-        @media only screen and (max-width: 50em) { @content };  // 800px
-    }
-    @if $breakpoint == large {
-        @media only screen and (max-width: 62.5em) { @content };  // 1000px
-    }
-    @if $breakpoint == largest {
-        @media only screen and (max-width: 75em) { @content }; // 1200px
-    }
+  @if $breakpoint == small {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+  @if $breakpoint == medium {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } // 800px
+  }
+  @if $breakpoint == large {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    } // 1000px
+  }
+  @if $breakpoint == largest {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px
+  }
+  @if $breakpoint == 32aspect {
+    @media only screen and (min-width: 40em) {
+      @content;
+    } // 3:2 aspect ratio
+  }
 }

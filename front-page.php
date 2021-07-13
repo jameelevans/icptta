@@ -20,7 +20,17 @@ get_header();
 				<a href="<?php echo esc_url( home_url('/about-us')); ?>" class="btn btn--blue">LEARN MORE</a>
 			</div>
 		</section>
-		<?php echo partners('p-lg');?>
+		<section class="partners p-lg'">
+      <div class="partners__headline partners--narrow">
+        <h2 class="h2__header h2__header--grey">Our Partners</h2>
+        <p class="p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+      </div>
+
+      <div class="partners__wrapper partners__slider partners--narrow">
+				<?php echo partners();?>
+      </div>
+    </section>
+		
 		<section class="testimonials">
 			<h2 class="h2__header h2__header--white">What Others Are Saying</h2>
 			<figure class="testimonial">

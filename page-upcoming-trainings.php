@@ -36,22 +36,24 @@ get_header();
               if($trainings->have_posts()) {
                 while($trainings->have_posts()) {
                   $trainings->the_post();?>
-                    <article class="trainings__card">
-                      <div class="trainings__date">
-                          <span class="trainings__month"><?php
-                        $trainingDate = new DateTime(get_field('training_date'));
-                        echo $trainingDate->format('M')?></span>
-                          <span class="trainings__day"><strong><?php echo $trainingDate->format('d') ?></strong></span>
-                        </div>
+                    <div class="trainings__wrapper">
+                      <article class="trainings__card">
+                      
 
                       <?php if ( has_post_thumbnail() ) { ?>
-                        <img class="trainings__img" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title_attribute(); ?>"/>
-                       <?php } else { ?>
-                        <img class="trainings__img" src="<?php bloginfo('template_directory'); ?>/assets/img/icptta-training.jpg" alt="<?php the_title(); ?>" />
+                        <div class="trainings__img" style="background-image: url(<?php the_post_thumbnail_url('thumbnail'); ?>);" ></div>
+                        <?php } else { ?>
+                        <div class="trainings__img" style="background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/icptta-training.jpg);" ></div>
                       <?php } ?>
 
                       <div class="trainings__details">
                         <h4 class="trainings__heading"><?php the_title();?></h4>
+                        <div class="trainings__date">
+                          <?php if( get_field('training_date') ){
+                            $trainingDate = new DateTime(get_field('training_date'));
+                            echo '<time>' . $trainingDate->format('M d') .'<sup>'. $trainingDate->format('S') .'</sup>, ' . $trainingDate->format('Y'). '</time>';
+                          }?>
+                        </div>
                         <p class="trainings__description"><?php
                         if( has_excerpt() ){
                           echo strip_tags(substr( get_the_excerpt(), 0, 100 ))."...";
@@ -62,6 +64,7 @@ get_header();
                         <a href="<?php the_permalink();?>" class="btn btn--blue">Learn More</a>
                       </div>
                     </article>
+                    </div>
                 <?php }
                  } else { ?>
                   <p class="trainings__no-show">There no trainings to show yet</p>

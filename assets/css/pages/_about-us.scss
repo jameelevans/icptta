@@ -1,0 +1,19 @@
+.about-us {
+  &__heading {
+    text-align: center;
+  }
+
+  &__content {
+    font-family: $font-primary;
+    font-weight: 100;
+    color: var(--color-charcoal);
+    font-size: 2rem;
+    column-count: 2;
+    margin-bottom: 5rem;
+
+    @include respond(medium) {
+      column-count: 1;
+      gap: 2rem;
+    }
+  }
+}

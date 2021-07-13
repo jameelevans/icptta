@@ -93,13 +93,13 @@
       grid-template-columns: repeat(2, minmax(5rem, max-content));
       grid-template-rows: auto;
       padding: 0 2rem;
-      grid-gap: 5rem;
+      grid-gap: 8rem;
     }
 
     @include respond(small) {
       grid-template-columns: minmax(5rem, max-content);
       grid-template-rows: auto;
-      grid-gap: 5rem;
+      grid-gap: 9rem;
     }
 
     .slick-list {
@@ -113,7 +113,7 @@
   }
 
   &__logo {
-    width: 25rem;
+    width: 20rem;
     position: relative;
     text-align: center;
     min-height: 100px;

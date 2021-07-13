@@ -33,27 +33,27 @@ get_header();
 
               while($trainings->have_posts()) {
                 $trainings->the_post();?>
-                  <article class="trainings__card">
-                    
+                  <div class="trainings__wrapper">
+                      <article class="trainings__card">
+                        <?php if ( has_post_thumbnail() ) { ?>
+                          <div class="trainings__img" style="background-image: url(<?php the_post_thumbnail_url('thumbnail'); ?>);" ></div>
+                          <?php } else { ?>
+                          <div class="trainings__img" style="background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/icptta-training.jpg);" ></div>
+                        <?php } ?>
 
-                      <?php if ( has_post_thumbnail() ) { ?>
-                        <img class="trainings__img" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title_attribute(); ?>"/>
-                       <?php } else { ?>
-                        <img class="trainings__img" src="<?php bloginfo('template_directory'); ?>/assets/img/icptta-training.jpg" alt="<?php the_title(); ?>" />
-                      <?php } ?>
-
-                      <div class="trainings__details">
-                        <h4 class="trainings__heading"><?php the_title();?></h4>
-                        <p class="trainings__description"><?php
-                        if( has_excerpt() ){
-                          echo strip_tags(substr( get_the_excerpt(), 0, 100 ))."...";
-                          } else {
-                          echo wp_trim_words(get_the_content(), 15);
-                          }?></p>
-                          
-                        <a href="<?php the_permalink();?>" class="btn btn--blue">Learn More</a>
-                      </div>
-                    </article>
+                        <div class="trainings__details">
+                          <h4 class="trainings__heading"><?php the_title();?></h4>
+                          <p class="trainings__description"><?php
+                          if( has_excerpt() ){
+                            echo strip_tags(substr( get_the_excerpt(), 0, 100 ))."...";
+                            } else {
+                            echo wp_trim_words(get_the_content(), 15);
+                            }?></p>
+                            
+                          <a href="<?php the_permalink();?>" class="btn btn--blue">Learn More</a>
+                        </div>
+                      </article>
+                    </div>
               <?php }
             ?>
           </div>

@@ -272,14 +272,7 @@ function general() { ?>
   // .11 Get and display general header content
 
   //* 12 Get and display Partners section
-  function partners($class) { ?>
-    <section class="partners <?php echo $class ?>">
-      <div class="partners__headline partners--narrow">
-        <h2 class="h2__header h2__header--grey">Our Partners</h2>
-        <p class="p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
-      </div>
-
-      <div class="partners__wrapper partners__slider partners--narrow">
+  function partners() { ?>
         <?php
             $partners = new WP_Query(array(
               'posts_per_page' => 4,
@@ -298,8 +291,6 @@ function general() { ?>
               
             <?php }
           ?>
-      </div>
-    </section>
     <?php } //. 12 Get and display Partners section
 
 

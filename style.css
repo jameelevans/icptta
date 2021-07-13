@@ -38,6 +38,7 @@ Text Domain: icptta.com
 *   Login
 *   General
 *   Front page
+*   About Us
 *   Trainings page
 *   Consultants page
 *   Partner page
@@ -2235,7 +2236,7 @@ html {
     grid-template-columns: repeat(2, minmax(5rem, max-content));
     grid-template-rows: auto;
     padding: 0 2rem;
-    grid-gap: 5rem;
+    grid-gap: 8rem;
   }
 }
 
@@ -2244,7 +2245,7 @@ html {
     grid-template-columns: minmax(5rem, -webkit-max-content);
     grid-template-columns: minmax(5rem, max-content);
     grid-template-rows: auto;
-    grid-gap: 5rem;
+    grid-gap: 9rem;
   }
 }
 
@@ -2258,7 +2259,7 @@ html {
 }
 
 .partners__logo {
-  width: 25rem;
+  width: 20rem;
   position: relative;
   text-align: center;
   min-height: 100px;
@@ -2464,6 +2465,30 @@ html {
   margin-bottom: 1rem;
 }
 
+.about-us__heading {
+  text-align: center;
+}
+
+.about-us__content {
+  font-family: futura-pt, sans-serif;
+  font-weight: 100;
+  color: var(--color-charcoal);
+  font-size: 2rem;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .about-us__content {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    gap: 2rem;
+  }
+}
+
 .trainings__section {
   max-width: 960px;
   margin: 0 auto;
@@ -2501,6 +2526,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: var(--color-grey-light);
+  padding: 3rem;
 }
 
 @media only screen and (max-width: 50em) {
@@ -2557,29 +2584,63 @@ html {
 }
 
 .trainings__normal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 5rem auto;
-  grid-gap: 2rem;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.trainings__normal .trainings__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  width: 33.3333%;
 }
 
 @media only screen and (max-width: 50em) {
-  .trainings__normal {
-    grid-template-rows: auto;
-    grid-template-columns: minmax(-webkit-min-content, 50rem);
-    grid-template-columns: minmax(min-content, 50rem);
+  .trainings__normal .trainings__wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .trainings__normal .trainings__wrapper {
+    width: 100%;
   }
 }
 
 .trainings__normal .trainings__card {
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
+}
+
+.trainings__normal .trainings__card:hover .trainings__img {
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+
+.trainings__normal .trainings__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
 }
 
 .trainings__normal .trainings__heading {
@@ -2587,7 +2648,7 @@ html {
   font-size: 2rem;
   font-weight: 400;
   color: var(--color-charcoal);
-  margin-bottom: 1.5rem;
+  color: var(--color-blue-primary);
 }
 
 @media only screen and (max-width: 50em) {
@@ -2597,24 +2658,37 @@ html {
 }
 
 .trainings__normal .trainings__img {
-  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+          filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.trainings__normal .trainings__img::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+@media only screen and (min-width: 40em) {
+  .trainings__normal .trainings__img::before {
+    padding-top: 66.6%;
+  }
 }
 
 .trainings__normal .trainings__date {
-  position: absolute;
-  width: 8rem;
-  background-color: rgba(var(--color-charcoal-a), 0.95);
-  color: var(--color-white);
   font-family: futura-pt, sans-serif;
-  padding: 5%;
-  line-height: 1;
-  text-align: center;
-}
-
-@media only screen and (max-width: 50em) {
-  .trainings__normal .trainings__date {
-    width: 12rem;
-  }
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .trainings__normal .trainings__month {
@@ -2834,6 +2908,10 @@ html {
 
 .consultants__category a:hover {
   color: var(--color-blue-primary);
+}
+
+.consultants__link {
+  text-align: center;
 }
 
 .consultant {
