@@ -14,6 +14,7 @@ class Slider {
       arrows: false,
       dots: true,
       infinite: true,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 800,

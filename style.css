@@ -1567,7 +1567,6 @@ html {
 
 .front-page .slider__slide {
   width: 100%;
-  height: 25vw;
 }
 
 @media only screen and (max-width: 50em) {
@@ -2485,7 +2484,6 @@ html {
     -webkit-column-count: 1;
        -moz-column-count: 1;
             column-count: 1;
-    gap: 2rem;
   }
 }
 

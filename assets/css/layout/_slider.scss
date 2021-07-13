@@ -245,7 +245,6 @@
   .slider {
     &__slide {
       width: 100%;
-      height: 25vw;
 
       @include respond(medium) {
         height: auto;
