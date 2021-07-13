@@ -4,17 +4,34 @@
   grid-template-columns: 1fr 4fr;
   grid-column-gap: 5rem;
 
+  @include respond(small) {
+    grid-template-columns: minmax(min-content, 100%);
+    grid-template-rows: minmax(min-content, 5rem) auto;
+  }
+
   &__logo {
     width: 100%;
+    pointer-events: none;
+
+    @include respond(small) {
+      width: 70%;
+      margin: 0 auto 2rem;
+    }
   }
 
   &__content {
     background-color: var(--color-grey-light);
     padding: 5rem;
 
-    p {
+    p,
+    ul,
+    a {
       font-weight: 100;
       font-size: 2rem;
+    }
+
+    ul {
+      padding-left: 2rem;
     }
   }
 }

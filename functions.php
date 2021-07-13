@@ -284,7 +284,7 @@ function general() { ?>
               $partners->the_post();?>
               <a class="partners__link" href="<?php the_permalink();?>">
                 <figure class="partners__logo">
-                  <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>">
+                  <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>" draggable="false">
                   <figcaption class="partners__name p__body"><?php the_title(); ?></figcaption>
                 </figure>
               </a>

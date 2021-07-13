@@ -48,14 +48,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /*@include respond(medium) {
-      display: grid;
-      grid-row-gap: 4rem;
-      grid-template-rows: auto auto;
-      justify-content: center;
-      justify-items: center;
-    }*/
   } //. Header main content section
 
   //* Header heading section
@@ -65,6 +57,7 @@
   //* Header logo
   &__logo {
     width: 15rem;
+    pointer-events: none;
 
     @include respond(medium) {
       width: 20rem;

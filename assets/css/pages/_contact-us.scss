@@ -5,6 +5,7 @@
   grid-template-rows: auto;
   grid-gap: 5rem;
   justify-content: center;
+  align-items: center;
 
   @include respond(medium) {
     grid-template-columns: minmax(min-content, 40rem);
@@ -61,6 +62,11 @@
 
 //* Faqs section
 .faqs {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+  position: relative;
+
   &__header {
     text-align: center;
     margin-bottom: 5rem;
@@ -78,22 +84,29 @@
   &__wrapper {
     font-size: 2rem;
     font-weight: 100;
-
     max-height: 0px;
     overflow: hidden;
     transition: 0.25s ease-in-out;
+
+    @include respond(small) {
+      font-size: 2.4rem;
+    }
   }
 
   &__title {
     border-top: 1px solid var(--color-black);
     cursor: pointer;
     display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 400;
     padding: 3rem 0 0 3rem;
     position: relative;
     margin-bottom: 2rem;
     transition: all 0.25s ease-out;
+
+    @include respond(small) {
+      font-size: 2.4rem;
+    }
   }
 
   &__title::before {

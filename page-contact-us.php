@@ -25,7 +25,7 @@ get_header();
       </div>
     </section>
 
-    <section class="faqs general--narrow">
+    <section class="faqs">
       <h2 class="h2__header--blue faqs__header">FAQs</h2>
 
       <div class="faqs__content">

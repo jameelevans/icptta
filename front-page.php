@@ -23,7 +23,6 @@ get_header();
 		<section class="partners p-lg'">
       <div class="partners__headline partners--narrow">
         <h2 class="h2__header h2__header--grey">Our Partners</h2>
-        <p class="p__subheader">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
       </div>
 
       <div class="partners__wrapper partners__slider partners--narrow">
@@ -44,7 +43,12 @@ get_header();
 							
 									<blockquote class="testimonial__quote"><?php the_field('quote'); ?>
 									<footer>
-										<cite class="testimonial__author">- <?php the_field('author'); ?></cite>
+										<cite class="testimonial__author">- 
+										<?php if (get_field('author')){
+											 the_field('author');
+										} else {
+											echo 'Unknown';
+										}?></cite>
 									</footer>
 								</blockquote>
 					<?php }

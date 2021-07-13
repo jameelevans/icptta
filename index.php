@@ -10,9 +10,7 @@ get_header();
 ?>
 	<main class="main general">
         <section class="general--narrow">
-            <p class="p__lead p__lead--centered">Lorem ipsum dolor sit amet, consectetuer adipiwisi enim ad minim veniam, quis nostrud exerci
-tation ullamcorper suscipim nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-erat volutpat. Ut wisi enim</p>
+            <p class="p__lead p__lead--centered">ICP TTA staff has assembled a comprehensive list of internal and external resources to assist emergency management personnel, victim service professionals and key community stakeholders integrate victim services into their emergency operations plans.</p>
         </section>
 
         <section class="general--content">

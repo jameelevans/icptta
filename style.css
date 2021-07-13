@@ -875,17 +875,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*@include respond(medium) {
-      display: grid;
-      grid-row-gap: 4rem;
-      grid-template-rows: auto auto;
-      justify-content: center;
-      justify-items: center;
-    }*/
 }
 
 .header__logo {
   width: 15rem;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 50em) {
@@ -1754,6 +1748,7 @@ html {
 
 .footer__icon {
   width: 100%;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -2210,13 +2205,8 @@ html {
 }
 
 .partners__headline {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .partners__wrapper {
@@ -2286,6 +2276,7 @@ html {
   max-height: 100%;
   width: auto;
   height: auto;
+  pointer-events: none;
 }
 
 .partners__name {
@@ -2733,10 +2724,13 @@ html {
 
 .training__content p,
 .training__content ul,
-.training__content ol,
 .training__content a {
   font-weight: 100;
   font-size: 2rem;
+}
+
+.training__content ul {
+  padding-left: 2rem;
 }
 
 .training__cta {
@@ -2943,14 +2937,35 @@ html {
   font-size: 2rem;
 }
 
+.consultant__content ul {
+  padding-left: 2rem;
+}
+
 .partner {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-column-gap: 5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .partner {
+    grid-template-columns: minmax(-webkit-min-content, 100%);
+    grid-template-columns: minmax(min-content, 100%);
+    grid-template-rows: minmax(-webkit-min-content, 5rem) auto;
+    grid-template-rows: minmax(min-content, 5rem) auto;
+  }
+}
+
 .partner__logo {
   width: 100%;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .partner__logo {
+    width: 70%;
+    margin: 0 auto 2rem;
+  }
 }
 
 .partner__content {
@@ -2958,9 +2973,15 @@ html {
   padding: 5rem;
 }
 
-.partner__content p {
+.partner__content p,
+.partner__content ul,
+.partner__content a {
   font-weight: 100;
   font-size: 2rem;
+}
+
+.partner__content ul {
+  padding-left: 2rem;
 }
 
 .contact-us {
@@ -2971,6 +2992,9 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 50em) {
@@ -3033,6 +3057,13 @@ html {
   }
 }
 
+.faqs {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+  position: relative;
+}
+
 .faqs__header {
   text-align: center;
   margin-bottom: 5rem;
@@ -3056,17 +3087,29 @@ html {
   transition: 0.25s ease-in-out;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .faqs__wrapper {
+    font-size: 2.4rem;
+  }
+}
+
 .faqs__title {
   border-top: 1px solid var(--color-black);
   cursor: pointer;
   display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 400;
   padding: 3rem 0 0 3rem;
   position: relative;
   margin-bottom: 2rem;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .faqs__title {
+    font-size: 2.4rem;
+  }
 }
 
 .faqs__title::before {
@@ -3133,6 +3176,10 @@ html {
 
 .error {
   text-align: center;
+  max-width: 96rem;
+  margin: 10rem auto;
+  padding: 5rem;
+  position: relative;
 }
 
 .error h2 {
@@ -3146,10 +3193,13 @@ html {
 }
 
 .error p {
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 1;
+  margin-bottom: 4rem;
 }
 
 .error img {
+  padding: 5rem;
   width: 100%;
+  margin-bottom: 4rem;
 }

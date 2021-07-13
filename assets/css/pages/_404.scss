@@ -1,6 +1,11 @@
 //* 404 page overall styles
 .error {
   text-align: center;
+  max-width: 96rem;
+
+  margin: 10rem auto;
+  padding: 5rem;
+  position: relative;
 
   & h2 {
     font-size: 10rem;
@@ -11,11 +16,14 @@
   }
 
   & p {
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 1;
+    margin-bottom: 4rem;
   }
 
   & img {
+    padding: 5rem;
     width: 100%;
+    margin-bottom: 4rem;
   }
 } //. 404 page overall styles

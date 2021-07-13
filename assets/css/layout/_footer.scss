@@ -110,6 +110,7 @@
   //* Footer icon
   &__icon {
     width: 100%;
+    pointer-events: none;
 
     @include respond(large) {
       width: 80%;

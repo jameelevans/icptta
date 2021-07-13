@@ -28,7 +28,7 @@
            <?php } ?>
         <div class="footer__main">
             <div class="footer__logo">
-                <img class="footer__icon lazyload" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-login-logo.png')); ?>" alt="ICP TTA logo">
+                <img class="footer__icon lazyload" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-login-logo.png')); ?>" alt="ICP TTA logo" draggable="false">
             </div>
             <div class="footer__content">
                 <p class="footer__disclaimer">Funds made available under 2020-V7-GX-K001, awarded by the
