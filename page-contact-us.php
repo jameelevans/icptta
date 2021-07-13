@@ -57,7 +57,8 @@ get_header();
     </section>
 
     <section class="form">
-      <?php the_content();?>
+      
+      <a class="btn btn--blue mb-lg" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank">ICPTTA Application</a>
     </section>
     
 

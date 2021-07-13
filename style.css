@@ -2733,6 +2733,10 @@ html {
   padding-left: 2rem;
 }
 
+.training__h4 {
+  margin-top: 5rem;
+}
+
 .training__cta {
   margin-top: 4rem;
 }

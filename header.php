@@ -45,7 +45,7 @@
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/trainings')); ?>" class="mobile-nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>">Trainings</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/consultants')); ?>" class="mobile-nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>">Consultants</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="mobile-nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>">Contact Us</a></li>
-								<a class="nav__cta btn btn--white-outline" href="<?php echo esc_url( home_url('/contact-us')); ?>">Sign Up Now</a>
+								<a class="nav__cta btn btn--white-outline" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank">ICPTTA Application</a>
 							</ul>
 						</nav>
 					</div>
@@ -79,7 +79,7 @@
 							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>">Trainings</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/consultants')); ?>">Consultants</a></li>
 							<li class="nav__item"><a class="nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/contact-us')); ?>">Contact Us</a></li>
-							<a class="nav__cta btn btn--blue" href="<?php echo esc_url( home_url('/contact-us')); ?>">Sign Up Now</a>
+							<a class="nav__cta btn btn--blue" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank">ICPTTA Application</a>
 						</ul><!-- .Navigation menu and CTA -->
 					</nav><!-- .Navigation content -->
 				</div><!-- .Navigation menu wrapper -->

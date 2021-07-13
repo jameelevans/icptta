@@ -21,6 +21,9 @@ get_header();
         </div>
     <section class="training__content general--single">
       <?php the_content(); ?>
+
+      <h4 class="h4__header training__h4">To Request Training</h4>
+      <p>To access these trainings or to request training not found here contact <strong>Terry Boes</strong> at terry.boes@icf.com or click the link below or call +1-312-995-7467.</p>
       <a href="mailto:terry.boes@icf.com?subject=Customized subject goes here" class="training__cta btn btn--blue">Request Access</a>
     </section>
     

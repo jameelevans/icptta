@@ -15,12 +15,13 @@ get_header();
 
         <section class="general--content">
             <div class="index">
-                <h4 class="h4__header index__heading">15 Best Practice Areas</h4>
+                <h4 class="h4__header index__heading">16 Best Practice Areas</h4>
                 <ul class="index__list">
                     <li class="index__item"><a href="#incident-command-system" class="index__link">Incident Command System</a></li>
                     <li class="index__item"><a href="#committee-identification-engagement" class="index__link">Committee Identification &amp; Engagement</a></li>
                     <li class="index__item"><a href="#contact-list" class="index__link">Contact List</a></li>
                     <li class="index__item"><a href="#frc" class="index__link">FRC Plan</a></li>
+                    <li class="index__item"><a href="#victim-identification" class="index__link">Victim Identification and Notification Protocol</a></li>
                     <li class="index__item"><a href="#public-information-crisis-communications-protocol" class="index__link">Public Information and Crisis Communications Protocol</a></li>
                     <li class="index__item"><a href="#volunteer-management-protocol" class="index__link">Volunteer Management Protocol</a></li>
                     <li class="index__item"><a href="#fac" class="index__link">FAC Plan</a></li>
@@ -190,6 +191,54 @@ get_header();
                     if( $frcPosts->have_posts() ):
                         while( $frcPosts->have_posts() ):
                             $frcPosts->the_post(); ?>
+                            <article class="resources__resource">
+                                <header>
+                                    <h4 class="h4__header"><?php echo the_title(); ?></h4>
+                                    <a class="resources__source" href="<?php the_field('source_page') ?>"><?php the_field('source_title') ?></a>
+                                </header>
+                                <p class="resources__excerpt p__body"><?php
+                                    if( has_excerpt() ){
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    } else {
+                                    echo wp_trim_words(get_the_content(), 30);
+                                    }?></p>
+                                <?php 
+                                $link = get_field('visit_site_button');
+                                if( $link ): 
+                                    $link_url = $link['url'];
+                                    $link_title = $link['title'];
+                                    $link_target = $link['target'] ? $link['target'] : '_self';
+                                    ?>
+                                    <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">Visit Site</a>
+                                <?php endif; 
+                                $downloadpdf = get_field('download_pdf_button');
+                                if( $downloadpdf ): 
+                                    $downloadpdf_url = $downloadpdf['url'];
+                                    $downloadpdf_title = $downloadpdf['title'];
+                                    $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
+                                    ?>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download PDF</a>
+                                <?php endif; ?>
+                            </article> 
+                        <?php endwhile;
+              
+                    else : ?> <p class="p__lead">No posts at this time</p>
+                    <?php
+                    wp_reset_postdata();
+                    endif;
+                ?>
+            </div>
+        </section>
+
+        <section id="victim-identification" class="general--content">
+            <h3 class="h3__header"><?php /* Display svg icon*/ echo svg_icon('resources__icon', 'comment-exclamation') ?> Victim Identification and Notification Protocol</h3>
+            <div class="resources">
+                <?php
+                // Display Victim Identification Resources
+                $vinpPosts = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'category_name' => 'victim-identification-and-notification-protocol', 'posts_per_page'=>-1));
+                    if( $vinpPosts->have_posts() ):
+                        while( $vinpPosts->have_posts() ):
+                            $vinpPosts->the_post(); ?>
                             <article class="resources__resource">
                                 <header>
                                     <h4 class="h4__header"><?php echo the_title(); ?></h4>
