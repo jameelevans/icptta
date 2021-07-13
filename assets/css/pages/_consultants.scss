@@ -159,6 +159,11 @@
   grid-template-columns: 1fr 4fr;
   grid-column-gap: 5rem;
 
+  @include respond(small) {
+    grid-template-columns: minmax(min-content, 100%);
+    grid-template-rows: minmax(min-content, 5rem) auto;
+  }
+
   &__headshot {
     width: 100%;
   }

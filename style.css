@@ -2918,6 +2918,15 @@ html {
   grid-column-gap: 5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .consultant {
+    grid-template-columns: minmax(-webkit-min-content, 100%);
+    grid-template-columns: minmax(min-content, 100%);
+    grid-template-rows: minmax(-webkit-min-content, 5rem) auto;
+    grid-template-rows: minmax(min-content, 5rem) auto;
+  }
+}
+
 .consultant__headshot {
   width: 100%;
 }

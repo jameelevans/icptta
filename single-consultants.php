@@ -14,7 +14,7 @@ get_header();
        
 
         <?php if ( has_post_thumbnail() ) { ?>
-          <img src="<?php the_post_thumbnail_url('consultantPortrait'); ?>" alt="<?php the_title_attribute(); ?>" class="consultant__headshot">
+          <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>" class="consultant__headshot">
         <?php } else { ?>
         <img class="consultant__headshot" src="<?php bloginfo('template_directory'); ?>/assets/img/headshot-fallback.jpg" alt="<?php the_title(); ?>" />
         <?php } ?>
