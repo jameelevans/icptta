@@ -445,6 +445,22 @@ html {
   margin-bottom: 8rem;
 }
 
+.mt-sm {
+  margin-top: 2rem;
+}
+
+.mt-md {
+  margin-top: 3rem;
+}
+
+.mt-lg {
+  margin-top: 4rem;
+}
+
+.mt-hg {
+  margin-top: 8rem;
+}
+
 .p-lg {
   margin: 10rem 0;
 }
@@ -452,6 +468,16 @@ html {
 @media only screen and (max-width: 50em) {
   .p-lg {
     margin: 5rem 3rem;
+  }
+}
+
+.pb-md {
+  padding-bottom: 8rem !important;
+}
+
+@media only screen and (max-width: 50em) {
+  .pb-md {
+    padding-bottom: 5rem !important;
   }
 }
 
@@ -2490,7 +2516,7 @@ html {
   font-weight: 100;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin: 5rem;
 }
 
 .trainings__no-show a, .trainings__link a {

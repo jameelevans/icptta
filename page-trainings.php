@@ -139,9 +139,8 @@ get_header();
               'posts_per_page' => 3,
               'post_type' => 'trainings',
               'meta_key' => 'training_date',
-              'meta_value' => '',
-              'meta_compare' => '=',
-              'order' => 'DESC'
+              'meta_value' => ' ',
+              'meta_compare' => '='
               ));
 
               if($previousTrainings->have_posts()) {
@@ -177,7 +176,7 @@ get_header();
             ?>
           </div>
 
-          <p class="trainings__link">View all trainings coming soon <a href="<?php echo esc_url( home_url('/trainings-coming-soon')); ?>">here</a></p>
+          <p class="trainings__link mt-lg">View all trainings coming soon <a href="<?php echo esc_url( home_url('/trainings-coming-soon')); ?>">here</a></p>
 
 
         </section>

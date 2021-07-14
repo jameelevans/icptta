@@ -11,24 +11,16 @@ get_header();
 	<main class="main general trainings">
 
 
-  <section class="general--narrow trainings__section">
+  <section class="general--narrow trainings__section pb-md">
           <div class="trainings__normal">
           <?php
             $today = date('Ymd');
             $trainings = new WP_Query(array(
-              'posts_per_page' => -1,
+              'posts_per_page' => 3,
               'post_type' => 'trainings',
-              'orderby' => 'meta_value_num',
               'meta_key' => 'training_date',
-              'order' => 'ASC',
-              'meta_query' => array(
-                array(
-                  'key' => 'training_date',
-                  'compare' => '<',
-                  'value' => $today,
-                  'type' => 'numeric'
-                )
-              )
+              'meta_value' => ' ',
+              'meta_compare' => '='
               ));
 
               while($trainings->have_posts()) {

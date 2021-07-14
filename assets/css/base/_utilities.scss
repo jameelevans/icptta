@@ -12,11 +12,32 @@
   margin-bottom: 8rem;
 }
 
+.mt-sm {
+  margin-top: 2rem;
+}
+.mt-md {
+  margin-top: 3rem;
+}
+.mt-lg {
+  margin-top: 4rem;
+}
+.mt-hg {
+  margin-top: 8rem;
+}
+
 .p-lg {
   margin: 10rem 0;
 
   @include respond(medium) {
     margin: 5rem 3rem;
+  }
+}
+
+.pb-md {
+  padding-bottom: 8rem !important;
+
+  @include respond(medium) {
+    padding-bottom: 5rem !important;
   }
 }
 
