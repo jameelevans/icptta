@@ -25,7 +25,9 @@ get_header();
         <h2 class="h2__header h2__header--grey">Our Partners</h2>
       </div>
 
-      <div class="partners__wrapper partners__slider partners--narrow">
+      <div class="partners__wrapper partners__slider partners--narrow mb-hg {
+  margin-bottom: 4rem;
+}">
 				<?php echo partners();?>
       </div>
     </section>

@@ -442,7 +442,7 @@ html {
 }
 
 .mb-hg {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .mt-sm {
