@@ -2066,35 +2066,6 @@ html {
   font-family: futura-pt, sans-serif;
 }
 
-.general .training__date {
-  position: absolute;
-  top: -13rem;
-  left: 10%;
-  background-color: var(--color-charcoal);
-  color: var(--color-white);
-  font-family: futura-pt, sans-serif;
-  padding: 1.5rem;
-  line-height: 1;
-  text-align: center;
-  font-size: 3rem;
-}
-
-.general .training__month {
-  display: block;
-  font-size: 5rem;
-}
-
-.general .training__day {
-  display: block;
-  font-size: 5.8rem;
-}
-
-.general .training__year {
-  display: block;
-  font-size: 2.2rem;
-  font-weight: 100;
-}
-
 .general--content {
   max-width: 1300px;
   margin: 0 auto;
@@ -2485,7 +2456,7 @@ html {
   text-align: center;
 }
 
-.about-us__content {
+.about-us__history {
   font-family: futura-pt, sans-serif;
   font-weight: 100;
   color: var(--color-charcoal);
@@ -2497,11 +2468,53 @@ html {
 }
 
 @media only screen and (max-width: 50em) {
-  .about-us__content {
+  .about-us__history {
     -webkit-column-count: 1;
        -moz-column-count: 1;
             column-count: 1;
   }
+}
+
+.about-us__content p,
+.about-us__content ul,
+.about-us__content a {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.about-us__content a {
+  position: relative;
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+.about-us__content a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.about-us__content a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.about-us__content ul {
+  padding-left: 2rem;
+}
+
+.about-us__content h4 {
+  margin: 3rem 0 2rem;
+  font-size: 2.8rem;
+  font-weight: 100;
 }
 
 .trainings__section {
@@ -2748,11 +2761,64 @@ html {
   }
 }
 
+.training__date {
+  position: absolute;
+  bottom: -2.8rem;
+  left: 10%;
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  font-family: futura-pt, sans-serif;
+  padding: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .training__date {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.training--narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 9rem 2rem 0;
+  position: relative;
+}
+
 .training__content p,
 .training__content ul,
 .training__content a {
   font-weight: 100;
   font-size: 2rem;
+}
+
+.training__content a {
+  position: relative;
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+.training__content a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.training__content a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .training__content ul {
@@ -2967,6 +3033,31 @@ html {
   font-size: 2rem;
 }
 
+.consultant__content a {
+  position: relative;
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+.consultant__content a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.consultant__content a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .consultant__content ul {
   padding-left: 2rem;
 }
@@ -3008,6 +3099,31 @@ html {
 .partner__content a {
   font-weight: 100;
   font-size: 2rem;
+}
+
+.partner__content a {
+  position: relative;
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+.partner__content a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.partner__content a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .partner__content ul {

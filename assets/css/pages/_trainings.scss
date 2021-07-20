@@ -210,12 +210,61 @@
 
 //* Training post
 .training {
+  &__date {
+    position: absolute;
+    bottom: -2.8rem;
+    left: 10%;
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    font-family: $font-primary;
+    padding: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    font-size: 3rem;
+
+    @include respond(small) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--narrow {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 9rem 2rem 0;
+    position: relative;
+  }
+
   &__content {
     p,
     ul,
     a {
       font-weight: 100;
       font-size: 2rem;
+    }
+
+    a {
+      position: relative;
+      color: var(--color-blue-primary);
+      text-decoration: none;
+
+      // Underline hover from middle
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: var(--color-blue-primary);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      } //. Underline hover from middle
     }
 
     ul {

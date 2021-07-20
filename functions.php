@@ -290,6 +290,7 @@ function general() { ?>
               </a>
               
             <?php }
+            wp_reset_postdata();
           ?>
     <?php } //. 12 Get and display Partners section
 

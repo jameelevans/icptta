@@ -76,7 +76,7 @@
 							<li class="nav__item"><a class="nav__link<?php if(is_front_page()){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/')); ?>">Home</a></li>
 							<li class="nav__item"><a class="nav__link<?php if(is_page('about-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/about-us')); ?>">About Us</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/resources')); ?>">Resources</a></li>
-							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>">Trainings</a></li>
+							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('trainings-coming-soon')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>">Trainings</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/consultants')); ?>">Consultants</a></li>
 							<li class="nav__item"><a class="nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/contact-us')); ?>">Contact Us</a></li>
 							<a class="nav__cta btn btn--blue" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank">ICPTTA Application</a>
@@ -104,6 +104,17 @@
 							echo svg_icon('share__icon', 'linkedin') ?>
 						</a>
 					</div>
+
+					<?php if(get_post_type() == 'trainings') {?>
+						<div class="training__date">
+								<?php if( get_field('training_date') ){
+									$trainingDate = new DateTime(get_field('training_date'));
+									echo '<time>' . $trainingDate->format('M d') .'<sup>'. $trainingDate->format('S') .'</sup>, ' . $trainingDate->format('Y'). '</time>';
+								} else {
+									echo '<p>Coming Soon</p>';
+								}?>
+						</div>
+						<?php } ?>
 
 					
 				</div>
