@@ -20,7 +20,7 @@ get_header();
             $consultants = new WP_Query(array(
               'posts_per_page' => -1,
               'post_type' => 'consultants',
-              'order-by'  => 'title',
+              'orderby'  => 'title',
               'order' => 'ASC'
 
               ));
