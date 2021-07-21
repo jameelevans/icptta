@@ -16,7 +16,7 @@ get_header();
           <?php
             $today = date('Ymd');
             $trainings = new WP_Query(array(
-              'posts_per_page' => 3,
+              'posts_per_page' => -1,
               'post_type' => 'trainings',
               'meta_key' => 'training_date',
               'meta_value' => ' ',
