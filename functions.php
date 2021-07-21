@@ -127,7 +127,7 @@ function custom_post_types() {
 
  // Training Post Type
  register_post_type('trainings', array(
-
+  'show_in_rest' => true,
   'map_meta_cap' => true,
   'supports' => array('title', 'editor', 'excerpt','thumbnail'),
   'rewrite' => array('slug' => 'training'),
