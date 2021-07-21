@@ -33,6 +33,7 @@ get_header();
                     <li class="index__item"><a href="#community-resilience-planning" class="index__link">Community Resilience Planning</a></li>
                     <li class="index__item"><a href="#criminal-justice-system-victim-support" class="index__link">Criminal Justice System – Victim Support</a></li>
                     <li class="index__item"><a href="#training-exercise" class="index__link">Training and Exercise</a></li>
+                    <li class="index__item"><a href="#overall-victim-assistance-resources" class="index__link">Overall Victim Assistance Resources</a></li>
                 </ul>
             </div>
         </section>
@@ -768,6 +769,54 @@ get_header();
                     if( $taePosts->have_posts() ):
                         while( $taePosts->have_posts() ):
                             $taePosts->the_post(); ?>
+                            <article class="resources__resource">
+                                <header>
+                                    <h4 class="h4__header"><?php echo the_title(); ?></h4>
+                                    <a class="resources__source" href="<?php the_field('source_page') ?>"><?php the_field('source_title') ?></a>
+                                </header>
+                                <p class="resources__excerpt p__body"><?php
+                                    if( has_excerpt() ){
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                    } else {
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
+                                <?php 
+                                $link = get_field('visit_site_button');
+                                if( $link ): 
+                                    $link_url = $link['url'];
+                                    $link_title = $link['title'];
+                                    $link_target = $link['target'] ? $link['target'] : '_self';
+                                    ?>
+                                    <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">Visit Site</a>
+                                <?php endif; 
+                                $downloadpdf = get_field('download_pdf_button');
+                                if( $downloadpdf ): 
+                                    $downloadpdf_url = $downloadpdf['url'];
+                                    $downloadpdf_title = $downloadpdf['title'];
+                                    $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
+                                    ?>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="<?php echo esc_attr( $downloadpdf_target ); ?>">Download PDF</a>
+                                <?php endif; ?>
+                            </article> 
+                        <?php endwhile;
+              
+                    else : ?> <p class="p__lead">No posts at this time</p>
+                    <?php
+                    wp_reset_postdata();
+                    endif;
+                ?>
+            </div>
+        </section>
+
+        <section id="overall-victim-assistance-resources" class="general--content">
+            <h3 class="h3__header"><?php /* Display svg icon*/ echo svg_icon('resources__icon', 'hands-heart') ?> Overall Victim Assistance Resources</h3>
+            <div class="resources">
+                <?php
+                // Display Overall Victim Assistance Resources Resources
+                $ovarPosts = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'category_name' => 'overall-victim-assistance-resources', 'posts_per_page'=>-1));
+                    if( $ovarPosts->have_posts() ):
+                        while( $ovarPosts->have_posts() ):
+                            $ovarPosts->the_post(); ?>
                             <article class="resources__resource">
                                 <header>
                                     <h4 class="h4__header"><?php echo the_title(); ?></h4>
