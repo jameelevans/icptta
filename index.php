@@ -55,9 +55,9 @@ get_header();
 
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
+                                    echo wp_trim_words(get_the_content(), 300);
                                     }?> </p>
                                     
                                 <?php 
@@ -75,7 +75,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
 
                             </article> 
@@ -104,10 +104,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -123,7 +123,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -151,10 +151,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -170,7 +170,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -198,10 +198,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -217,7 +217,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -246,10 +246,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -265,7 +265,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -294,10 +294,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -313,7 +313,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -343,10 +343,10 @@ get_header();
 
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -362,7 +362,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -391,10 +391,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -410,7 +410,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -439,10 +439,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -458,7 +458,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -487,10 +487,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -506,7 +506,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -535,10 +535,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -554,7 +554,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -583,10 +583,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -602,7 +602,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -631,10 +631,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -650,7 +650,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -679,10 +679,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -698,7 +698,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -727,10 +727,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
@@ -746,7 +746,7 @@ get_header();
                                     $downloadpdf_title = $downloadpdf['title'];
                                     $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                     ?>
-                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download File</a>
+                                    <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank">Download </a>
                                 <?php endif; ?>
                             </article> 
                         <?php endwhile;
@@ -775,10 +775,10 @@ get_header();
                                 </header>
                                 <p class="resources__excerpt p__body"><?php
                                     if( has_excerpt() ){
-                                    echo strip_tags(substr( get_the_excerpt(), 0, 250 ))."...";
+                                    echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
                                     } else {
-                                    echo wp_trim_words(get_the_content(), 30);
-                                    }?></p>
+                                    echo wp_trim_words(get_the_content(), 300);
+                                    }?> </p>
                                 <?php 
                                 $link = get_field('visit_site_button');
                                 if( $link ): 
