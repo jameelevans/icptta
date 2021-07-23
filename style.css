@@ -845,14 +845,14 @@ html {
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
 }
 
 .header__top {
   font-family: futura-pt, sans-serif;
   font-size: 1.5rem;
   padding: 1rem;
-  width: 100vw;
+  width: 100%;
   color: var(--color-white);
   background-image: var(--gradient-primary);
   font-weight: 100;
@@ -878,7 +878,7 @@ html {
 }
 
 .header__menu {
-  width: 100vw;
+  width: 100%;
   padding: 1.2rem 5vw;
   display: grid;
   position: relative;
@@ -921,7 +921,7 @@ html {
 }
 
 .header__main {
-  width: 100vw;
+  width: 100%;
   background-image: var(--gradient-primary);
   position: relative;
 }
@@ -1654,6 +1654,7 @@ html {
 }
 
 .footer {
+  width: 100%;
   display: grid;
   grid-template-rows: auto;
 }
@@ -1749,6 +1750,7 @@ html {
 }
 
 .footer__main {
+  width: 100%;
   background: var(--gradient-primary);
   color: var(--color-white);
   display: grid;
@@ -1839,6 +1841,7 @@ html {
 }
 
 .footer__bottom {
+  width: 100%;
   background-color: var(--color-charcoal);
   color: var(--color-white);
   text-align: center;
