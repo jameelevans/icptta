@@ -49,7 +49,7 @@ get_header();
 										<?php if (get_field('author')){
 											 the_field('author');
 										} else {
-											echo 'Unknown';
+											echo 'Anonymous';
 										}?></cite>
 									</footer>
 								</blockquote>
