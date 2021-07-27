@@ -1,4 +1,5 @@
-<a class="resource" href="<?php the_field('resource_link');?>" alt="">
+<!-- Indiviual resource -->
+<a class="resource" href="<?php the_field('resource_link');?>" title="Click here to view <?php echo the_title(); ?>">
   <?php if ( has_post_thumbnail() ) { ?>
     <img class="resource__icon" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title_attribute(); ?>"/>
     <?php } else { 
@@ -11,4 +12,4 @@
     ?>
   </h4>
   <p class="resource__resource-title p__body"><?php echo the_title(); ?></p>
-</a>
+</a><!-- .Indiviual resource -->

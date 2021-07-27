@@ -1130,7 +1130,7 @@ html {
 }
 
 .mobile-nav__item:last-of-type {
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .mobile-nav__link:link, .mobile-nav__link:visited {
@@ -1301,12 +1301,12 @@ html {
 }
 
 .nav__item:last-of-type {
-  margin-right: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 @media only screen and (max-width: 62.5em) {
   .nav__item:last-of-type {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 

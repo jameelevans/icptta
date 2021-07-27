@@ -217,7 +217,9 @@ register_post_type('consultants', array(
 
 //* 10. Get and display header slider
 function slider() { ?>
+  <!-- Front page slider -->
   <section>
+    <!-- Heading only for Screen Readers -->
     <h3 id="slider-heading" class="sr-only">Recent news</h3>
     <div class="slider" aria-labelledby="slider-heading">
         <?php
@@ -227,25 +229,28 @@ function slider() { ?>
         ));
         while ($slider -> have_posts()) {
           $slider -> the_post(); ?>
+          <!-- Indiviual slide -->
           <article class="slider__slide">
+            <!-- Slider text -->
             <div class="slider__text">
               <h4 class="slider__heading"><?php echo get_the_title(); ?></h4>
               <p class="slider__subheading"><?php the_field('sub_heading'); ?></p>
               <div class="slider__buttons">
-                <a href="<?php the_field('link_learn'); ?>" class="slider__links btn btn--white-outline">Learn More</a>
-                <a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="slider__links btn btn--blue">CONTACT US</a>
+                <a href="<?php the_field('link_learn'); ?>" class="slider__links btn btn--white-outline" title="Click here to learn more about <?php echo get_the_title(); ?>">Learn More</a>
+                <a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="slider__links btn btn--blue" title="Click here to go to the contact us page">CONTACT US</a>
               </div>
-            </div>
+            </div><!-- .Slider text -->
+            <!-- Slider image -->
             <div class="slider__image">
               <?php // Class=wp-post-image
               echo get_the_post_thumbnail(); ?>
-            </div>
-          </article>
+            </div><!-- .Slider image -->
+          </article><!-- .Indiviual slide -->
       <?php }
       wp_reset_postdata();
       ?>
     </div>
-  </section>
+  </section><!-- .Front page slider -->
 <?php } 
 // .10 Get and display header slider
 
@@ -282,12 +287,14 @@ function general() { ?>
 
             while($partners->have_posts()) {
               $partners->the_post();?>
-              <a class="partners__link" href="<?php the_permalink();?>">
+              <!-- Individual partner -->
+              <a class="partners__link" href="<?php the_permalink();?>" title="Click here to visit <?php the_title(); ?>'s page">
+                <!-- Partner logo -->
                 <figure class="partners__logo">
                   <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>" draggable="false">
                   <figcaption class="partners__name p__body"><?php the_title(); ?></figcaption>
-                </figure>
-              </a>
+                </figure><!-- .Partner logo -->
+              </a><!-- .Individual partner -->
               
             <?php }
             wp_reset_postdata();

@@ -75,7 +75,7 @@
     margin: 1rem;
 
     &:last-of-type {
-      margin-bottom: 3rem;
+      margin-top: 3rem;
     }
   }
 
@@ -256,10 +256,10 @@
   }
 
   &__item:last-of-type {
-    margin-right: 2.5rem; // Remove right margin on all list items except last
+    margin-left: 2.5rem; // Add left margin on all list items except last
 
     @include respond(large) {
-      margin-right: 0;
+      margin-left: 0;
     }
   }
 
