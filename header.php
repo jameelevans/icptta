@@ -12,7 +12,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<?php if(is_front_page()) {echo '<meta name="google-site-verification" content="" />';}?>
+		<?php if(is_front_page()) {echo '<meta name="google-site-verification" content="uOIW8aV2Utxa6bh88AelEn21z2v-YE_x5KkTwDycbGw" />';}?>
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<?php wp_head(); ?>
 	</head>
