@@ -20,7 +20,7 @@ get_header();
             <h4 class="h4__header index__heading">16 Best Practice Areas</h4>
             <ul class="index__list">
                 <li class="index__item"><a href="#incident-command-system" class="index__link" title="Click here to scroll to Incident Command System resources">Incident Command System</a></li>
-                <li class="index__item"><a href="#committee-identification-engagement" class="index__link" title="Click here to scroll to Incident Command System resources">Incident Command System</a></li>
+                <li class="index__item"><a href="#committee-identification-engagement" class="index__link" title="Click here to scroll to Committee Identification & Engagement resources">Committee Identification &amp; Engagement</a></li>
                 <li class="index__item"><a href="#contact-list" class="index__link" title="Click here to scroll to Contact List resources">Contact List</a></li>
                 <li class="index__item"><a href="#frc" class="index__link" title="Click here to scroll to FRC Plan resources">FRC Plan</a></li>
                 <li class="index__item"><a href="#victim-identification" class="index__link" title="Click here to scroll to Victim Identification and Notification Protocol resources">Victim Identification and Notification Protocol</a></li>
