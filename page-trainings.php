@@ -110,12 +110,15 @@ get_header();
               </article>
               </div>
           <?php }
-            } else { ?>
-            <p class="trainings__no-show">There no trainings to show yet</p>
+            } elseif (!$featuredTraining->have_posts()) { ?>
+            <p class="trainings__no-show">There are currently no available trainings to show</p>
           <?php }
       ?>
     </div><!-- .Normal trainings -->
+    <?php  
+    if($trainings->have_posts()) { ?>
     <p class="trainings__link">View all available trainings <a href="<?php echo esc_url( home_url('/upcoming-trainings')); ?>" title="Click here to view all available trainings">here</a></p>
+    <?php } ?>
   </section><!-- .Available Trainings header -->
   <!-- Trainings coming soon -->
   <section class="trainings__section">
@@ -154,11 +157,13 @@ get_header();
               </div>
           <?php }
         } else { ?>
-          <p class="trainings__no-show">There no trainings to show yet</p>
+          <p class="trainings__no-show">There are no upcoming trainings to show yet</p>
         <?php }
       ?>
     </div>
-    <p class="trainings__link mt-lg">View all trainings coming soon <a href="<?php echo esc_url( home_url('/trainings-coming-soon')); ?>" title="Click here to see all upcoming trainings">here</a></p>
+    <?php if($previousTrainings->have_posts()) { ?> 
+      <p class="trainings__link mt-lg">View all trainings coming soon <a href="<?php echo esc_url( home_url('/trainings-coming-soon')); ?>" title="Click here to see all upcoming trainings">here</a></p>
+    <?php } ?>
   </section><!-- .Trainings coming soon -->
 </main><!-- .Main trainings content -->
 <?php get_footer(); ?>
