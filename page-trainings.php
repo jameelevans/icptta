@@ -14,7 +14,7 @@ get_header();
   <section class="trainings__section">
     <h2 class="h2__header h2__header--grey">Available Trainings</h2>
     <?php
-        $today = date('Ymd');
+        $startDate = date('20200101');
         $featuredTraining = new WP_Query(array(
           'posts_per_page' => 1,
           'post_type' => 'trainings',
@@ -25,7 +25,7 @@ get_header();
             array(
               'key' => 'training_date',
               'compare' => '>=',
-              'value' => $today,
+              'value' => $startDate,
               'type' => 'numeric'
             )
           )
@@ -64,7 +64,7 @@ get_header();
     <!-- Normal trainings -->
     <div class="trainings__normal">
     <?php
-      $today = date('Ymd');
+      $startDate = date('20200101');
       $trainings = new WP_Query(array(
         'posts_per_page' => 6,
         'offset' => 1,
@@ -76,7 +76,7 @@ get_header();
           array(
             'key' => 'training_date',
             'compare' => '>=',
-            'value' => $today,
+            'value' => $startDate,
             'type' => 'numeric'
           )
         )

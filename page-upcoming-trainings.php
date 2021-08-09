@@ -16,7 +16,7 @@ get_header();
   
           <div class="trainings__normal">
           <?php
-            $today = date('Ymd');
+            $startDate = date('20200101');
             $trainings = new WP_Query(array(
               'posts_per_page' => -1,
               'post_type' => 'trainings',
@@ -27,7 +27,7 @@ get_header();
                 array(
                   'key' => 'training_date',
                   'compare' => '>=',
-                  'value' => $today,
+                  'value' => $startDate,
                   'type' => 'numeric'
                 )
               )
