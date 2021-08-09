@@ -13,6 +13,12 @@ get_header();
   <!-- Available Trainings header -->
   <section class="trainings__section">
     <h2 class="h2__header h2__header--grey">Available Trainings</h2>
+
+    <!-- Lead sententce -->
+    <p class="p__lead p__lead--centered">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact Terry Boes at <a href="mailto:terry.boes@icf.com">terry.boes@icf.com</a></p>
+
+
+
     <?php
         $startDate = date('20200101');
         $featuredTraining = new WP_Query(array(

@@ -206,6 +206,10 @@ h1 {
   margin-bottom: 5rem;
 }
 
+.p__lead a {
+  color: var(--color-blue-primary);
+}
+
 @media only screen and (max-width: 62.5em) {
   .p__lead {
     font-size: 3.5rem !important;

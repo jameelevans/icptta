@@ -102,6 +102,10 @@ h1 {
   font-size: 3rem !important;
   margin-bottom: 5rem;
 
+  & a {
+    color: var(--color-blue-primary);
+  }
+
   @include respond(large) {
     font-size: 3.5rem !important;
   }
