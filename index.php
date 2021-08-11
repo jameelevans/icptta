@@ -17,8 +17,8 @@ get_header();
     <!-- Resource index  -->
     <section class="general--content">
         <div class="index">
-            <h4 class="h4__header index__heading">16 Best Practice Areas</h4>
-            <ul class="index__list">
+            <h4 class="h4__header index__heading">16 Best Practices in Planning for CMV/DT</h4>
+            <ol class="index__list">
                 <li class="index__item"><a href="#incident-command-system" class="index__link" title="Click here to scroll to Incident Command System resources">Incident Command System</a></li>
                 <li class="index__item"><a href="#committee-identification-engagement" class="index__link" title="Click here to scroll to Committee Identification & Engagement resources">Committee Identification &amp; Engagement</a></li>
                 <li class="index__item"><a href="#contact-list" class="index__link" title="Click here to scroll to Contact List resources">Contact List</a></li>
@@ -36,7 +36,7 @@ get_header();
                 <li class="index__item"><a href="#criminal-justice-system-victim-support" class="index__link" title="Click here to scroll to Criminal Justice System – Victim Support resources">Criminal Justice System – Victim Support</a></li>
                 <li class="index__item"><a href="#training-exercise" class="index__link" title="Click here to scroll to Training and Exercise resources">Training and Exercise</a></li>
                 <li class="index__item"><a href="#overall-victim-assistance-resources" class="index__link" title="Click here to scroll to Overall Victim Assistance Resources resources">Overall Victim Assistance Resources</a></li>
-            </ul>
+            </ol>
         </div>
     </section><!-- .Resource index  -->
     <!-- Incident Command System Resources section -->

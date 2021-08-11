@@ -1,6 +1,6 @@
 <?php
 /**
- * * The template for displaying the Trainings page
+ * * The template for displaying the All Upcoming Trainings page
  *
  * @package icptta
  */
@@ -13,6 +13,10 @@ get_header();
 
         <section class="general--narrow trainings__section">
   
+          <!-- Lead sententce -->
+          <p class="p__lead">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact Terry Boes at <a href="mailto:terry.boes@icf.com">terry.boes@icf.com</a></p>
+
+
   
           <div class="trainings__normal">
           <?php

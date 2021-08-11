@@ -15,7 +15,7 @@ get_header();
     <h2 class="h2__header h2__header--grey">Available Trainings</h2>
 
     <!-- Lead sententce -->
-    <p class="p__lead p__lead--centered">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact Terry Boes at <a href="mailto:terry.boes@icf.com">terry.boes@icf.com</a></p>
+    <p class="p__lead">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact Terry Boes at <a href="mailto:terry.boes@icf.com">terry.boes@icf.com</a></p>
 
 
 
@@ -41,12 +41,7 @@ get_header();
           <!-- Featured training -->
           <div class="trainings__featured">
             <div class="trainings__figure">
-              <div class="trainings__date">
-                <span class="trainings__month"><?php
-              $trainingDate = new DateTime(get_field('training_date'));
-              echo $trainingDate->format('M')?></span>
-                <span class="trainings__day"><strong><?php echo $trainingDate->format('d') ?></strong></span>
-              </div>
+             
             <?php if ( has_post_thumbnail() ) { ?>
               <img class="trainings__img" src="<?php the_post_thumbnail_url('training'); ?>" alt="<?php the_title_attribute(); ?>"/>
               <?php } else { ?>
@@ -55,6 +50,12 @@ get_header();
             </div>
             <div class="trainings__narrow">
               <h4 class="trainings__heading h2__header--blue"><?php the_title();?></h4>
+              <div class="trainings__date">
+                    <?php if( get_field('training_date') ){
+                      $trainingDate = new DateTime(get_field('training_date'));
+                      echo '<time>' . $trainingDate->format('M d') .'<sup>'. $trainingDate->format('S') .'</sup>, ' . $trainingDate->format('Y'). '</time>';
+                    }?>
+                  </div>
               <p class="trainings__description"><?php
               if( has_excerpt() ){
                 echo strip_tags(substr( get_the_excerpt(), 0, 500 ))."...";

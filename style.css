@@ -765,28 +765,36 @@ html {
 }
 
 .index {
-  padding: 3rem 3rem 4rem 3rem;
+  padding: 0 0 4rem;
   background-color: var(--color-grey-light);
-  border-width: 5px 0 5px 5px;
   margin-bottom: 5rem;
-  border-style: solid;
-  -o-border-image: linear-gradient(to bottom, var(--color-blue-primary), var(--color-red-primary)) 1 100%;
-     border-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-blue-primary)), to(var(--color-red-primary))) 1 100%;
-     border-image: linear-gradient(to bottom, var(--color-blue-primary), var(--color-red-primary)) 1 100%;
 }
 
 .index__heading {
   margin-bottom: 2rem;
+  padding: 3rem 2rem;
+  width: 100%;
+  background: var(--gradient-secondary);
+  text-align: center;
+  color: var(--color-white);
 }
 
 .index__list {
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
-          column-gap: 2rem;
-  list-style: none;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 2.8rem;
+     -moz-column-gap: 2.8rem;
+          column-gap: 2.8rem;
+  padding: 1.5rem 3.5rem 0;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .index__list {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
 }
 
 @media only screen and (max-width: 50em) {
@@ -800,8 +808,16 @@ html {
   }
 }
 
+.index__item::marker {
+  font-size: 2rem;
+}
+
+.index__item:last-of-type {
+  list-style: '*  ';
+}
+
 .index__item:not(:last-of-type) {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 50em) {
@@ -2584,31 +2600,9 @@ html {
 }
 
 .trainings__featured .trainings__date {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 12rem;
-  background-color: rgba(var(--color-charcoal-a), 0.95);
-  color: var(--color-white);
   font-family: futura-pt, sans-serif;
-  padding: 1.5rem;
-  line-height: 1;
-  text-align: center;
-}
-
-.trainings__featured .trainings__month {
-  display: block;
-  font-size: 4rem;
-  font-weight: 100;
-}
-
-.trainings__featured .trainings__day {
-  display: block;
-  font-size: 4.8rem;
-}
-
-.trainings__featured .trainings__heading {
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .trainings__featured .trainings__description {

@@ -1,24 +1,25 @@
 .index {
-  padding: 3rem 3rem 4rem 3rem;
+  padding: 0 0 4rem;
   background-color: var(--color-grey-light);
-  border-width: 5px 0 5px 5px;
   margin-bottom: 5rem;
-  border-style: solid;
-  border-image: linear-gradient(
-      to bottom,
-      var(--color-blue-primary),
-      var(--color-red-primary)
-    )
-    1 100%;
 
   &__heading {
     margin-bottom: 2rem;
+    padding: 3rem 2rem;
+    width: 100%;
+    background: var(--gradient-secondary);
+    text-align: center;
+    color: var(--color-white);
   }
 
   &__list {
-    column-count: 2;
-    column-gap: 2rem;
-    list-style: none;
+    column-count: 3;
+    column-gap: 2.8rem;
+    padding: 1.5rem 3.5rem 0;
+
+    @include respond(large) {
+      column-count: 2;
+    }
 
     @include respond(medium) {
       column-count: 1;
@@ -27,8 +28,16 @@
   }
 
   &__item {
+    &::marker {
+      font-size: 2rem;
+    }
+
+    &:last-of-type {
+      list-style: '*  ';
+    }
+
     &:not(:last-of-type) {
-      margin-bottom: 0.8rem;
+      margin-bottom: 1.5rem;
 
       @include respond(medium) {
         margin-bottom: 1.8rem;
