@@ -118,6 +118,58 @@ Text Domain: icptta.com
 *
 */
 @font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  src: url("assets/fonts/Roboto-Thin.ttf") format("ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  font-style: italic;
+  src: url("assets/fonts/Roboto-ThinItalic.ttf") format("ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  src: url("assets/fonts/Roboto-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  font-style: italic;
+  src: url("assets/fonts/Roboto-LightItalic.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  src: url("assets/fonts/Roboto-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  font-style: italic;
+  src: url("assets/fonts/Roboto-BoldItalic.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lusitana", serif;
+  font-display: swap;
+  src: url("assets/fonts/Lusitana-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
   font-family: 'slick';
   src: url("./assets/fonts/slick.eot");
   src: url("./assets/fonts/slick.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/slick.woff") format("woff"), url("./assets/fonts/slick.ttf") format("truetype"), url("./assets/fonts/slick.svg#slick") format("svg");

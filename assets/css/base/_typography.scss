@@ -14,6 +14,66 @@ $font-body: 1.2rem;
 $font-icon-title: 0.8rem;
 $font-icon-body: 0.8rem;
 
+// Font mixins
+@mixin font-primary {
+  font-family: $font-primary;
+  font-display: swap;
+}
+
+@mixin font-primary-i {
+  font-family: $font-primary;
+  font-display: swap;
+  font-style: italic;
+}
+
+@mixin font-secondary {
+  font-family: $font-secondary;
+  font-display: swap;
+}
+
+//Included fonts from assets
+@font-face {
+  @include font-primary;
+  src: url('assets/fonts/Roboto-Thin.ttf') format('ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  @include font-primary-i;
+  src: url('assets/fonts/Roboto-ThinItalic.ttf') format('ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  @include font-primary;
+  src: url('assets/fonts/Roboto-Light.ttf') format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  @include font-primary-i;
+  src: url('assets/fonts/Roboto-LightItalic.ttf') format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  @include font-primary;
+  src: url('assets/fonts/Roboto-Bold.ttf') format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  @include font-primary-i;
+  src: url('assets/fonts/Roboto-BoldItalic.ttf') format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  @include font-secondary;
+  src: url('assets/fonts/Lusitana-Regular.ttf') format('ttf');
+  font-weight: 400;
+}
+
 // Slider fonts
 @if $slick-font-family == 'slick' {
   @font-face {

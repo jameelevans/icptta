@@ -25,7 +25,6 @@
 //* 1. Enqueuing styles and scripts
   function theme_enqueue_scripts() {
   wp_enqueue_script( 'Bundled_js', get_template_directory_uri() . '/assets/js/scripts-bundled.js#asyncload', array(), '1.0.0', true );
-  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css2?family=Lusitana&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
   wp_enqueue_style('icptta_main_styles', get_stylesheet_uri());
   }
   add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
