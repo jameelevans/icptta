@@ -44,7 +44,7 @@
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/trainings')); ?>" class="mobile-nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>" title="Navigate to trainings page">Trainings</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/consultants')); ?>" class="mobile-nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" title="Navigate to consultants page">Consultants</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="mobile-nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" title="Navigate to Contact Us page">Contact Us</a></li>
-								<li class="mobile-nav__item"><a class="nav__cta btn btn--white-outline" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" title="Fill out the ICPTTA application">ICPTTA Application</a></li>
+								<li class="mobile-nav__item"><a class="nav__cta btn btn--white-outline" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" rel="noreferrer" title="Fill out the ICPTTA application">ICPTTA Application</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -73,7 +73,7 @@
 							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('trainings-coming-soon')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>" title="Navigate to a trainings page">Trainings</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/consultants')); ?>" title="Navigate to a consultants page">Consultants</a></li>
 							<li class="nav__item"><a class="nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/contact-us')); ?>" title="Navigate to Contact Us page">Contact Us</a></li>
-							<li class="nav__item"><a class="nav__cta btn btn--blue" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" title="Fill out the ICPTTA Application">ICPTTA Application</a></li>
+							<li class="nav__item"><a class="nav__cta btn btn--blue" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" rel="noreferrer" title="Fill out the ICPTTA Application">ICPTTA Application</a></li>
 						</ul><!-- .Navigation menu and CTA -->
 					</nav><!-- .Navigation content -->
 				</div><!-- .Navigation menu wrapper -->
@@ -83,11 +83,11 @@
 				
 					<div class="share">
 						<p class="share__text">SHARE</p>
-						<a class="share__link" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="Click to share this post on Facebook" target="_blank">
+						<a class="share__link" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="Click to share this post on Facebook" target="_blank" rel="noreferrer">
 							<?php // Display Facebook svg icon
 							echo svg_icon('share__icon', 'facebook') ?>
 						</a>
-						<a class="share__link" href="http://twitter.com/intent/tweet?text=Currently reading <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Click to tweet this post on Twitter" target="_blank">
+						<a class="share__link" href="http://twitter.com/intent/tweet?text=Currently reading <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Click to tweet this post on Twitter" target="_blank" rel="noreferrer">
 							<?php // Display Twitter svg icon
 							echo svg_icon('share__icon', 'twitter') ?>
 						</a>
