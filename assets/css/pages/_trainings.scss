@@ -17,7 +17,7 @@
 
     & a {
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
       color: var(--color-blue-primary);
       transition: color 0.3s ease-in-out;
 
@@ -153,23 +153,6 @@
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
     }
-    & .trainings__month {
-      display: block;
-      font-size: 3rem;
-      font-weight: 100;
-
-      @include respond(medium) {
-        font-size: 4rem;
-      }
-    }
-    & .trainings__day {
-      display: block;
-      font-size: 2.8rem;
-
-      @include respond(medium) {
-        font-size: 4.8rem;
-      }
-    }
 
     .trainings__details {
       background-color: var(--color-grey-light);
@@ -180,7 +163,7 @@
 
     .trainings__description {
       font-size: 1.5rem;
-      font-weight: 100;
+      font-weight: 300;
       margin-bottom: 2.5rem;
 
       @include respond(medium) {

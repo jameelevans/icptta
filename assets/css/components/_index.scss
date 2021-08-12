@@ -37,11 +37,7 @@
     }
 
     &:not(:last-of-type) {
-      margin-bottom: 1.5rem;
-
-      @include respond(medium) {
-        margin-bottom: 1.8rem;
-      }
+      margin-bottom: 1.8rem;
     }
   }
 

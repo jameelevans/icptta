@@ -167,6 +167,7 @@
   & h2 {
     text-align: center;
     font-style: italic;
+    font-family: $font-secondary;
   }
 
   & .testimonial {
@@ -175,6 +176,7 @@
     margin: 0 30vw;
     padding: 2.5rem 3.5rem;
     position: relative;
+    font-family: $font-secondary;
 
     @include respond(large) {
       margin: 0 2rem;

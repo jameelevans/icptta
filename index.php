@@ -12,7 +12,7 @@ get_header();
 <main class="main general">
     <!-- Lead sententce -->
     <section class="general--narrow">
-        <p class="p__lead p__lead--centered">ICP TTA staff has assembled a comprehensive list of internal and external resources to assist emergency management personnel, victim service professionals and key community stakeholders integrate victim services into their emergency operations plans.</p>
+        <p class="p__lead p__lead--centered">ICP TTA staff has assembled a comprehensive list of internal and external resources to assist emergency management personnel, victim service professionals and key community stakeholders integrate victim services into their emergency operations plans. Our resources are divided into 16 best practice areas including an Overall Victim Assistance Resources category at the end.</p>
     </section><!-- .Lead sententce -->
     <!-- Resource index  -->
     <section class="general--content">
@@ -22,11 +22,11 @@ get_header();
                 <li class="index__item"><a href="#incident-command-system" class="index__link" title="Click here to scroll to Incident Command System resources">Incident Command System</a></li>
                 <li class="index__item"><a href="#committee-identification-engagement" class="index__link" title="Click here to scroll to Committee Identification & Engagement resources">Committee Identification &amp; Engagement</a></li>
                 <li class="index__item"><a href="#contact-list" class="index__link" title="Click here to scroll to Contact List resources">Contact List</a></li>
-                <li class="index__item"><a href="#frc" class="index__link" title="Click here to scroll to FRC Plan resources">FRC Plan</a></li>
+                <li class="index__item"><a href="#frc" class="index__link" title="Click here to scroll to FRC Plan resources">Family and Friends Reception / Notification Center (FRC) Plan</a></li>
                 <li class="index__item"><a href="#victim-identification" class="index__link" title="Click here to scroll to Victim Identification and Notification Protocol resources">Victim Identification and Notification Protocol</a></li>
                 <li class="index__item"><a href="#public-information-crisis-communications-protocol" class="index__link" title="Click here to scroll to Public Information and Crisis Communications Protocol resources">Public Information and Crisis Communications Protocol</a></li>
                 <li class="index__item"><a href="#volunteer-management-protocol" class="index__link" title="Click here to scroll to Volunteer Management Protocol resources">Volunteer Management Protocol</a></li>
-                <li class="index__item"><a href="#fac" class="index__link" title="Click here to scroll to FAC Plan resources">FAC Plan</a></li>
+                <li class="index__item"><a href="#fac" class="index__link" title="Click here to scroll to FAC Plan resources">Family/Friends Assistance Center (FAC) Plan</a></li>
                 <li class="index__item"><a href="#donation-management-protocol" class="index__link" title="Click here to scroll to Donation Management Protocol resources">Donation Management Protocol</a></li>
                 <li class="index__item"><a href="#memorial-special-events-management-plan" class="index__link" title="Click here to scroll to Memorial and Special Events Management Plan resources">Memorial and Special Events Management Plan</a></li>
                 <li class="index__item"><a href="#community-behavioral-health-response" class="index__link" title="Click here to scroll to Community Behavioral Health Response resources">Community Behavioral Health Response</a></li>

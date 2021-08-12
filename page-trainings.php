@@ -50,10 +50,10 @@ get_header();
             </div>
             <div class="trainings__narrow">
               <h4 class="trainings__heading h2__header--blue"><?php the_title();?></h4>
-              <div class="trainings__date">
+              <div class="trainings__date">Posted on: 
                     <?php if( get_field('training_date') ){
                       $trainingDate = new DateTime(get_field('training_date'));
-                      echo '<time>' . $trainingDate->format('M d') .'<sup>'. $trainingDate->format('S') .'</sup>, ' . $trainingDate->format('Y'). '</time>';
+                      echo '<time>' . $trainingDate->format('M d') .', '. $trainingDate->format('Y'). '</time>';
                     }?>
                   </div>
               <p class="trainings__description"><?php
@@ -100,10 +100,10 @@ get_header();
                 <?php } ?>
                 <div class="trainings__details">
                   <h4 class="trainings__heading"><?php the_title();?></h4>
-                  <div class="trainings__date">
+                  <div class="trainings__date">Posted on: 
                     <?php if( get_field('training_date') ){
                       $trainingDate = new DateTime(get_field('training_date'));
-                      echo '<time>' . $trainingDate->format('M d') .'<sup>'. $trainingDate->format('S') .'</sup>, ' . $trainingDate->format('Y'). '</time>';
+                      echo '<time>' . $trainingDate->format('M d') .', ' . $trainingDate->format('Y'). '</time>';
                     }?>
                   </div>
                   <p class="trainings__description"><?php

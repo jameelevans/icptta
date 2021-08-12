@@ -137,13 +137,13 @@ html {
 }
 
 h1 {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .h2__header {
-  font-family: adobe-caslon-pro, serif;
+  font-family: "Lusitana", serif;
   font-size: 5.5rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
@@ -164,9 +164,9 @@ h1 {
 }
 
 .h2__header--blue {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4.8rem;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--color-blue-primary);
 }
 
@@ -177,7 +177,7 @@ h1 {
 }
 
 .h3__header {
-  font-family: adobe-caslon-pro, serif;
+  font-family: "Lusitana", serif;
   font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
@@ -186,9 +186,9 @@ h1 {
 }
 
 .h4__header {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2.8rem;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--color-charcoal);
 }
 
@@ -199,7 +199,7 @@ h1 {
 }
 
 .p__lead {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   color: var(--color-charcoal);
   font-size: 3rem !important;
@@ -221,8 +221,8 @@ h1 {
 }
 
 .p__subheader {
-  font-family: futura-pt, sans-serif;
-  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: var(--color-charcoal);
   font-size: 2rem;
 }
@@ -234,9 +234,9 @@ h1 {
 }
 
 .p__body {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 50em) {
@@ -246,7 +246,7 @@ h1 {
 }
 
 strong {
-  font-family: futura-pt-bold, sans-serif !important;
+  font-weight: 700;
 }
 
 /* ==========================================
@@ -257,7 +257,7 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 .icon-title {
-  font-family: adobe-caslon-pro, serif;
+  font-family: "Lusitana", serif;
   font-size: 0.8rem;
 }
 
@@ -506,7 +506,7 @@ html {
   cursor: pointer;
   display: inline-block;
   font-size: 1.5rem;
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   padding: 1rem 3rem;
   text-align: center;
@@ -549,7 +549,7 @@ html {
   overflow: hidden;
   font-size: 1.5rem;
   font-weight: 100;
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--color-white);
   cursor: pointer;
   text-align: center;
@@ -705,7 +705,7 @@ html {
 }
 
 .resources__heading {
-  font-family: adobe-caslon-pro, serif;
+  font-family: "Lusitana", serif;
   font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
@@ -817,13 +817,7 @@ html {
 }
 
 .index__item:not(:last-of-type) {
-  margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 50em) {
-  .index__item:not(:last-of-type) {
-    margin-bottom: 1.8rem;
-  }
+  margin-bottom: 1.8rem;
 }
 
 .index__link {
@@ -869,7 +863,7 @@ html {
 }
 
 .header__top {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   padding: 1rem;
   width: 100%;
@@ -990,8 +984,8 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: futura-pt, sans-serif;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 0.8rem;
   left: -7rem;
   padding: 2px;
@@ -1065,7 +1059,7 @@ html {
 
 .mobile-nav {
   display: none;
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (max-width: 50em) {
@@ -1632,14 +1626,14 @@ html {
 }
 
 .front-page .slider__heading {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 100;
   margin-bottom: 0;
 }
 
 .front-page .slider__subheading {
-  font-family: futura-pt-bold, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 4.5vw;
@@ -1713,7 +1707,7 @@ html {
 .footer__top .help__details {
   margin: -2.5rem 0 4rem 0;
   font-size: 2.5rem;
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
@@ -1723,12 +1717,12 @@ html {
   outline: var(--color-white) solid 3px;
   border-radius: 2px;
   color: var(--color-white);
-  font-family: futura-pt, sans-serif;
-  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .footer__top .contact__header {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
@@ -1806,7 +1800,7 @@ html {
 }
 
 .footer__disclaimer {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   font-weight: 100;
 }
@@ -2086,7 +2080,7 @@ html {
 
 .general {
   position: relative;
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .general--content {
@@ -2193,7 +2187,7 @@ html {
 .about__tagline {
   position: absolute;
   text-indent: -9999px;
-  font-family: adobe-caslon-pro, serif;
+  font-family: "Lusitana", serif;
   font-size: 2rem;
   top: 13rem;
   left: 21rem;
@@ -2202,7 +2196,7 @@ html {
 }
 
 .about__mission {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .about__mission-header {
@@ -2300,7 +2294,7 @@ html {
 }
 
 .partners__name {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   left: 0;
   bottom: -1rem;
@@ -2331,6 +2325,7 @@ html {
 .testimonials h2 {
   text-align: center;
   font-style: italic;
+  font-family: "Lusitana", serif;
 }
 
 .testimonials .testimonial {
@@ -2339,6 +2334,7 @@ html {
   margin: 0 30vw;
   padding: 2.5rem 3.5rem;
   position: relative;
+  font-family: "Lusitana", serif;
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -2440,7 +2436,7 @@ html {
 .home-resources__wrapper .resource {
   color: var(--color-charcoal);
   text-decoration: none;
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   padding: 5rem 2rem;
   border-radius: 0.5rem;
@@ -2480,8 +2476,8 @@ html {
 }
 
 .about-us__history {
-  font-family: futura-pt, sans-serif;
-  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: var(--color-charcoal);
   font-size: 2rem;
   -webkit-column-count: 2;
@@ -2548,7 +2544,7 @@ html {
 }
 
 .trainings__no-show, .trainings__link {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 2rem;
   text-align: center;
@@ -2557,7 +2553,7 @@ html {
 
 .trainings__no-show a, .trainings__link a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-blue-primary);
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
@@ -2600,13 +2596,13 @@ html {
 }
 
 .trainings__featured .trainings__date {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .trainings__featured .trainings__description {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -2673,7 +2669,7 @@ html {
 }
 
 .trainings__normal .trainings__heading {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   color: var(--color-charcoal);
@@ -2715,32 +2711,9 @@ html {
 }
 
 .trainings__normal .trainings__date {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.trainings__normal .trainings__month {
-  display: block;
-  font-size: 3rem;
-  font-weight: 100;
-}
-
-@media only screen and (max-width: 50em) {
-  .trainings__normal .trainings__month {
-    font-size: 4rem;
-  }
-}
-
-.trainings__normal .trainings__day {
-  display: block;
-  font-size: 2.8rem;
-}
-
-@media only screen and (max-width: 50em) {
-  .trainings__normal .trainings__day {
-    font-size: 4.8rem;
-  }
 }
 
 .trainings__normal .trainings__details {
@@ -2752,7 +2725,7 @@ html {
 
 .trainings__normal .trainings__description {
   font-size: 1.5rem;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 2.5rem;
 }
 
@@ -2768,7 +2741,7 @@ html {
   left: 10%;
   background-color: var(--color-charcoal);
   color: var(--color-white);
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 1.5rem;
   line-height: 1;
   text-align: center;
@@ -2877,7 +2850,7 @@ html {
 }
 
 .consultants__heading {
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
@@ -2932,7 +2905,7 @@ html {
 
 .consultants__description {
   font-size: 1.5rem;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
@@ -3158,7 +3131,7 @@ html {
   outline: var(--color-white) solid 3px;
   border-radius: 2px;
   color: var(--color-white);
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
@@ -3218,7 +3191,7 @@ html {
 
 .faqs__content {
   overflow: hidden;
-  font-family: futura-pt, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .faqs__drawer {

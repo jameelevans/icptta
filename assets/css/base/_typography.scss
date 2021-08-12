@@ -6,9 +6,8 @@
 */
 
 // * --------| Font variables |-------- *
-$font-primary: futura-pt, sans-serif;
-$font-primary-bold: futura-pt-bold, sans-serif;
-$font-secondary: adobe-caslon-pro, serif;
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Lusitana', serif;
 $font-h1: 4rem;
 $font-h2: 2.4rem;
 $font-body: 1.2rem;
@@ -42,7 +41,7 @@ html {
 h1 {
   font-family: $font-primary;
   font-size: $font-h1;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .h2__header {
@@ -67,7 +66,7 @@ h1 {
 .h2__header--blue {
   font-family: $font-primary;
   font-size: 4.8rem;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--color-blue-primary);
 
   @include respond(medium) {
@@ -87,7 +86,7 @@ h1 {
 .h4__header {
   font-family: $font-primary;
   font-size: 2.8rem;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--color-charcoal);
 
   @include respond(large) {
@@ -117,7 +116,7 @@ h1 {
 
 .p__subheader {
   font-family: $font-primary;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--color-charcoal);
   font-size: 2rem;
 
@@ -129,7 +128,7 @@ h1 {
 .p__body {
   font-family: $font-primary;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 300;
 
   @include respond(medium) {
     font-size: 2.3rem;
@@ -137,7 +136,8 @@ h1 {
 }
 
 strong {
-  font-family: $font-primary-bold !important;
+  //font-family: $font-primary;
+  font-weight: 700;
 }
 
 // Icons
