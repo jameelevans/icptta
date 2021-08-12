@@ -175,6 +175,7 @@ Text Domain: icptta.com
   src: url("./assets/fonts/slick.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/slick.woff") format("woff"), url("./assets/fonts/slick.ttf") format("truetype"), url("./assets/fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -324,78 +325,6 @@ Single-colored icons can be modified like so:
   fill: currentColor;
 }
 
-/*
-Futura PT Heavy
-
-font-family: futura-pt, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Futura PT Heavy Oblique
-
-font-family: futura-pt, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
-
-
-Futura PT Light Oblique
-
-font-family: futura-pt, sans-serif;
-
-font-weight: 300;
-
-font-style: italic;
-
-
-Futura PT Book
-
-font-family: futura-pt, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;
-
-
-Futura PT Book Oblique
-
-font-family: futura-pt, sans-serif;
-
-font-weight: 400;
-
-font-style: italic;
-
-
-Futura PT Light
-
-font-family: futura-pt, sans-serif;
-
-font-weight: 300;
-
-font-style: normal;
-
-
-Futura PT Bold
-
-font-family: futura-pt-bold, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Futura PT Bold Oblique
-
-font-family: futura-pt-bold, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
-*/
 *,
 *::before,
 *::after {
@@ -971,6 +900,7 @@ html {
 
 .header__logo {
   width: 15rem;
+  height: auto;
   pointer-events: none;
 }
 
@@ -1842,6 +1772,7 @@ html {
 
 .footer__icon {
   width: 100%;
+  height: auto;
   pointer-events: none;
 }
 
@@ -2222,6 +2153,7 @@ html {
 
 .about__icon {
   width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 62.5em) {

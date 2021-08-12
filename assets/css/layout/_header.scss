@@ -57,6 +57,7 @@
   //* Header logo
   &__logo {
     width: 15rem;
+    height: auto;
     pointer-events: none;
 
     @include respond(medium) {
