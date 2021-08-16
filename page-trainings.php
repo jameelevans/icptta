@@ -60,7 +60,7 @@ get_header();
               if( has_excerpt() ){
                 echo strip_tags(substr( get_the_excerpt(), 0, 300 ))."...";
                 } else {
-                echo wp_trim_words(get_the_content(), 45);
+                echo wp_trim_words(get_the_content(), 40);
                 }?></p>
                 
               <a href="<?php the_permalink();?>" class="btn btn--blue" title="Click here to learn more about this training">Learn More</a>
