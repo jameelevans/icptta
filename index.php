@@ -78,7 +78,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
 
                         </article> 
@@ -126,7 +126,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -173,7 +173,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -220,7 +220,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -268,7 +268,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -316,7 +316,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -365,7 +365,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -383,7 +383,7 @@ get_header();
         <div class="resources">
             <?php
             // Display FAC Plan Resources
-            $facPosts = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'category_name' => 'vfamily-friends-assistance-center-fac-plan', 'posts_per_page'=>-1));
+            $facPosts = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'category_name' => 'family-friends-assistance-center-fac-plan', 'posts_per_page'=>-1));
                 if( $facPosts->have_posts() ):
                     while( $facPosts->have_posts() ):
                         $facPosts->the_post(); ?>
@@ -413,7 +413,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -461,7 +461,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -509,7 +509,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -557,7 +557,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -605,7 +605,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -653,7 +653,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -701,7 +701,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;
@@ -749,7 +749,7 @@ get_header();
                                 $downloadpdf_title = $downloadpdf['title'];
                                 $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
                                 ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" title="Click here to download the file">Download File</a>
+                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
                             <?php endif; ?>
                         </article> 
                     <?php endwhile;

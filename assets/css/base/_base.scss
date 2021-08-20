@@ -10,3 +10,8 @@
 html {
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: var(--color-red-primary);
+  color: var(--color-white);
+}
