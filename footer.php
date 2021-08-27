@@ -20,9 +20,9 @@
                 <!-- Contact us area -->
                 <div class="contact">
                     <h4 class="contact__header">Contact</h4>
-                    <p class="contact__details">To reach ICP TTA staff please email or call Tara Hughes at:</p>
-                    <p><a href="mailto:tara.hughes@icf.com" class="contact__link" title="Click here to email Tara now"><?php echo svg_icon('contact__icon', 'mail') ?>&nbsp;&nbsp;&nbsp; tara.hughes@icf.com</a></p>
-                    <p><a href="tel:16172183584" class="contact__link" title="Click here to call Tara now"><?php echo svg_icon('contact__icon', 'phone') ?>&nbsp; &nbsp; +1-617-218-3584</a></p>
+                    <p class="contact__details">To reach ICP TTA staff please email or call us at:</p>
+                    <p><a href="mailto:icptta@icf.com" class="contact__link" title="Click here to email us now"><?php echo svg_icon('contact__icon', 'mail') ?>&nbsp;&nbsp;&nbsp; icptta@icf.com</a></p>
+                    <p><a href="tel:16172183584" class="contact__link" title="Click here to call us now"><?php echo svg_icon('contact__icon', 'phone') ?>&nbsp; &nbsp; +1-617-218-3584</a></p>
                 </div><!-- .Contact us area -->
             </div><!-- .Top footer area -->
            <?php } ?>

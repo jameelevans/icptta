@@ -18,9 +18,9 @@ get_header();
       </div>
       <div class="contact">
           <h4 class="contact__header">Contact</h4>
-          <p class="contact__details">To reach ICP TTA staff please email or call Tara Hughes at:</p>
-          <p><a href="mailto:tara.hughes@icf.com" class="contact__link" title="CLick here to email Tara Hughes"><?php echo svg_icon('contact__icon', 'mail') ?>&nbsp;&nbsp;&nbsp; tara.hughes@icf.com</a></p>
-          <p><a href="tel:6172183584" class="contact__link" title="CLick here to call tara Hughes"><?php echo svg_icon('contact__icon', 'phone') ?>&nbsp; &nbsp;+1-617-218-3584</a></p>
+          <p class="contact__details">To reach ICP TTA staff please email or call us at:</p>
+          <p><a href="mailto:icptta@icf.com" class="contact__link" title="CLick here to email us"><?php echo svg_icon('contact__icon', 'mail') ?>&nbsp;&nbsp;&nbsp; icptta@icf.com</a></p>
+          <p><a href="tel:6172183584" class="contact__link" title="CLick here to call us"><?php echo svg_icon('contact__icon', 'phone') ?>&nbsp; &nbsp;+1-617-218-3584</a></p>
       </div>
     </div>
   </section><!-- .Contact information -->
