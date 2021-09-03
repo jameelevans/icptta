@@ -19,7 +19,6 @@ get_header();
               'posts_per_page' => -1,
               'post_type' => 'trainings',
               'meta_key' => 'training_date',
-              'order' => 'DEC',
               'meta_value' => ' ',
               'meta_compare' => '='
               ));

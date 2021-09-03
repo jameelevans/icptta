@@ -14,7 +14,7 @@ get_header();
         <section class="general--narrow trainings__section">
   
           <!-- Lead sententce -->
-          <p class="p__lead">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact Terry Boes at <a href="mailto:terry.boes@icf.com">terry.boes@icf.com</a></p>
+          <p class="p__lead">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact us at <a title="Click here to contact ICP TTA" href="mailto:icptta@icf.com">icptta@icf.com</a></p>
 
 
   
@@ -26,7 +26,7 @@ get_header();
               'post_type' => 'trainings',
               'orderby' => 'meta_value_num',
               'meta_key' => 'training_date',
-              'order' => 'ASC',
+              'order' => 'DEC',
               'meta_query' => array(
                 array(
                   'key' => 'training_date',
