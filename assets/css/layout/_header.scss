@@ -178,7 +178,8 @@
     &__general {
       text-align: center;
       color: var(--color-white);
-      padding: 10rem 0;
+      padding: 10rem 5rem;
+      line-height: 1.1;
 
       @include respond(medium) {
         padding: 5rem 0;
