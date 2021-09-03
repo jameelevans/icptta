@@ -26,7 +26,7 @@ get_header();
           'post_type' => 'trainings',
           'orderby' => 'meta_value_num',
           'meta_key' => 'training_date',
-          'order' => 'ASC',
+          'order' => 'DEC',
           'meta_query' => array(
             array(
               'key' => 'training_date',
@@ -78,7 +78,7 @@ get_header();
         'post_type' => 'trainings',
         'orderby' => 'meta_value_num',
         'meta_key' => 'training_date',
-        'order' => 'ASC',
+        'order' => 'DEC',
         'meta_query' => array(
           array(
             'key' => 'training_date',
