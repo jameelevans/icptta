@@ -16,65 +16,12 @@ get_header();
 
     <!-- Lead sententce -->
     <p class="p__lead">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact us at <a title="Click here to contact ICP TTA" href="mailto:icptta@icf.com">icptta@icf.com</a></p>
-
-
-
-    <?php
-        $startDate = date('20200101');
-        $featuredTraining = new WP_Query(array(
-          'posts_per_page' => 1,
-          'post_type' => 'trainings',
-          'orderby' => 'meta_value_num',
-          'meta_key' => 'training_date',
-          'order' => 'DEC',
-          'meta_query' => array(
-            array(
-              'key' => 'training_date',
-              'compare' => '>=',
-              'value' => $startDate,
-              'type' => 'numeric'
-            )
-          )
-        ));
-        while($featuredTraining->have_posts()) {
-          $featuredTraining->the_post();?>
-          <!-- Featured training -->
-          <div class="trainings__featured">
-            <div class="trainings__figure">
-             
-            <?php if ( has_post_thumbnail() ) { ?>
-              <img class="trainings__img" src="<?php the_post_thumbnail_url('training'); ?>" alt="<?php the_title_attribute(); ?>"/>
-              <?php } else { ?>
-              <img class="trainings__img" src="<?php bloginfo('template_directory'); ?>/assets/img/icptta-training.jpg" alt="<?php the_title(); ?>" />
-            <?php } ?>
-            </div>
-            <div class="trainings__narrow">
-              <h4 class="trainings__heading h2__header--blue"><?php the_title();?></h4>
-              <div class="trainings__date">Posted on: 
-                    <?php if( get_field('training_date') ){
-                      $trainingDate = new DateTime(get_field('training_date'));
-                      echo '<time>' . $trainingDate->format('M d') .', '. $trainingDate->format('Y'). '</time>';
-                    }?>
-                  </div>
-              <p class="trainings__description"><?php
-              if( has_excerpt() ){
-                echo strip_tags(substr( get_the_excerpt(), 0, 300 ))."...";
-                } else {
-                echo wp_trim_words(get_the_content(), 40);
-                }?></p>
-                
-              <a href="<?php the_permalink();?>" class="btn btn--blue" title="Click here to learn more about this training">Learn More</a>
-            </div>
-          </div><!-- .Featured training -->
-        <?php }
-      ?>
-    <!-- Normal trainings -->
+    <!-- Trainings -->
     <div class="trainings__normal">
     <?php
       $startDate = date('20200101');
       $trainings = new WP_Query(array(
         'posts_per_page' => 6,
-        'offset' => 1,
         'post_type' => 'trainings',
         'orderby' => 'meta_value_num',
         'meta_key' => 'training_date',
