@@ -15,7 +15,7 @@ get_header();
     <h2 class="h2__header h2__header--grey">Available Trainings</h2>
 
     <!-- Lead sententce -->
-    <p class="p__lead">The following trainings are available, if you would like to meet with the instructors to ask some questions, or have a session tailored to your community, please contact us at <a title="Click here to contact ICP TTA" href="mailto:icptta@icf.com">icptta@icf.com</a></p>
+    <p class="p__lead">The following trainings are available. After viewing, if you or your community are interested in additional information about a specific subject or would like assistance with customizing a webinar’s content to further your mass violence/domestic terrorism response planning, please contact the program at <a title="Click here to contact ICP TTA" href="mailto:icptta@icf.com">icptta@icf.com</a></p>
     <!-- Trainings -->
     <div class="trainings__normal">
     <?php
