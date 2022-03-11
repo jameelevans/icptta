@@ -19,8 +19,7 @@ get_header();
 			</div><!-- .About logo -->
 			<!-- About mission -->
 			<div class="about__mission">
-				<h3 class="about__mission-header">Mission Statement</h3>
-				<p class="about__mission-p p__lead">To deliver individualized training and technical assistance (TTA) to local, state, regional, and tribal jurisdictions across the country, including Washington, D.C., and U.S. territories, to augment existing emergency response plans to ensure that they include effective protocols and strategies to address the immediate and long-term needs of victims, families, and first responders after incidents of criminal mass violence (CMV) and domestic terrorism (DT).</p>
+				<p class="about__mission-p p__lead">Whether it be the Boston Marathon Bombing or yet another shooting at a school, nightclub, or concert, it seems as if criminal mass violence and domestic terrorism (CMV/DT) events have become all too common in our current world. While we hope these incidents never happen, we also need to be prepared when they do. ICP TTA is here to equip your community with the knowledge and resources you will need. </p>
 				<a href="<?php echo esc_url( home_url('/about-us')); ?>" class="btn btn--blue" title="Click here to learn more about us">LEARN MORE</a>
 			</div><!-- .About mission -->
 		</section><!-- .About section -->

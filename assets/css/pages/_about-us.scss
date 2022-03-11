@@ -3,17 +3,57 @@
     text-align: center;
   }
 
+  &__mission {
+    font-family: $font-primary;
+    font-weight: 300;
+    color: var(--color-charcoal);
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  &__list {
+    font-family: $font-primary;
+    font-weight: 300;
+    color: var(--color-charcoal);
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  &__item {
+    margin-bottom: 1.3rem;
+  }
+
+  & .link {
+    position: relative;
+    color: var(--color-blue-primary);
+    text-decoration: none;
+
+    // Underline hover from middle
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: var(--color-blue-primary);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    } //. Underline hover from middle
+  }
+
   &__history {
     font-family: $font-primary;
     font-weight: 300;
     color: var(--color-charcoal);
     font-size: 2rem;
-    column-count: 2;
-    margin-bottom: 5rem;
-
-    @include respond(medium) {
-      column-count: 1;
-    }
+    margin-bottom: 2rem;
   }
 
   &__content {

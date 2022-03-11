@@ -2495,23 +2495,58 @@ html {
   text-align: center;
 }
 
+.about-us__mission {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: var(--color-charcoal);
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.about-us__list {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: var(--color-charcoal);
+  font-size: 2rem;
+  margin-left: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.about-us__item {
+  margin-bottom: 1.3rem;
+}
+
+.about-us .link {
+  position: relative;
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+.about-us .link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.about-us .link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .about-us__history {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: var(--color-charcoal);
   font-size: 2rem;
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  margin-bottom: 5rem;
-}
-
-@media only screen and (max-width: 50em) {
-  .about-us__history {
-    -webkit-column-count: 1;
-       -moz-column-count: 1;
-            column-count: 1;
-  }
+  margin-bottom: 2rem;
 }
 
 .about-us__content p,

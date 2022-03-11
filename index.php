@@ -12,7 +12,9 @@ get_header();
 <main class="main general">
     <!-- Lead sententce -->
     <section class="general--narrow">
-        <p class="p__lead p__lead--centered">ICP TTA staff has assembled a comprehensive list of internal and external resources to assist emergency management personnel, victim service professionals and key community stakeholders integrate victim services into their emergency operations plans. Our resources are divided into 16 best practice areas including an Overall Victim Assistance Resources category at the end.</p>
+        <p class="p__lead">RESOURCE HIGHLIGHT:  ICP TTA is proud to release our newly created Exercise Guide to assist communities in incorporating victim services into emergency management exercises. This guide contains sample exercise templates aligned with Homeland Security Exercise and Evaluation Program (HSEEP) Doctrine and can be found under the “Training and Exercise” section.</p>
+
+        <p class="p__body">ICP TTA staff have also assembled a comprehensive list of additional external resources divided into our 16 best practice areas as well as an Overall Victim Assistance Resources category. These will help emergency management personnel, victim services professionals, and key community stakeholders locate specific material and guidance to integrate victim services into comprehensive emergency operations plans.</p>
     </section><!-- .Lead sententce -->
     <!-- Resource index  -->
     <section class="general--content">
