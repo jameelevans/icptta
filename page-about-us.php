@@ -11,7 +11,7 @@ get_header();
 <!-- Main about us content -->
 <main class="main general about-us">
     <!-- Mission section -->
-    <section class="general--narrow">
+    <section class="general--about-us">
     <h2 class="h2__header h2__header--grey about-us__heading">Mission Statement</h2>
     <p class="about-us__mission">To ensure local, state, regional, and tribal jurisdictions across the country are better prepared to respond to the needs of victims following incidents of criminal mass violence and domestic terrorism (CMV/DT).<br/><br/>
 We do this by:</p>
@@ -25,7 +25,7 @@ We do this by:</p>
   </section><!-- .Mission section -->
 
   <!-- History section -->
-  <section class="general--narrow">
+  <section class="general--about-us">
     <h2 class="h2__header h2__header--grey about-us__heading">History</h2>
     <p class="about-us__history">In 2020, the Office for Victims of Crime, operating under the US Department of Justice, recognized a need to improve communities’ capabilities to deal with increasing amounts of criminal mass violence and domestic terrorism (CMV/DT).</p>
     <p class="about-us__history">The needs that arise from CMV/DT are seen in victims, responders, and their impacted communities.</p>

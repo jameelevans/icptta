@@ -2126,6 +2126,13 @@ html {
   position: relative;
 }
 
+.general--about-us {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8rem 2rem 0;
+  position: relative;
+}
+
 /* Make YouTube videos inserted via WordPress oEmbed full-width */
 .wp-block-embed-youtube {
   overflow: hidden;

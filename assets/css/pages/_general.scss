@@ -46,6 +46,13 @@
     padding: 8rem 2rem;
     position: relative;
   }
+
+  &--about-us {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 8rem 2rem 0;
+    position: relative;
+  }
 }
 
 /* Make YouTube videos inserted via WordPress oEmbed full-width */
