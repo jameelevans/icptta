@@ -275,6 +275,31 @@ h1 {
   text-align: center;
 }
 
+.p__lead .link {
+  position: relative;
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+.p__lead .link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.p__lead .link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .p__subheader {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -292,6 +317,31 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
+}
+
+.p__body .link {
+  position: relative;
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+.p__body .link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-blue-primary);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.p__body .link:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 @media only screen and (max-width: 50em) {
