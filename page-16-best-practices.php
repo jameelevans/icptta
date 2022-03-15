@@ -194,7 +194,7 @@ get_header();
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-  <h2 id="community-behavioral-health-response" class="h3__header"><?php /* Display svg icon*/ echo svg_icon('resources__icon', 'users') ?> Community Resilience Planning</h2>
+  <h2 id="community-resilience-planning" class="h3__header"><?php /* Display svg icon*/ echo svg_icon('resources__icon', 'users') ?> Community Resilience Planning</h2>
    
 <p class="p__body">Resiliency Centers reflect the desire for communities to provide for healing, health, and support to victims and the community at large. A resiliency center or program will focus on the longer-term needs of victims and/or the local community, depending on the funding secured. Services are free for identified and funded populations. The center provides a safe and supportive healing environment for individuals and groups seeking improved emotional and physical health related to the CMV/DT incident.</p><br/>
 

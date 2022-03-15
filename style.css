@@ -313,6 +313,19 @@ h1 {
   }
 }
 
+.p__subheader--white {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .p__subheader--white {
+    font-size: 2.5rem;
+  }
+}
+
 .p__body {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
@@ -516,6 +529,10 @@ html {
   .p-lg {
     margin: 5rem 3rem;
   }
+}
+
+.pt-hg {
+  margin-top: 10rem;
 }
 
 .pb-md {
@@ -2283,6 +2300,97 @@ html {
   margin-bottom: 2rem;
 }
 
+.program {
+  background: var(--gradient-primary);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+  width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.program__wrapper {
+  max-width: 96rem;
+  margin: 10rem auto 0;
+  padding: 5rem;
+}
+
+.program__benifits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.program .benifit {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  padding: 5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  width: 25rem;
+  margin: 1rem;
+}
+
+.program .benifit:hover .benifit__icon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.program .benifit:hover {
+  background-color: rgba(var(--color-white-a), 0.1);
+}
+
+.program .benifit__icon {
+  width: 8rem;
+  height: 8rem;
+  fill: var(--color-white);
+  margin-bottom: 2rem;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.program .benifit__best-practice-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.program__cta {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: var(--color-white);
+  font-size: 2rem;
+  max-width: 96rem;
+  margin: 5rem auto;
+  padding: 5rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .program__cta {
+    font-size: 2.5rem;
+  }
+}
+
+.program__cta a {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
 .partners--narrow {
   max-width: 960px;
   margin: 0 auto;
@@ -2481,6 +2589,23 @@ html {
           box-shadow: 0px 0px 3rem rgba(var(--color-black-a), 0.2);
 }
 
+.home-resources .foundations {
+  text-align: center;
+  width: 100%;
+}
+
+.home-resources .foundations__heading {
+  font-family: "Lusitana", serif;
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 10rem 0 2.5rem;
+  color: var(--color-charcoal);
+}
+
+.home-resources .foundations__cta {
+  margin: 5rem auto;
+}
+
 .home-resources__subheading {
   margin-bottom: 4.5rem;
 }
@@ -2490,27 +2615,19 @@ html {
 }
 
 .home-resources__wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin-top: 10rem;
 }
 
-@media only screen and (max-width: 50em) {
-  .home-resources__wrapper {
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 3rem;
-    grid-template-columns: minmax(-webkit-min-content, 45rem);
-    grid-template-columns: minmax(min-content, 45rem);
-    grid-column-gap: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.home-resources__wrapper .resource {
+.home-resources__wrapper .foundation {
   color: var(--color-charcoal);
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -2520,18 +2637,20 @@ html {
   background-color: transparent;
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
+  width: 20rem;
+  margin: 0.5rem;
 }
 
-.home-resources__wrapper .resource:hover .resource__icon {
+.home-resources__wrapper .foundation:hover .foundation__icon {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.home-resources__wrapper .resource:hover {
+.home-resources__wrapper .foundation:hover {
   background-color: var(--color-grey-light);
 }
 
-.home-resources__wrapper .resource__icon {
+.home-resources__wrapper .foundation__icon {
   width: 3rem;
   height: 3rem;
   fill: var(--color-charcoal);
@@ -2542,7 +2661,7 @@ html {
   transition: all 0.5s;
 }
 
-.home-resources__wrapper .resource__best-practice-title {
+.home-resources__wrapper .foundation__best-practice-title {
   font-size: 2.2rem;
   font-weight: 400;
   margin-bottom: 1rem;

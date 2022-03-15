@@ -12,10 +12,11 @@ get_header();
 <main class="main general">
     <!-- Lead sententce -->
     <section class="general--narrow">
-        <p class="p__lead">RESOURCE HIGHLIGHT:  ICP TTA is proud to release our newly created Exercise Guide to assist communities in incorporating victim services into emergency management exercises. This guide contains sample exercise templates aligned with Homeland Security Exercise and Evaluation Program (HSEEP) Doctrine and can be found under the “Training and Exercise” section.</p>
+        <p class="p__lead"><strong>RESOURCE HIGHLIGHT:</strong> ICP TTA is proud to release our newly created Exercise Guide to assist communities in incorporating victim services into emergency management exercises. This guide contains sample exercise templates aligned with Homeland Security Exercise and Evaluation Program (HSEEP) Doctrine and can be found under the “Training and Exercise” section.</p>
 
         <p class="p__body">ICP TTA staff have also assembled a comprehensive list of additional external resources divided into our 16 best practice areas as well as an Overall Victim Assistance Resources category. These will help emergency management personnel, victim services professionals, and key community stakeholders locate specific material and guidance to integrate victim services into comprehensive emergency operations plans.</p>
     </section><!-- .Lead sententce -->
+    
     <!-- Resource index  -->
     <section class="general--content">
         <div class="index">
@@ -41,6 +42,7 @@ get_header();
             </ol>
         </div>
     </section><!-- .Resource index  -->
+
     <!-- Incident Command System Resources section -->
     <section id="incident-command-system" class="general--content">
         <h3 class="resources__heading"> <?php /* Display svg icon*/ echo svg_icon('resources__icon', 'command-system') ?>Incident Command System</h3>
