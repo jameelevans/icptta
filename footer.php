@@ -46,6 +46,8 @@
                 <ul class="footer__list">
                     <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/')); ?>" title="Click here to go to the Home page">Home</a></li>
                     <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/about-us')); ?>" title="Click here to go to the About us page">About us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/16-best-practices')); ?>" title="Click here to go to a 16 Best Practices page">16 Best Practices</a></li>
+                    
                     <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/resources')); ?>" title="Click here to go to a resources page">Resources</a></li>
                     <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/trainings')); ?>" title="Click here to go to a trainings page">Trainings</a></li>
                     <li class="footer__item"><a class="footer__link" href="<?php echo esc_url( home_url('/consultants')); ?>" title="Click here to go to a consultants page">Consultants</a></li>
