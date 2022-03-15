@@ -22,7 +22,7 @@
 				<!-- Top header contact strip -->
 				<div class="header__top">
 					<div class="header__top-details">
-						<p>Need help? <?php echo svg_icon('phone__icon', 'mail') ?> email icptta@icf.com</p>
+						<p>Need help? <a href="<?php echo esc_url( home_url('/contact-us')); ?>">contact us</a> <?php echo svg_icon('phone__icon', 'mail') ?> or email icptta@icf.com</p>
 					</div>
 				</div><!-- .Top header contact strip -->
 
@@ -40,10 +40,11 @@
 							<ul class="mobile-nav__list">
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/')); ?>" class="mobile-nav__link<?php if(is_front_page()){echo ' is-current-link';} ?>" title="Navigate to Home page">Home</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/about-us')); ?>" class="mobile-nav__link<?php if(is_page('about-us')){echo ' is-current-link';} ?>" title="Navigate to About us page">About Us</a></li>
+								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/16-best-practices')); ?>" class="mobile-nav__link<?php if(is_page('16-best-practices')){echo ' is-current-link';} ?>" title="Navigate to 16 Best Practices page">16 Best Practices</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/resources')); ?>" class="mobile-nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>" title="Navigate to a resource page">Resources</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/trainings')); ?>" class="mobile-nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>" title="Navigate to trainings page">Trainings</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/consultants')); ?>" class="mobile-nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" title="Navigate to consultants page">Consultants</a></li>
-								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/contact-us')); ?>" class="mobile-nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" title="Navigate to Contact Us page">Contact Us</a></li>
+							
 								<li class="mobile-nav__item"><a class="nav__cta btn btn--white-outline" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" rel="noreferrer" title="Fill out the ICPTTA application">ICPTTA Application</a></li>
 							</ul>
 						</nav>
@@ -69,10 +70,10 @@
 						<ul class="nav">
 							<li class="nav__item"><a class="nav__link<?php if(is_front_page()){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/')); ?>" title="Navigate to Home page">Home</a></li>
 							<li class="nav__item"><a class="nav__link<?php if(is_page('about-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/about-us')); ?>" title="Navigate to About Us page">About Us</a></li>
+							<li class="nav__item"><a class="nav__link<?php if(is_page('16-best-practices')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/16-best-practices')); ?>" title="Navigate to 16 Best Practices page">16 Best Practices</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/resources')); ?>" title="Navigate to a resource page">Resources</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('trainings-coming-soon')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>" title="Navigate to a trainings page">Trainings</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/consultants')); ?>" title="Navigate to a consultants page">Consultants</a></li>
-							<li class="nav__item"><a class="nav__link<?php if(is_page('contact-us')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/contact-us')); ?>" title="Navigate to Contact Us page">Contact Us</a></li>
 							<li class="nav__item"><a class="nav__cta btn btn--blue" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" rel="noreferrer" title="Fill out the ICPTTA Application">ICPTTA Application</a></li>
 						</ul><!-- .Navigation menu and CTA -->
 					</nav><!-- .Navigation content -->

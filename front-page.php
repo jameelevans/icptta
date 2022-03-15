@@ -114,125 +114,126 @@ get_header();
 
 			<div class="foundations">
 								
-			<h2 class="foundations__heading">Program Foundations</h2>
+				<h2 class="foundations__heading">Program Foundations</h2>
 
-<div class="home-resources__wrapper">
-	
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#incident-command-system" title="Click here to navigate to Incident Command System">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'command-system');?> 
-		<h4 class="foundation__best-practice-title">Incident Command System</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#committee-identification-engagement" title="Click here to navigate to Committee Identification &amp; Engagement">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'committee');?> 
-		<h4 class="foundation__best-practice-title">Committee Identification &amp; Engagement</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#contact-list" title="Click here to navigate to Contact List">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'ballot-check');?> 
-		<h4 class="foundation__best-practice-title">Contact List</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#frc" title="Click here to navigate to Friends and Family Reception/Notification Center (FRC) Plan">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'clipboard-user');?> 
-		<h4 class="foundation__best-practice-title">Friends and Family Reception/ Notification Center (FRC) Plan</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#victim-identification" title="Click here to navigate to Victim Identification and Notification Protocol">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'comment-exclamation');?> 
-		<h4 class="foundation__best-practice-title">Victim Identification and Notification Protocol</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#public-information-crisis-communications-protocol" title="Click here to navigate to Public Information and Crisis Communications Protocol">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'broadcast-tower');?> 
-		<h4 class="foundation__best-practice-title">Public Information and Crisis Communications Protocol</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#volunteer-management-protocol" title="Click here to navigate to Volunteer Management Protocol">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'hand-holding-heart');?> 
-		<h4 class="foundation__best-practice-title">Volunteer Management Protocol</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#fac" title="Click here to navigate to Family/Friends Assistance Center (FAC) Protocol">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'hand-holding-medical');?> 
-		<h4 class="foundation__best-practice-title">Family/Friends Assistance Center (FAC) Protocol</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#donation-management-protocol" title="Click here to navigate to Donation Management Protocol">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'donate');?> 
-		<h4 class="foundation__best-practice-title">Donation Management Protocol</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#memorial-special-events-management-plan" title="Click here to navigate to Memorial and Special Events Management Plan">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'ribbon');?> 
-		<h4 class="foundation__best-practice-title">Memorial and Special Events Management Plan</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#community-behavioral-health-response" title="Click here to navigate to Community Behavioral Health Response">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'head-side-medical');?> 
-		<h4 class="foundation__best-practice-title">Community Behavioral Health Response</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#first-responder-support" title="Click here to navigate to First Responder Support">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'first-aid');?> 
-		<h4 class="foundation__best-practice-title">First Responder Support</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#planning-preparedness-grants-emergency-funding-assistance" title="Click here to navigate to Planning &amp; Preparedness Grants and Emergency Funding Assistance">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'hands-usd');?> 
-		<h4 class="foundation__best-practice-title">Planning &amp; Preparedness Grants and Emergency Funding Assistance</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#community-resilience-planning" title="Click here to navigate to Community Resilience Planning">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'users');?> 
-		<h4 class="foundation__best-practice-title">Community Resilience Planning</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#criminal-justice-system-victim-support" title="Click here to navigate to Criminal Justice System – Victim Support">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'gavel');?> 
-		<h4 class="foundation__best-practice-title">Criminal Justice System – Victim Support</h4>
-	</a><!-- .Indiviual foundation -->
-	<!-- Indiviual foundation -->
-	<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#training-exercise" title="Click here to navigate to">
-			<?php 
-			// Display Link svg icon
-				echo svg_icon('foundation__icon', 'users-cog');?> 
-		<h4 class="foundation__best-practice-title">Training and Exercise</h4>
-	</a><!-- .Indiviual foundation -->
+				<div class="home-resources__wrapper">
+					
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#incident-command-system" title="Click here to navigate to Incident Command System">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'command-system');?> 
+						<h4 class="foundation__best-practice-title">Incident Command System</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#committee-identification-engagement" title="Click here to navigate to Committee Identification &amp; Engagement">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'committee');?> 
+						<h4 class="foundation__best-practice-title">Committee Identification &amp; Engagement</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#contact-list" title="Click here to navigate to Contact List">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'ballot-check');?> 
+						<h4 class="foundation__best-practice-title">Contact List</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#frc" title="Click here to navigate to Friends and Family Reception/Notification Center (FRC) Plan">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'clipboard-user');?> 
+						<h4 class="foundation__best-practice-title">Friends and Family Reception/ Notification Center (FRC) Plan</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#victim-identification" title="Click here to navigate to Victim Identification and Notification Protocol">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'comment-exclamation');?> 
+						<h4 class="foundation__best-practice-title">Victim Identification and Notification Protocol</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#public-information-crisis-communications-protocol" title="Click here to navigate to Public Information and Crisis Communications Protocol">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'broadcast-tower');?> 
+						<h4 class="foundation__best-practice-title">Public Information and Crisis Communications Protocol</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#volunteer-management-protocol" title="Click here to navigate to Volunteer Management Protocol">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'hand-holding-heart');?> 
+						<h4 class="foundation__best-practice-title">Volunteer Management Protocol</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#fac" title="Click here to navigate to Family/Friends Assistance Center (FAC) Protocol">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'hand-holding-medical');?> 
+						<h4 class="foundation__best-practice-title">Family/Friends Assistance Center (FAC) Protocol</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#donation-management-protocol" title="Click here to navigate to Donation Management Protocol">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'donate');?> 
+						<h4 class="foundation__best-practice-title">Donation Management Protocol</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#memorial-special-events-management-plan" title="Click here to navigate to Memorial and Special Events Management Plan">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'ribbon');?> 
+						<h4 class="foundation__best-practice-title">Memorial and Special Events Management Plan</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#community-behavioral-health-response" title="Click here to navigate to Community Behavioral Health Response">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'head-side-medical');?> 
+						<h4 class="foundation__best-practice-title">Community Behavioral Health Response</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#first-responder-support" title="Click here to navigate to First Responder Support">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'first-aid');?> 
+						<h4 class="foundation__best-practice-title">First Responder Support</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#planning-preparedness-grants-emergency-funding-assistance" title="Click here to navigate to Planning &amp; Preparedness Grants and Emergency Funding Assistance">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'hands-usd');?> 
+						<h4 class="foundation__best-practice-title">Planning &amp; Preparedness Grants and Emergency Funding Assistance</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#community-resilience-planning" title="Click here to navigate to Community Resilience Planning">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'users');?> 
+						<h4 class="foundation__best-practice-title">Community Resilience Planning</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#criminal-justice-system-victim-support" title="Click here to navigate to Criminal Justice System – Victim Support">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'gavel');?> 
+						<h4 class="foundation__best-practice-title">Criminal Justice System – Victim Support</h4>
+					</a><!-- .Indiviual foundation -->
+					<!-- Indiviual foundation -->
+					<a class="foundation" href="<?php echo esc_url( home_url('/16-best-practices')); ?>#training-exercise" title="Click here to navigate to">
+							<?php 
+							// Display Link svg icon
+								echo svg_icon('foundation__icon', 'users-cog');?> 
+						<h4 class="foundation__best-practice-title">Training and Exercise</h4>
+					</a><!-- .Indiviual foundation -->
 
-</div><!-- .foundations wrapper-->
-<a class="foundations__cta btn btn btn--blue" href="<?php echo esc_url( home_url('/16-best-practices')); ?>" title="Click here to view our 16 best practices">VIEW DEFINITIONS</a>
+				</div><!-- .foundations wrapper-->
+
+				<a class="foundations__cta btn btn btn--blue" href="<?php echo esc_url( home_url('/16-best-practices')); ?>" title="Click here to view our 16 best practices">VIEW DEFINITIONS</a>
 
 			</div>
 			

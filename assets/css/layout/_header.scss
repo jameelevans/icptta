@@ -16,6 +16,11 @@
       text-align: right;
       margin-right: 5vw;
 
+      a {
+        color: var(--color-white);
+        font-weight: 400;
+      }
+
       @include respond(medium) {
         text-align: center;
         margin-right: 0;
