@@ -12,7 +12,26 @@ get_header();
     <section class="general--single resource-page__content">
       <?php the_content(); ?>
       <hr class="resource-page__hr" />
+
+      <div class="resource-page__source">
+        <h4>Source:</h4>
+
+        <?php
+        $source = get_field('source_page');
+          if( $source ): 
+              ?>
+              <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page" target="_blank"><?php the_field('source_title') ?></a>
+              <?php else : ?> <p class="p__body">No sources at this time</p>
+                    
+          <?php endif; ?>
+
+        
+      </div>
+
       <div class="resource-page__links">
+
+      
+
         <h4>Linked Resources:</h4>
         <?php 
           $link = get_field('visit_site_button');

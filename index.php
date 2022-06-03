@@ -42,7 +42,7 @@ get_header();
 
                         </article> 
                     <?php endwhile;
-                else : ?> <p class="p__lead">No featured resources at this time</p>
+                else : ?> <p class="p__body">No featured resources at this time</p>
                     <?php
                 wp_reset_postdata();
                 endif;
@@ -91,7 +91,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             
 
@@ -128,7 +128,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -159,7 +159,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -190,7 +190,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -222,7 +222,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -254,7 +254,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -286,7 +286,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
 
                             <p class="resources__excerpt p__body"><?php
@@ -319,7 +319,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -351,7 +351,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -383,7 +383,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -415,7 +415,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -447,7 +447,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -479,7 +479,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -511,7 +511,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -543,7 +543,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -575,7 +575,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
@@ -607,7 +607,7 @@ get_header();
                         <article class="resources__resource">
                             <header>
                                 <h4 class="h4__header"><?php echo the_title(); ?></h4>
-                                <a class="resources__source" href="<?php the_field('source_page') ?>" title="Click here to navigate to <?php the_field('source_title') ?>'s page"><?php the_field('source_title') ?></a>
+                                
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
