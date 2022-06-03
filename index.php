@@ -12,9 +12,44 @@ get_header();
 <main class="main general">
     <!-- Lead sententce -->
     <section class="general--narrow">
-        <p class="p__lead"><strong>RESOURCE HIGHLIGHT:</strong> ICP TTA is proud to release our newly created Exercise Guide to assist communities in incorporating victim services into emergency management exercises. This guide contains sample exercise templates aligned with Homeland Security Exercise and Evaluation Program (HSEEP) Doctrine and can be found under the “Training and Exercise” section.</p>
+        <p class="p__lead">ICP TTA staff have also assembled a comprehensive list of additional external resources divided into our 16 best practice areas as well as an Overall Victim Assistance Resources category. These will help emergency management personnel, victim services professionals, and key community stakeholders locate specific material and guidance to integrate victim services into comprehensive emergency operations plans.</p>
 
-        <p class="p__body">ICP TTA staff have also assembled a comprehensive list of additional external resources divided into our 16 best practice areas as well as an Overall Victim Assistance Resources category. These will help emergency management personnel, victim services professionals, and key community stakeholders locate specific material and guidance to integrate victim services into comprehensive emergency operations plans.</p>
+        <h2 class="featured-resources__h2"><strong>RESOURCE HIGHLIGHT</strong></h2>
+
+        <div class="featured-resources">
+            <?php
+            // Display Incident Command System Resources
+            $icsPosts = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'category_name' => 'featured-resources', 'posts_per_page'=>-1));
+                if( $icsPosts->have_posts() ):
+                    while( $icsPosts->have_posts() ):
+                        $icsPosts->the_post(); ?>
+                        <article class="featured-resources__resource">
+                            <header>
+                                <h4 class="h4__header"><?php echo the_title(); ?></h4>
+                            </header>
+                            
+
+                            <p class="featured-resources__excerpt p__body"><?php
+                                if( has_excerpt() ){
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
+                                } else {
+                                echo wp_trim_words(get_the_content(), 30);
+                                }?> </p>
+                                
+                       
+                                <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
+                          
+
+                        </article> 
+                    <?php endwhile;
+                else : ?> <p class="p__lead">No featured resources at this time</p>
+                    <?php
+                wp_reset_postdata();
+                endif;
+            ?>
+        </div>
+
+       
     </section><!-- .Lead sententce -->
     
     <!-- Resource index  -->
@@ -62,28 +97,14 @@ get_header();
 
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
+
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                                 
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            
 
                         </article> 
                     <?php endwhile;
@@ -111,27 +132,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
                 else : ?> <p class="p__lead">No posts at this time</p>
@@ -158,27 +163,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
                 else : ?> <p class="p__lead">No posts at this time</p>
@@ -205,27 +194,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -253,27 +226,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -301,27 +258,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -350,27 +291,11 @@ get_header();
 
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -398,27 +323,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -446,27 +355,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -494,27 +387,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -542,27 +419,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -590,27 +451,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -638,27 +483,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -686,27 +515,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -734,27 +547,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="_blank" rel="noreferrer" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -782,27 +579,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="<?php echo esc_attr( $downloadpdf_target ); ?>" title="Click here to download the file">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
@@ -830,27 +611,11 @@ get_header();
                             </header>
                             <p class="resources__excerpt p__body"><?php
                                 if( has_excerpt() ){
-                                echo strip_tags(substr( get_the_excerpt(), 0, 650 ))."...";
+                                echo strip_tags(substr( get_the_excerpt(), 0, 210 ))."...";
                                 } else {
-                                echo wp_trim_words(get_the_content(), 300);
+                                echo wp_trim_words(get_the_content(), 30);
                                 }?> </p>
-                            <?php 
-                            $link = get_field('visit_site_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" title="Click here to visit site">Visit Site</a>
-                            <?php endif; 
-                            $downloadpdf = get_field('download_pdf_button');
-                            if( $downloadpdf ): 
-                                $downloadpdf_url = $downloadpdf['url'];
-                                $downloadpdf_title = $downloadpdf['title'];
-                                $downloadpdf_target = $downloadpdf['target'] ? $downloadpdf['target'] : '_self';
-                                ?>
-                                <a class="btn btn--red" href="<?php echo esc_url( $downloadpdf_url ); ?>" target="<?php echo esc_attr( $downloadpdf_target ); ?>">Download File</a>
-                            <?php endif; ?>
+                            <a class="btn btn--blue" href="<?php the_permalink();?>" title="Click here to learn more about <?php the_title();?>">Learn more</a>
                         </article> 
                     <?php endwhile;
             
