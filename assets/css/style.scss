@@ -83,6 +83,9 @@ Text Domain: icptta.com
 //  * Index
 @import 'components/index';
 
+//  *BuddyBoss styles
+@import 'components/buddyboss';
+
 //*--------| Layouts |--------*//
 //  * Header
 @import 'layout/header';
@@ -123,3 +126,5 @@ Text Domain: icptta.com
 
 //  * 404 page
 @import 'pages/404';
+
+

@@ -15,11 +15,7 @@ class BackTop {
     this.refreshWaypoints();
   }
 
-  refreshWaypoints() {
-    this.lazyImages.on('load', function() {
-      Waypoint.refreshAll();
-    });
-  }
+  
 
 
   createOptionsWaypoint() {

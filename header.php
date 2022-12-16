@@ -74,6 +74,17 @@
 							<li class="nav__item"><a class="nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/resources')); ?>" title="Navigate to a resource page">Resources</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('trainings-coming-soon')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>" title="Navigate to a trainings page">Trainings</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/consultants')); ?>" title="Navigate to a consultants page">Consultants</a></li>
+
+							<?php if (is_user_logged_in() ): ?>
+								<li class="nav__item"><a class="nav__link<?php if (is_page('members') or get_post_type() == 'members') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/members')); ?>" title="Navigate to a members page">Members</a></li>
+								<li class="nav__item"><a class="nav__link<?php if (is_page('groups') or get_post_type() == 'groups') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/groups')); ?>" title="Navigate to a groups page">Groups</a></li>
+								<li class="nav__item"><a class="nav__link<?php if (is_page('news-feed') or get_post_type() == 'news-feed') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/news-feed')); ?>" title="Navigate to a News Feed page">News Feed</a></li>
+								<li class="nav__item"><a class="nav__link" href="<?php echo wp_logout_url() ?>" title="Logout">Logout</a></li>
+								
+							<?php else: ?> 
+								<li class="nav__item"><a class="nav__link" href="<?php echo esc_url( home_url('/wp-login.php')); ?>" title="Login">Member Login</a></li>
+							<?php endif ?> 
+					
 							<li class="nav__item"><a class="nav__cta btn btn--blue" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" rel="noreferrer" title="Fill out the ICPTTA Application">ICPTTA Application</a></li>
 						</ul><!-- .Navigation menu and CTA -->
 					</nav><!-- .Navigation content -->

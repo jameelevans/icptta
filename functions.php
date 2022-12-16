@@ -264,6 +264,10 @@ function general() { ?>
           else if (is_404()) {
           echo '404 Error';
           }
+          else if (is_archive('forums')) {
+            echo 'Forums';
+            }
+          
           else if (is_archive('training')) {
             echo 'All Previous Trainings';
             } else {
@@ -321,4 +325,53 @@ function ignoreCertainFiles ($exclude_filters){
 }
 //. 13 Exclude node_modules from exporting
 
+//* 14 Register widgets UI
+function register_buddypress_sidebars() {
+  register_sidebar( array(
+      'name' => 'Members Sidebar',
+      'id' => 'members_sidebar',
+      'before_widget' => '<aside class="widget">',
+      'after_widget' => '</aside>',
+      'before_title' => '<h3 class="buddypress__h3">',
+      'after_title' => '</h3>',
+  ) );
+  register_sidebar( array(
+    'name' => 'Activity Sidebar',
+    'id' => 'activity_sidebar',
+    'before_widget' => '<aside class="widget">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="buddypress__h3">',
+    'after_title' => '</h3>',
+) );
+register_sidebar( array(
+  'name' => 'Activity Left',
+  'id' => 'activity_left',
+  'before_widget' => '<aside class="widget">',
+  'after_widget' => '</aside>',
+  'before_title' => '<h3 class="buddypress__h3">',
+  'after_title' => '</h3>',
+) );
+
+register_sidebar( array(
+  'name' => 'Profile Completion',
+  'id' => 'profile_completion',
+  'before_widget' => '<aside class="widget widget_bp_profile_completion_widget">',
+  'after_widget' => '</aside>',
+  'before_title' => '<h3 class="buddypress__h3">',
+  'after_title' => '</h3>',
+) );
+
+
+
+register_sidebar( array(
+  'name' => 'Group Sidebar',
+  'id' => 'group_sidebar',
+  'before_widget' => '<aside class="widget">',
+  'after_widget' => '</aside>',
+  'before_title' => '<h3 class="buddypress__h3">',
+  'after_title' => '</h3>',
+) );
+}
+add_action( 'widgets_init', 'register_buddypress_sidebars' );
+//. 14 Register widgets UI
 
