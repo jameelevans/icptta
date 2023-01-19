@@ -188,6 +188,7 @@
 //* Navigation overall styles
 .nav {
   display: flex;
+  font-family: $font-primary;
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;

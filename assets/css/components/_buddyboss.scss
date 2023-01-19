@@ -552,6 +552,7 @@ white-space: nowrap;
         box-shadow: none;
         border: 1px solid #eee;
         background: #fafafa;
+        max-width: 860px;
 
         & .item-avatar {
           width: 7rem !important;
@@ -665,6 +666,21 @@ white-space: nowrap;
     #send-private-message {
       margin-right: .5rem;
     }
+
+    #member-invites-table .field-actions-add i {
+      background-color: #000;
+      display: inline-block;
+      color: #fff;
+      border-radius: 100%;
+      padding: 1px 4px 3px 1px;
+      height: 15px;
+      width: 15px;
+      line-height: normal;
+  }
+
+  [class*=" bb-icon-"]:before, [class^=bb-icon-]:before {
+    margin: 0;
+}
 
 
     .bp-toggle-action-button,

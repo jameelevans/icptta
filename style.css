@@ -1521,6 +1521,7 @@ html {
           box-shadow: none;
   border: 1px solid #eee;
   background: #fafafa;
+  max-width: 860px;
 }
 
 .buddypress__content .activity-list.bp-list .activity-item .item-avatar {
@@ -1623,6 +1624,21 @@ html {
 
 .buddypress__content #send-private-message {
   margin-right: .5rem;
+}
+
+.buddypress__content #member-invites-table .field-actions-add i {
+  background-color: #000;
+  display: inline-block;
+  color: #fff;
+  border-radius: 100%;
+  padding: 1px 4px 3px 1px;
+  height: 15px;
+  width: 15px;
+  line-height: normal;
+}
+
+.buddypress__content [class*=" bb-icon-"]:before, .buddypress__content [class^=bb-icon-]:before {
+  margin: 0;
 }
 
 .buddypress__content .bp-toggle-action-button,
@@ -2498,6 +2514,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Roboto", sans-serif;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: end;
