@@ -24,6 +24,11 @@ get_header();
       </div>
     </div>
   </section><!-- .Contact information -->
+
+  <!-- Contact form -->
+  <section class="general--single-narrow">
+    <?php echo the_content();?>
+  </section><!-- .Contact form -->
   <!-- FAQs section -->
   <section class="faqs">
     <h2 class="h2__header--blue faqs__header">FAQs</h2>
