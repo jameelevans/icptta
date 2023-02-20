@@ -673,53 +673,6 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
           box-shadow: 0 0.5rem 1rem rgba(var(--color-black-a), 0.2);
 }
 
-.btn .wpforms-submit {
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
-  overflow: hidden !important;
-  font-size: 1.5rem !important;
-  font-weight: 100 !important;
-  font-family: "Roboto", sans-serif !important;
-  color: var(--color-white) !important;
-  cursor: pointer !important;
-  text-align: center !important;
-  background-size: 450% 150% !important;
-  border-radius: 2px !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  padding: 1rem 3rem !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  position: relative !important;
-  display: inline-block !important;
-  background-image: var(--gradient-secondary) !important;
-  border: none !important;
-}
-
-.btn .wpforms-submit:hover {
-  background-position: 50% 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
-  -webkit-box-shadow: 0 1rem 2rem rgba(var(--color-black-a), 0.2);
-          box-shadow: 0 1rem 2rem rgba(var(--color-black-a), 0.2);
-}
-
-.btn .wpforms-submit:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-@media only screen and (max-width: 50em) {
-  .btn .wpforms-submit {
-    padding: 1.5rem 3.5rem;
-    font-size: 2rem;
-  }
-}
-
 .btn--red {
   background-image: var(--gradient-primary);
   border: none;
@@ -784,6 +737,53 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(var(--color-black-a), 0.2);
           box-shadow: 0 0.5rem 1rem rgba(var(--color-black-a), 0.2);
   color: var(--color-blue-primary);
+}
+
+.wpforms-submit {
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  overflow: hidden !important;
+  font-size: 1.5rem !important;
+  font-weight: 100 !important;
+  font-family: "Roboto", sans-serif !important;
+  color: var(--color-white) !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  background-size: 450% 150% !important;
+  border-radius: 2px !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 3rem !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  display: inline-block !important;
+  background-image: var(--gradient-secondary) !important;
+  border: none !important;
+}
+
+.wpforms-submit:hover {
+  background-position: 50% 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-box-shadow: 0 1rem 2rem rgba(var(--color-black-a), 0.2);
+          box-shadow: 0 1rem 2rem rgba(var(--color-black-a), 0.2);
+}
+
+.wpforms-submit:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+@media only screen and (max-width: 50em) {
+  .wpforms-submit {
+    padding: 1.5rem 3.5rem;
+    font-size: 2rem;
+  }
 }
 
 .featured-resources {
