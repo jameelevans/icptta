@@ -49,6 +49,8 @@ get_header();
 <p class="p__body">The Incident Command System (ICS) is a common organizational structure used by emergency responders to aid in the management of resources during response to incidents. It includes common procedures, personnel, facilities, equipment, and means of communication. Ensuring that victim services professionals and other non-traditional response stakeholders are trained in ICS is important. They must understand the framework, lines of reporting, and their role within ICS. Relying on the ICS environment will reduce chaos in the response and allow non-traditional responders to integrate into an existing and trusted response framework.</p><br/>
 
 <p class="p__body">Additional resources regarding the Incident Command System can be found on the <a class="link" href="/resources/#incident-command-system">resources page.</a> ICPTTA also developed a <a class="link" href="/trainings/">webinar on the Emergency Operations</a> center within ICS.</p>
+<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nmf2sT8MT2c?si=00_-5qb3EHgku33X" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -60,6 +62,9 @@ get_header();
 <p class="p__body">When an incident occurs, committee members will be activated as leadership in their respective roles and will have the authority to make decisions and allocate resources. Each non-traditional agency will maintain their own list of responders and will activate additional, appropriately trained staff as needed.</p><br/>
 
 <p class="p__body">Additional resources regarding Committee Identification &amp; Engagement can be found on the <a class="link" href="/resources/#committee-identification-engagement">resources page.</a></p>
+
+<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yxigicB11Mk?si=JNAR1B_ZL2Rxvcrr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -75,6 +80,9 @@ get_header();
 
 <p class="p__body">Additional resources regarding the Contact List can be found on the <a class="link" href="/resources/#contact-list">resources page.</a></p>
 
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/edhgJus858w?si=AQ2orslypZDR_hVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
@@ -83,6 +91,9 @@ get_header();
 <p class="p__body">Following a CMV/DT incident, reliable, validated information is the overwhelming need that must be addressed. Victims need to know what happened, where they can go for safety, where and how they will be united with their support systems, and how to access services. Families and friends of presumed victims will be looking for information on the safety and whereabouts of their loved ones. An FRC provides a common gathering place, information, and basic support services for survivors and families. It is a short-term facility needed to provide just-in-time services while more long-term services are being organized. It is generally open for 24-48 hours.</p><br/>
 
 <p class="p__body">Additional resources regarding FRCs can be found on the <a class="link" href="/resources/#frc">resources page.</a></p>
+
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0UQkx-D1XD0?si=dvOk_Lf4_SU8c9Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -96,6 +107,9 @@ get_header();
 
 <p class="p__body">Additional resources regarding Victim Identification and Notification can be found on the <a class="link" href="/resources/#victim-identification">resources page.</a></p>
 
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z6UKqkxfeJ4?si=SBDzdeYYi_zS_k62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
@@ -104,6 +118,9 @@ get_header();
 <p class="p__body">Information is the most valuable resource following a CMV/DT incident. Communications professionals will need to provide continuous, accurate, and accessible information about the incident to various audiences – including victims, families, and the public. Processes need to be developed to manage these tasks. Platforms must be selected and developed. Staff must be identified and trained. Victims and families will also be highly sought after by the media. They will need information regarding how to manage media inquiries.</p><br/>
 
 <p class="p__body">Additional resources regarding Public Information and Crisis Communications can be found on the <a class="link" href="/resources/#public-information-crisis-communications-protocol">resources page.</a> ICPTTA also developed a <a class="link" href="/trainings/">Communications during a Mass Violence or Domestic Terrorism Incident webinar</a>.</p>
+
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z6UKqkxfeJ4?si=uxNCmbpOdRre9mGB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -117,6 +134,8 @@ get_header();
 
 <p class="p__body">Additional resources regarding Volunteer Management can be found on the <a class="link" href="/resources/#volunteer-management-protocol">resources page</a>.</p>
 
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2aW_r7hmS44?si=PIVvZk__jUWctqf7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -131,7 +150,8 @@ get_header();
 <p class="p__body">FACs allow victims streamlined access to agencies, resources, and information that are needed to meet their immediate needs. This includes mental health and spiritual care support, initial victim advocacy and access to victim compensation, return of personal effects, legal guidance (probate, custody, immigration), vital document replacement, and immediate transportation and lodging. Referrals to local and regional services to meet longer-term needs are also provided. These may include mental health counseling, health care, guidance with legal matters, work-related issues, financial planning, insurance benefits, social security/disability, and more. Most FACs have a physical location, and all should have a website for online access.</p><br/>
 
 <p class="p__body">Additional resources regarding FACs can be found on the <a class="link" href="/resources/#fac" data-type="URL" data-id="/resources/#fac">resources page.</a></p>
- 
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PnnpnUGQ4tE?si=M2yA68TiRly0Pq3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -147,6 +167,8 @@ get_header();
 <p class="p__body">Jurisdictions can access the guidance of the National Compassion Fund through the ICP TTA program to assist with setting up systems for managing financial donations.</p><br/>
 
 <p class="p__body">Additional resources regarding Donation Management can be found on the <a class="link" href="/resources/#donation-management-protocol">resources page</a>. ICPTTA also has a series of <a class="link" href="https://icptta.com/trainings/">Resource Management webinars.</a></p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/exb61jKCqk0?si=DXYH81lhw26XGHn5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -156,7 +178,8 @@ get_header();
 <p class="p__body">Memorials, vigils, and special events tend to be quite spontaneous – both in timing and location. Special events can include dignitary visits and incident site visits for victims and families. These events require flexibility and rapid response by the community to ensure safety for all participants. Jurisdictions need to focus on creating trauma-informed interactions for victims and families in attendance. At minimum, jurisdictions likely need to coordinate with victim advocates, faith-based leaders, law enforcement, public works, and/or the media. Additional partners may be involved depending on the type of event.</p><br/>
 
 <p class="p__body">Additional resources regarding Special Events can be found on the <a class="link" href="/resources/#memorial-special-events-management-plan">resources page</a>.</p>
- 
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uHzUZxAfjBQ?si=sx2QzIGNbxDdFfmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -168,6 +191,8 @@ get_header();
 <p class="p__body">CMV/DT incidents can be traumatic for victims, families, and the surrounding community. Following an incident, people may experience a variety of temporary reactions that will dissipate over a period of several weeks to a couple of months. Others will experience a range of longer-term reactions that include depression, anxiety, increased use/abuse of substances, weight fluctuations, anger, and challenges in stress management. To respond to the emotional needs of victims and the larger community, jurisdictions need to understand their community’s behavioral health services landscape. This includes mental health, psychiatric care, and substance abuse services. It is also helpful to develop a process to identify gaps that may exist as the volume of need increases.&nbsp;</p><br/>
 
 <p class="p__body">Additional resources regarding Community Behavioral Health can be found on the <a class="link" href="http://resources/#community-behavioral-health-response">resources page</a>.</p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o4e4dJLdfh0?si=_Do_eQSWvmQ4dNCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -177,6 +202,8 @@ get_header();
 <p class="p__body">Exposure to a CMV/DT incident may be challenging for first responders - as is an accumulation of exposure to stressful responses throughout a career. First responders are typically first to enter the scene of CMV/DT incidents and the last to ask for help. It is important for jurisdictions to understand how CMV/DT incidents can be more challenging for many responders than more common critical incidents, and prepare for the often more complicated and longer lasting behavioral health needs of first responders following a CMV/DT incident. &nbsp;</p><br/>
 
 <p class="p__body">Additional resources regarding First Responder Supper can be found on the <a class="link" href="/resources/#first-responder-support">resources page</a>. ICPTTA also has a recorded webinar regarding <a class="link" href="https://icptta.com/trainings/">First Responder Care</a> following the Sandy Hook school shooting.</p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iiNPoYemDiY?si=xsee8WqvhvTpveyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -189,6 +216,8 @@ get_header();
 <p class="p__body">Communities, victims and their loved ones have a number of needs following a CMV/DT incident. Communities will have response costs, as well as costs for continued care of victims and the community. Victims may need medical assistance, adaptive equipment, physical therapy, trauma and grief counseling, lost wages, and assistance with funeral costs/arrangements among others. There are numerous grants and financial resources available to support victims and communities following CMV/DT incidents. Examples include Victims of Crime Act (VOCA) funding and the Antiterrorism and Emergency Assistance Program (AEAP). Prior to an incident, it is extremely helpful to form a multi-agency team with the ability to gather information and write grant applications as many funding opportunities have strict, and often short, timeframes.</p><br/>
 
 <p class="p__body">Additional resources regarding grants and funding assistance can be found on the <a class="link" href="/resources/#planning-preparedness-grants-emergency-funding-assistance">resources page.</a></p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jl1cafWnsUo?si=zSk01XAbTPM2plmt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -199,6 +228,8 @@ get_header();
 <p class="p__body">Resiliency Centers reflect the desire for communities to provide for healing, health, and support to victims and the community at large. A resiliency center or program will focus on the longer-term needs of victims and/or the local community, depending on the funding secured. Services are free for identified and funded populations. The center provides a safe and supportive healing environment for individuals and groups seeking improved emotional and physical health related to the CMV/DT incident.</p><br/>
 
 <p class="p__body">Additional resources regarding resiliency planning can be found on the <a class="link" href="/resources/#community-resilience-planning">resources page</a>.</p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ffm0vQDg78g?si=wdqjxYmJAvT7W7lZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -211,6 +242,8 @@ get_header();
 <p class="p__body">Should there be a living defendant of a CMV/DT incident, victims and family members will need support as the case moves through the criminal justice system. This includes assistance with victim impact statements, media management, emotional support, and information regarding the investigation, prosecution, adjudication, sentencing, and any appeals. Due to the large number of identified victims, unique strategies are often employed to meet the needs during high demand times – an example being Hospitality Centers during trials.</p><br/>
 
 <p class="p__body">Additional resources regarding supporting victims through the criminal justice system can be found on the <a class="link" href="/resources/#criminal-justice-system-victim-support">resources page</a>.</p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BOegcwVRE3E?si=VFMa_E6MbtQwnv_n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -221,6 +254,8 @@ get_header();
 <p class="p__body">Exercises are a key component of national preparedness. They provide the whole community with the opportunity to influence plans, address and validate capabilities, and identify areas of improvement. &nbsp;Jurisdictions should incorporate victim services into existing emergency management exercises. This will help jurisdictions better meet the needs of victims and families should a CMV/DT incident occur.</p><br/>
 
 <p class="p__body">ICPTTA is proud to release our new Exercises Guide to assist communities in incorporating victim services into emergency management exercises related to CMV/DT. This guide contains sample exercise templates aligned with Homeland Security Exercise and Evaluation Program (HSEEP) Doctrine. The Exercise Guide and additional training and exercise resources can be found on the <a class="link" href="/resources/#training-exercise">resources page</a>.</p>
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YXmncUf4HcM?si=K0CeL5g5oq5FXGxZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  
 
 

@@ -50,6 +50,12 @@
     color: var(--color-charcoal);
   }
 
+  &__youtube{
+    color: var(--color-charcoal);
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
   &__mission {
     font-family: $font-primary;
   }

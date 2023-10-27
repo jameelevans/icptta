@@ -14,8 +14,11 @@ get_header();
 		<section class="about fade-in-up">
 			<!-- About logo -->
 			<div class="about__logo">
-				<img class="about__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-logo-tag.png')); ?>" alt="ICP TTA logo">
+				<!--<img class="about__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-logo-tag.png')); ?>" alt="ICP TTA logo">-->
 				<h1 class="about__tagline"><?php get_bloginfo( 'description' ) ?></h1>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/VWszsfPFX48?si=sTqvvZaXVEUvQdoi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br />
+					<a class="about__youtube" href="https://youtu.be/k_6EjdhfIaw" target="_blank">See Spanish intro here >></a>
+
 			</div><!-- .About logo -->
 			<!-- About mission -->
 			<div class="about__mission">

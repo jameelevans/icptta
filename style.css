@@ -3564,6 +3564,12 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
   color: var(--color-charcoal);
 }
 
+.about__youtube {
+  color: var(--color-charcoal);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
 .about__mission {
   font-family: "Roboto", sans-serif;
 }
