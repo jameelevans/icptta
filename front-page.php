@@ -17,7 +17,7 @@ get_header();
 				<!--<img class="about__icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/icp-tta-logo-tag.png')); ?>" alt="ICP TTA logo">-->
 				<h1 class="about__tagline"><?php get_bloginfo( 'description' ) ?></h1>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/VWszsfPFX48?si=sTqvvZaXVEUvQdoi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br />
-					<a class="about__youtube" href="https://youtu.be/k_6EjdhfIaw" target="_blank">See Spanish intro here >></a>
+					<a class="spanish__youtube" href="https://youtu.be/k_6EjdhfIaw" target="_blank">See Spanish intro here >></a>
 
 			</div><!-- .About logo -->
 			<!-- About mission -->
@@ -64,17 +64,17 @@ get_header();
 		
 		</section><!-- .Program section -->
 
-		<!-- Partners Section -->
+		<!-- Partners Section
 		<section class="partners p-lg">
-			<!-- Partners headline -->
+
       <div class="partners__headline partners--narrow">
         <h2 class="h2__header h2__header--grey mt-hg">Our Partners</h2>
-      </div><!-- .Partners headline -->
-			<!-- Partners wrapper -->
+      </div>
+	
       <div class="partners__wrapper partners__slider partners--narrow mb-hg">
-				<?php echo partners();?>
-      </div><!-- .Partners wrapper -->
-    </section><!-- .Partners Section -->
+				<?php //echo partners();?>
+      </div>
+    </section>Partners Section -->
 
 		<!-- Testimonials section -->
 		<section class="testimonials">

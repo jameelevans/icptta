@@ -43,8 +43,6 @@
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/16-best-practices')); ?>" class="mobile-nav__link<?php if(is_page('16-best-practices')){echo ' is-current-link';} ?>" title="Navigate to 16 Best Practices page">16 Best Practices</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/resources')); ?>" class="mobile-nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>" title="Navigate to a resource page">Resources</a></li>
 								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/trainings')); ?>" class="mobile-nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('past-trainings')) echo ' is-current-link'; ?>" title="Navigate to trainings page">Trainings</a></li>
-								<li class="mobile-nav__item"><a href="<?php echo esc_url( home_url('/consultants')); ?>" class="mobile-nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" title="Navigate to consultants page">Consultants</a></li>
-							
 								<li class="mobile-nav__item"><a class="nav__cta btn btn--white-outline" href="<?php echo 'https://forms.office.com/Pages/ResponsePage.aspx?id=e7mQz0a-AEqXAIHOT_G39scp5bMnerROs_IFzZhqodxUREVZT1JDMThITUJCTFRMQzZPVVNDMzI2WS4u'; ?>" target="_blank" rel="noreferrer" title="Fill out the ICPTTA application">ICPTTA Application</a></li>
 							</ul>
 						</nav>
@@ -73,7 +71,7 @@
 							<li class="nav__item"><a class="nav__link<?php if(is_page('16-best-practices')){echo ' is-current-link';} ?>" href="<?php echo esc_url( home_url('/16-best-practices')); ?>" title="Navigate to 16 Best Practices page">16 Best Practices</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (get_post_type() == 'post') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/resources')); ?>" title="Navigate to a resource page">Resources</a></li>
 							<li class="nav__item"><a class="nav__link<?php if (is_page('trainings') or get_post_type() == 'trainings' or is_page('upcoming-trainings') or is_page('trainings-coming-soon')) echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/trainings')); ?>" title="Navigate to a trainings page">Trainings</a></li>
-							<li class="nav__item"><a class="nav__link<?php if (is_page('consultants') or get_post_type() == 'consultants') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/consultants')); ?>" title="Navigate to a consultants page">Consultants</a></li>
+
 
 							<?php if (is_user_logged_in() ): ?>
 								<li class="nav__item"><a class="nav__link<?php if (is_page('members') or get_post_type() == 'members') echo ' is-current-link'; ?>" href="<?php echo esc_url( home_url('/members')); ?>" title="Navigate to a members page">Members</a></li>

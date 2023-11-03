@@ -52,6 +52,8 @@ get_header();
 <br/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nmf2sT8MT2c?si=00_-5qb3EHgku33X" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<a class="spanish__youtube" href="https://youtu.be/CwiqFhs8wlg" target="_blank">Ver versión en español aquí >></a>
+
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
@@ -65,6 +67,7 @@ get_header();
 
 <br/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yxigicB11Mk?si=JNAR1B_ZL2Rxvcrr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/obIFeH-88Xw" target="_blank">Ver versión en español aquí >></a>
 
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -82,6 +85,7 @@ get_header();
 
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/edhgJus858w?si=AQ2orslypZDR_hVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/5qS1xEQNxxQ" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -94,6 +98,7 @@ get_header();
 
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0UQkx-D1XD0?si=dvOk_Lf4_SU8c9Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/5BzbGamu8T0" target="_blank">Ver versión en español aquí >></a>
 
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -109,6 +114,7 @@ get_header();
 
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z6UKqkxfeJ4?si=SBDzdeYYi_zS_k62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/lUJ5yC5qVH4" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -120,7 +126,8 @@ get_header();
 <p class="p__body">Additional resources regarding Public Information and Crisis Communications can be found on the <a class="link" href="/resources/#public-information-crisis-communications-protocol">resources page.</a> ICPTTA also developed a <a class="link" href="/trainings/">Communications during a Mass Violence or Domestic Terrorism Incident webinar</a>.</p>
 
 <br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z6UKqkxfeJ4?si=uxNCmbpOdRre9mGB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ITPSlpIv44?si=9R8UjhI4aZJveKzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/5KnfEkqU9XY" target="_blank">Ver versión en español aquí >></a>
 
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -136,6 +143,7 @@ get_header();
 
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2aW_r7hmS44?si=PIVvZk__jUWctqf7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/7qkSmh6E3tY" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -152,6 +160,7 @@ get_header();
 <p class="p__body">Additional resources regarding FACs can be found on the <a class="link" href="/resources/#fac" data-type="URL" data-id="/resources/#fac">resources page.</a></p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PnnpnUGQ4tE?si=M2yA68TiRly0Pq3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/h0RQOor-hjA" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -169,6 +178,7 @@ get_header();
 <p class="p__body">Additional resources regarding Donation Management can be found on the <a class="link" href="/resources/#donation-management-protocol">resources page</a>. ICPTTA also has a series of <a class="link" href="https://icptta.com/trainings/">Resource Management webinars.</a></p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/exb61jKCqk0?si=DXYH81lhw26XGHn5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/z8Jt3Cdnkog" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -180,6 +190,7 @@ get_header();
 <p class="p__body">Additional resources regarding Special Events can be found on the <a class="link" href="/resources/#memorial-special-events-management-plan">resources page</a>.</p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uHzUZxAfjBQ?si=sx2QzIGNbxDdFfmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/ZVN3uP2n85k" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -193,6 +204,7 @@ get_header();
 <p class="p__body">Additional resources regarding Community Behavioral Health can be found on the <a class="link" href="http://resources/#community-behavioral-health-response">resources page</a>.</p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o4e4dJLdfh0?si=_Do_eQSWvmQ4dNCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/tEm6gP3kf5c" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -204,6 +216,7 @@ get_header();
 <p class="p__body">Additional resources regarding First Responder Supper can be found on the <a class="link" href="/resources/#first-responder-support">resources page</a>. ICPTTA also has a recorded webinar regarding <a class="link" href="https://icptta.com/trainings/">First Responder Care</a> following the Sandy Hook school shooting.</p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iiNPoYemDiY?si=xsee8WqvhvTpveyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/WT0nsEDrNUA" target="_blank">Ver versión en español aquí >></a>
  
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -218,6 +231,7 @@ get_header();
 <p class="p__body">Additional resources regarding grants and funding assistance can be found on the <a class="link" href="/resources/#planning-preparedness-grants-emergency-funding-assistance">resources page.</a></p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jl1cafWnsUo?si=zSk01XAbTPM2plmt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/sWD-G-XIAkw" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -230,6 +244,7 @@ get_header();
 <p class="p__body">Additional resources regarding resiliency planning can be found on the <a class="link" href="/resources/#community-resilience-planning">resources page</a>.</p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ffm0vQDg78g?si=wdqjxYmJAvT7W7lZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/v2R1AlzWPoQ" target="_blank">Ver versión en español aquí >></a>
  
 
 <!-- wp:spacer {"height":"50px"} -->
@@ -244,6 +259,7 @@ get_header();
 <p class="p__body">Additional resources regarding supporting victims through the criminal justice system can be found on the <a class="link" href="/resources/#criminal-justice-system-victim-support">resources page</a>.</p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BOegcwVRE3E?si=VFMa_E6MbtQwnv_n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/8uoOtsDmggE" target="_blank">Ver versión en español aquí >></a>
 
 <!-- wp:spacer {"height":"50px"} -->
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -256,6 +272,7 @@ get_header();
 <p class="p__body">ICPTTA is proud to release our new Exercises Guide to assist communities in incorporating victim services into emergency management exercises related to CMV/DT. This guide contains sample exercise templates aligned with Homeland Security Exercise and Evaluation Program (HSEEP) Doctrine. The Exercise Guide and additional training and exercise resources can be found on the <a class="link" href="/resources/#training-exercise">resources page</a>.</p>
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YXmncUf4HcM?si=K0CeL5g5oq5FXGxZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <a class="spanish__youtube" href="https://youtu.be/smDqVmHoebk" target="_blank">Ver versión en español aquí >></a>
  
 
 
