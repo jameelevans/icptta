@@ -141,7 +141,7 @@ function custom_post_types() {
   'menu_icon' => 'dashicons-calendar'
 ));
 
-  // Consultant Post Type
+  /* Consultant Post Type
 register_post_type('consultants', array(
   'show_in_rest' => true,
   'supports' => array('title', 'editor', 'thumbnail'),
@@ -156,7 +156,7 @@ register_post_type('consultants', array(
     'singular_name' => 'Consultant'
   ),
   'menu_icon' => 'dashicons-admin-users'
-));
+));*/
 
   // Partners Post Type
   register_post_type('partners', array(
